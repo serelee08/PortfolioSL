@@ -1,9 +1,9 @@
 :root {
   --bg: #fbf7ef;
-  --text: #2b2b2b;
-  --sub: #777;
-  --accent: #e6dccc;
   --card: #ffffff;
+  --text: #2b2b2b;
+  --sub: #666;
+  --accent: #e6dccc;
 }
 
 * {
@@ -23,12 +23,7 @@ h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-.landing {
+.hero {
   text-align: center;
   padding: 80px 20px;
 }
@@ -38,22 +33,23 @@ img {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
-.subtitle {
+.headline {
   color: var(--sub);
-  margin: 10px 0 20px;
+  margin: 8px 0 18px;
 }
 
-.contact-card {
+.contact {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 18px;
   flex-wrap: wrap;
   font-size: 14px;
 }
 
-.container {
+.wrapper {
   max-width: 1100px;
   margin: auto;
   padding: 0 20px 80px;
@@ -70,27 +66,27 @@ section h2 {
   display: inline-block;
 }
 
-.grid-3 {
+.about-text {
+  max-width: 800px;
+}
+
+.skill-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.project, .award-card, .edu {
+.skill-card {
   background: var(--card);
-  padding: 30px;
+  padding: 28px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
 .project {
-  margin-bottom: 40px;
+  background: var(--card);
+  padding: 36px;
+  border-radius: 18px;
+  margin-bottom: 50px;
 }
 
 .period {
@@ -98,14 +94,46 @@ section h2 {
   color: var(--sub);
 }
 
-.desc {
-  margin: 12px 0;
+.project-desc {
+  margin: 10px 0 20px;
   font-weight: 500;
 }
 
-.result-img {
-  margin-top: 20px;
+.portfolio-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.metric {
+  background: #fff7e6;
+  border: 1px solid #f0c674;
   border-radius: 12px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.metric span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.project-img {
+  margin-top: 26px;
+  border-radius: 14px;
+}
+
+.award-grid,
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.edu {
+  margin-bottom: 30px;
 }
 
 footer {
@@ -117,7 +145,9 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .grid-3, .grid-2 {
+  .skill-grid,
+  .award-grid,
+  .cert-grid {
     grid-template-columns: 1fr;
   }
 }
