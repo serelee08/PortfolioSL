@@ -1,13 +1,7 @@
-/* ===== Base ===== */
 body {
   background: #fbf6e9;
-  font-family: "Times New Roman", "Noto Serif KR", serif;
+  font-family: "Noto Serif KR", "Times New Roman", serif;
   color: #1f1f1f;
-  line-height: 1.8;
-}
-
-h1, h2, h3, h4 {
-  letter-spacing: 0.3px;
 }
 
 /* ===== Landing ===== */
@@ -16,211 +10,111 @@ h1, h2, h3, h4 {
   padding: 90px 20px 70px;
 }
 
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
 .landing h1 {
-  font-size: 40px;
-  font-weight: 700;
+  margin-top: 20px;
+  font-size: 34px;
 }
 
-.landing-desc {
-  margin-top: 22px;
-  font-size: 17px;
-  color: #333;
+.landing h2 {
+  font-size: 18px;
+  color: #444;
 }
 
-/* ===== Contact Icons ===== */
-.contact-icons {
+.intro {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* ===== Business Card ===== */
+.business-card {
   margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
 }
 
-.contact-icons img {
+.business-card img {
   width: 42px;
-  margin: 0 14px;
   cursor: pointer;
   transition: all 0.35s ease;
-  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.15));
 }
 
-.contact-icons img:hover {
+.business-card img:hover {
   transform: translateY(-6px) scale(1.15);
-  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.25));
 }
 
 .contact-info p {
   display: none;
-  margin-top: 14px;
+  margin-top: 12px;
   font-size: 15px;
-  color: #444;
-  animation: fadeUp 0.4s ease;
 }
 
 /* ===== Divider ===== */
-.line {
-  border: none;
-  border-top: 3px solid #8fd3e8;
-  margin: 70px 0;
+.divider {
+  height: 3px;
+  background: linear-gradient(90deg, #8fd3e8, #6a8ef6, #8fd3e8);
+  margin: 80px 0;
 }
 
 /* ===== Section ===== */
 .section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
-.section h2 {
+.section-title {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
-/* ===== Project Card ===== */
-.project-card {
-  padding: 20px 10px;
-}
-
-.project-card h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.project-card span {
-  font-size: 14px;
-  color: #555;
-}
-
-.period {
-  font-size: 14px;
-  margin-bottom: 14px;
-  color: #666;
-}
-
-.goal {
-  margin-bottom: 18px;
-  font-size: 15px;
-}
-
-/* ===== List ===== */
-.project-card ul {
-  margin-left: 22px;
-}
-
-.project-card li {
-  margin-bottom: 8px;
-  transition: all 0.25s ease;
-}
-
-.project-card li:hover {
-  color: #0b6efd;
-  transform: translateX(4px);
-}
-
-/* ===== Portfolio Link ===== */
-.portfolio-link {
-  display: inline-block;
-  margin-top: 22px;
-  font-size: 15px;
-  color: #6a1b9a;
-  font-weight: bold;
-  cursor: pointer;
+/* ===== Box ===== */
+.box {
+  background: rgba(255,255,255,0.6);
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
   transition: all 0.3s ease;
 }
 
-.portfolio-link:hover {
-  color: #3f51b5;
-  transform: translateX(6px);
-}
-
-/* ===== Result Box ===== */
-.result-box {
-  display: flex;
-  gap: 16px;
-  background: linear-gradient(135deg, #ffe9a3, #fff1c1);
-  padding: 20px;
-  margin-top: 28px;
-  border: 2px solid #f2c94c;
-  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
-  transition: all 0.35s ease;
-}
-
-.result-box:hover {
+.box:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 35px rgba(0,0,0,0.25);
-}
-
-.result-box img {
-  width: 42px;
-}
-
-.result-box strong {
-  font-size: 15px;
-}
-
-.result-box p {
-  font-size: 14px;
-  margin-top: 6px;
 }
 
 /* ===== Skill ===== */
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 35px;
-}
-
-.skill-grid div {
-  padding: 16px;
-  transition: all 0.3s ease;
-}
-
-.skill-grid div:hover {
-  background: rgba(143, 211, 232, 0.15);
-  transform: translateY(-6px);
-}
-
-.skill-grid h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  gap: 30px;
 }
 
 /* ===== Award ===== */
 .award-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 50px;
+  gap: 40px;
+}
+
+.center {
   text-align: center;
 }
 
-.award-grid img {
+.center img {
   width: 220px;
-  margin-top: 18px;
-  box-shadow: 0 12px 22px rgba(0,0,0,0.25);
-  transition: all 0.35s ease;
-}
-
-.award-grid img:hover {
-  transform: scale(1.08);
+  margin-top: 16px;
 }
 
 /* ===== Certificate ===== */
 .cert-img {
   width: 320px;
-  margin-top: 25px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
-  transition: all 0.35s ease;
-}
-
-.cert-img:hover {
-  transform: translateY(-6px) scale(1.05);
-}
-
-/* ===== Animation ===== */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
 }

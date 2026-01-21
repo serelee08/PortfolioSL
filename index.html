@@ -1,129 +1,111 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Serena Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=300">
+  <meta charset="UTF-8" />
+  <title>Serena | AI Backend Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ===== Landing ===== -->
+<!-- ================= Landing ================= -->
 <section class="landing">
-  <h1>AI Backend Engineer</h1>
-  <p class="landing-desc">
-    AI 모델과 안정적인 백엔드 아키텍처를 결합해<br>
-    실제 서비스로 구현하는 엔지니어
+  <img src="assets/profile.jpg" class="profile-img" alt="profile">
+
+  <h1>Serena</h1>
+  <h2>AI Backend Engineer</h2>
+
+  <p class="intro">
+    AI와 백엔드 기술을 결합해<br>
+    실제 서비스로 완성하는 엔지니어입니다.
   </p>
 
-  <div class="contact-icons">
+  <!-- Business Card -->
+  <div class="business-card">
     <img src="assets/mail.png" onclick="toggle('email')">
     <img src="assets/phone.png" onclick="toggle('phone')">
     <img src="assets/github.png" onclick="toggle('github')">
+    <img src="assets/location.png" onclick="toggle('location')">
   </div>
 
   <div class="contact-info">
     <p id="email">📧 serelee08@gmail.com</p>
     <p id="phone">📱 010-XXXX-XXXX</p>
     <p id="github">💻 github.com/serelee08</p>
+    <p id="location">📍 Incheon, South Korea</p>
   </div>
 </section>
 
-<hr class="line">
+<div class="divider"></div>
 
-<!-- ===== Experience ===== -->
+<!-- ================= About ================= -->
 <section class="section">
-  <h2>Experience</h2>
-
-  <div class="project-card">
-    <h3>Project01 : EVLink <span>(AI 기반 전기차 충전기 공유 플랫폼)</span></h3>
-    <p class="period">기간 : 25.08.25 ~ 25.09.25</p>
-
-    <p class="goal">
-      프로젝트 목적 : 호스트/사용자 기반 전기차 충전기 공유 플랫폼 구축으로
-      예약, 실시간 사용 현황 제공 및 운영 효율 향상
+  <h3 class="section-title">About</h3>
+  <div class="box">
+    <p>
+      Spring Boot 기반 백엔드와 Django 기반 AI 서비스를 직접 설계·구현하며,
+      모델 학습부터 API, 배포까지 전 과정을 경험한 엔지니어입니다.
     </p>
-
-    <ul>
-      <li>Google Gemini + Django 기반 AI 대화형 챗봇 서비스 개발</li>
-      <li>LSTM 기반 감성분석 모델 설계 및 구현</li>
-      <li>React & Spring Boot REST API 개발</li>
-      <li>OAuth2 로그인 인증 (Kakao/Naver/Google)</li>
-      <li>DB 설계 (MySQL, MariaDB, Oracle)</li>
-      <li>시스템 아키텍처 설계 및 Diagram/PPT 제작</li>
-    </ul>
-
-    <a class="portfolio-link">▶ 포트폴리오 보기 (Google Drive)</a>
-
-    <!-- 성과지표 -->
-    <div class="result-box">
-      <img src="assets/bulb.png">
-      <div>
-        <strong>성과지표 (한 줄)</strong>
-        <p>
-          AI 챗봇과 LSTM 감성분석을 통해 사용자 문의·리뷰 자동 분류 및
-          REST API·DB 연동으로 운영 효율과 처리 속도 향상
-        </p>
-      </div>
-    </div>
   </div>
 </section>
 
-<hr class="line">
+<div class="divider"></div>
 
-<!-- ===== Skill ===== -->
+<!-- ================= Skill ================= -->
 <section class="section">
-  <h2>Skill</h2>
-
+  <h3 class="section-title">Skill</h3>
   <div class="skill-grid">
-    <div>
+    <div class="box">
       <h4>Backend</h4>
       <p>Java, Spring Boot, MyBatis, JPA, SQL, Redis</p>
     </div>
-    <div>
+    <div class="box">
       <h4>AI / Data</h4>
       <p>Python, Django, LSTM, BERT, TensorFlow, PyTorch</p>
     </div>
-    <div>
+    <div class="box">
       <h4>Frontend</h4>
       <p>React, TypeScript, HTML, CSS, Figma</p>
     </div>
   </div>
 </section>
 
-<hr class="line">
+<div class="divider"></div>
 
-<!-- ===== Award ===== -->
+<!-- ================= Award ================= -->
 <section class="section">
-  <h2>Award</h2>
-
+  <h3 class="section-title">Award</h3>
   <div class="award-grid">
-    <div>
+    <div class="box center">
       <h4>프로젝트 우수상</h4>
       <img src="assets/award1.png">
     </div>
-    <div>
+    <div class="box center">
       <h4>특모범상 (출석률 100%)</h4>
       <img src="assets/award2.png">
     </div>
   </div>
 </section>
 
-<hr class="line">
+<div class="divider"></div>
 
-<!-- ===== Education ===== -->
+<!-- ================= Education ================= -->
 <section class="section">
-  <h2>Education</h2>
-
-  <p class="edu-title">클라우드 기반 AI 대화형 서비스 개발자 과정</p>
-  <p class="period">2025.03.20 ~ 2025.09.25</p>
-
-  <p class="edu-title">IBM AI Engineering Professional 과정</p>
-  <p class="period">2025.12 ~ 2026.03</p>
+  <h3 class="section-title">Education</h3>
+  <div class="box">
+    <strong>클라우드 기반 AI 대화형 서비스 개발자 과정</strong>
+    <p>2025.03 ~ 2025.09</p>
+  </div>
+  <div class="box">
+    <strong>IBM AI Engineering Professional</strong>
+    <p>2025.12 ~ 2026.03 (예정)</p>
+  </div>
 </section>
 
-<!-- ===== Certificate ===== -->
+<div class="divider"></div>
+
+<!-- ================= Certificate ================= -->
 <section class="section center">
-  <h2>Certificate</h2>
+  <h3 class="section-title">Certificate</h3>
   <img src="assets/cert1.png" class="cert-img">
 </section>
 
