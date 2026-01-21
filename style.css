@@ -1,31 +1,28 @@
 :root {
-  --bg: #fbf7ef;
-  --card: #ffffff;
-  --text: #2b2b2b;
-  --sub: #666;
-  --accent: #e6dccc;
+  --bg-main: #0b0f1a;
+  --bg-sub: #12172a;
+  --accent: #4f8cff;
+  --accent-soft: rgba(79,140,255,0.15);
+  --text-main: #e5e7eb;
+  --text-sub: #9ca3af;
+  --card-radius: 18px;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  margin: 0;
   font-family: 'Pretendard', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
+  background: linear-gradient(160deg, #0b0f1a, #12172a);
+  color: var(--text-main);
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
+/* ================= Hero ================= */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 20px 60px;
 }
 
 .profile-img {
@@ -33,121 +30,120 @@ h1, h2, h3 {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  border: 3px solid var(--accent-soft);
 }
 
 .headline {
-  color: var(--sub);
-  margin: 8px 0 18px;
+  color: var(--text-sub);
+  margin-top: 6px;
 }
 
-.contact {
+/* ================= Contact ================= */
+.contact-icons {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 18px;
-  flex-wrap: wrap;
-  font-size: 14px;
+  gap: 16px;
 }
 
+.contact-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg-sub);
+  color: var(--accent);
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px var(--accent-soft);
+}
+
+.contact-card {
+  margin: 20px auto 0;
+  max-width: 360px;
+  padding: 16px;
+  border-radius: var(--card-radius);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.contact-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= Layout ================= */
 .wrapper {
   max-width: 1100px;
   margin: auto;
-  padding: 0 20px 80px;
+  padding: 40px 20px;
 }
 
 section {
   margin-bottom: 80px;
 }
 
-section h2 {
+h2 {
   font-size: 28px;
-  margin-bottom: 30px;
-  border-bottom: 2px solid var(--accent);
-  display: inline-block;
+  margin-bottom: 24px;
 }
 
-.about-text {
-  max-width: 800px;
-}
-
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.skill-card {
-  background: var(--card);
+/* ================= Cards ================= */
+.skill-card,
+.project,
+.edu,
+.award-grid div {
+  background: rgba(255,255,255,0.03);
+  border-radius: var(--card-radius);
   padding: 28px;
-  border-radius: 16px;
+  transition: all 0.3s ease;
 }
 
-.project {
-  background: var(--card);
-  padding: 36px;
-  border-radius: 18px;
-  margin-bottom: 50px;
+.skill-card:hover,
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
-.period {
-  font-size: 14px;
-  color: var(--sub);
+/* ================= Project ================= */
+.project-img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 12px;
 }
 
-.project-desc {
-  margin: 10px 0 20px;
-  font-weight: 500;
-}
-
+/* ================= Button ================= */
 .portfolio-link {
   display: inline-block;
-  margin-top: 12px;
-  font-weight: 500;
+  margin-top: 16px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), #7aa2ff);
+  color: #fff;
   text-decoration: none;
-  color: #000;
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
-.metric {
-  background: #fff7e6;
-  border: 1px solid #f0c674;
-  border-radius: 12px;
-  padding: 18px;
-  margin-top: 18px;
+.portfolio-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px var(--accent-soft);
 }
 
-.metric span {
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.project-img {
-  margin-top: 26px;
-  border-radius: 14px;
-}
-
-.award-grid,
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.edu {
-  margin-bottom: 30px;
-}
-
+/* ================= Footer ================= */
 footer {
   text-align: center;
-  padding: 40px;
-  color: #999;
+  padding: 40px 0;
+  color: var(--text-sub);
   font-size: 14px;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .skill-grid,
-  .award-grid,
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
 }
