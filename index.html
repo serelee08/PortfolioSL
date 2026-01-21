@@ -4,15 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI 백엔드 엔지니어 | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
 <header class="landing">
-  <img src="assets/profile.jpg" class="profile-img" alt="profile"/>
+  <img src="images/profile.jpg" class="profile-img" alt="profile"/>
   <h1>이지애</h1>
   <p class="subtitle">AI 백엔드 엔지니어</p>
 
@@ -25,23 +29,23 @@
 
 <main class="container">
 
-<section id="about">
+<section>
   <h2>About</h2>
   <p>
     AI 기반 서비스와 안정적인 백엔드 아키텍처를 결합하여  
-    실제 비즈니스에서 동작하는 시스템을 구현하는 엔지니어입니다.
+    실제 비즈니스 환경에서 동작하는 시스템을 구현하는 엔지니어입니다.
   </p>
 </section>
 
-<section id="skills">
+<section>
   <h2>Skills</h2>
   <div class="grid-3">
     <div>
       <h3>Backend</h3>
       <ul>
-        <li>Java, Spring Boot (REST API, Security, JWT)</li>
-        <li>JPA / MyBatis, MVC</li>
-        <li>MySQL, MariaDB, Oracle</li>
+        <li>Java, Spring Boot</li>
+        <li>REST API, Security, JWT</li>
+        <li>JPA, MyBatis</li>
       </ul>
     </div>
     <div>
@@ -56,96 +60,73 @@
       <h3>Frontend</h3>
       <ul>
         <li>React, TypeScript</li>
-        <li>HTML5, CSS3, Figma</li>
+        <li>HTML, CSS, Figma</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="experience">
+<section>
   <h2>Experience</h2>
 
   <article class="project">
     <h3>Project01. EVLink</h3>
     <span class="period">2025.08.25 ~ 2025.09.25</span>
-    <p class="desc">
-      AI 기반 전기차 충전기 공유 플랫폼
-    </p>
+    <p class="desc">AI 기반 전기차 충전기 공유 플랫폼</p>
     <ul>
-      <li>Gemini + Django 기반 AI 챗봇 서비스 개발</li>
-      <li>LSTM 감성분석 모델 설계 및 REST API 연동</li>
-      <li>Spring Boot 기반 백엔드 API 및 OAuth2 인증 구현</li>
+      <li>Gemini + Django AI 챗봇 개발</li>
+      <li>LSTM 감성분석 모델 및 REST API 연동</li>
+      <li>Spring Boot 백엔드 인증/보안 설계</li>
     </ul>
-    <a href="#" class="link">🔗 Portfolio 보기</a>
-    <img src="assets/evlink.png" class="result-img"/>
+    <img src="images/evlink.png" class="result-img"/>
   </article>
 
   <article class="project">
     <h3>Project02. Wallet</h3>
     <span class="period">2025.10</span>
-    <p class="desc">
-      통계 기반 자산 관리 플랫폼
-    </p>
+    <p class="desc">통계 기반 자산 관리 서비스</p>
     <ul>
-      <li>수입/지출 분석 API 설계</li>
-      <li>데이터 시각화 및 비즈니스 로직 구현</li>
+      <li>수입·지출 데이터 모델링</li>
+      <li>비즈니스 로직 중심 API 설계</li>
     </ul>
-    <img src="assets/wallet.png" class="result-img"/>
+    <img src="images/wallet.png" class="result-img"/>
   </article>
 </section>
 
-<section id="award">
+<section>
   <h2>Award</h2>
   <div class="grid-2">
     <div class="award-card">
       <h3>프로젝트 우수상</h3>
       <p>한국 ICT 인재 개발원</p>
-      <img src="assets/award1.png"/>
+      <img src="images/award1.png"/>
     </div>
     <div class="award-card">
       <h3>특모범상 (출석률 100%)</h3>
       <p>한국 ICT 인재 개발원</p>
-      <img src="assets/award2.png"/>
+      <img src="images/award2.png"/>
     </div>
   </div>
 </section>
 
-<section id="education">
+<section>
   <h2>Education</h2>
 
   <div class="edu">
-    <h3>클라우드 기반 AI 대화형 서비스 개발자 과정</h3>
+    <h3>클라우드 기반 AI 서비스 개발 과정</h3>
     <p>한국 ICT 인재 개발원</p>
     <ul>
-      <li>Spring Boot, React, AI 통합 프로젝트</li>
-      <li>REST API & 클라우드 환경 실습</li>
-    </ul>
-  </div>
-
-  <div class="edu">
-    <h3>IBM AI Engineering Professional 과정</h3>
-    <p>Corsera </p>
-    <ul>
-      <li>Transformer & RAG 시스템 구축</li>
-      <li>PyTorch 기반 모델 학습</li>
-    </ul>
-  </div>
-
-  <div class="edu">
-    <h3>University Pathway English</h3>
-    <p>ILAC Canada</p>
-    <ul>
-      <li>Academic Writing & Presentation</li>
-      <li>다국적 팀 프로젝트</li>
+      <li>Spring Boot · React 통합 프로젝트</li>
+      <li>REST API & 클라우드 실습</li>
     </ul>
   </div>
 </section>
 
-<section id="certificate">
+<section>
   <h2>🎓 Certificate</h2>
   <div class="grid-2">
-    <img src="assets/cert1.png"/>
-    <img src="assets/cert2.png"/>
+    <img src="images/certificate1.png"/>
+    <img src="images/certificate2.png"/>
   </div>
 </section>
 
