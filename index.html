@@ -5,60 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Backend Engineer | Portfolio</title>
   <meta name="description" content="AI Backend Engineer Portfolio">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- ICON -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
 
+<!-- ================= LANDING ================= -->
 <header class="hero">
-  <img src="images/myself.jpg" class="profile-img" alt="profile">
+  <img src="./images/myself.jpg" alt="profile" class="profile-img"/>
 
   <h1>이지애</h1>
   <h2>AI Backend Engineer</h2>
   <p class="tagline">잘 설계된 파이프라인이 반복적인 가치를 만든다</p>
 
+  <!-- ICONS (SAME SIZE) -->
   <div class="contact-icons">
-    <button onclick="toggle('email')"><i class="fa-solid fa-envelope"></i></button>
-    <button onclick="toggle('phone')"><i class="fa-solid fa-phone"></i></button>
-    <button onclick="toggle('url')"></button>
+    <button onclick="toggleContact('email')" aria-label="email">
+      <i class="fa-solid fa-envelope"></i>
+    </button>
+    <button onclick="toggleContact('phone')" aria-label="phone">
+      <i class="fa-solid fa-phone"></i>
+    </button>
+    <button onclick="toggleContact('url')" aria-label="url">
+      <i class="fa-solid fa-link"></i>
+    </button>
   </div>
 
+  <!-- TOGGLE -->
   <div class="contact-info">
     <p id="email" class="hidden">📧 Serelee08@gmail.com</p>
     <p id="phone" class="hidden">📱 010-7713-9527</p>
-    <p id="url" class="hidden">🌐
-      🔗 <a href="https://USERNAME.github.io/REPO" target="_blank">
-        https://Serelee08.github.io/REPO
+    <p id="url" class="hidden">
+      🔗 <a href="https://serelee08.github.io/PortfolioSL/" target="_blank">
+        https://serelee08.github.io/PortfolioSL/
       </a>
     </p>
   </div>
 </header>
 
+<!-- ================= ABOUT ================= -->
 <section>
   <h3>About</h3>
-  <p>Python · Java(Spring) · AWS 환경에서 AI 백엔드 개발 경험을 보유한 엔지니어입니다…</p>
+  <p>
+    Python · Java(Spring) · TypeScript 기반의 AWS 환경에서
+    AI 백엔드 개발 경험을 보유한 엔지니어입니다.
+  </p>
+  <p>
+    클라이언트 요청부터 서버, 데이터베이스, 응답까지
+    전체 흐름과 데이터 파이프라인 설계에 집중해 왔습니다.
+  </p>
 </section>
 
+<!-- ================= SKILLS ================= -->
 <section>
   <h3>Skills</h3>
-  <!-- 위 서술 그대로 -->
+
+  <h4>Backend</h4>
+  <ul>
+    <li>Java, Spring Boot (REST API, Security, JWT)</li>
+    <li>MyBatis, JPA/Hibernate, SQL</li>
+  </ul>
+
+  <h4>AI / Data</h4>
+  <ul>
+    <li>Python, Django</li>
+    <li>LSTM, Transformer, NLP</li>
+  </ul>
 </section>
 
+<!-- ================= EXPERIENCE ================= -->
 <section>
   <h3>Experience</h3>
-  <!-- EVLink / Walley -->
+
+  <article>
+    <h4>EVLink – AI 기반 전기차 충전기 공유 플랫폼</h4>
+    <ul>
+      <li>Gemini AI 챗봇</li>
+      <li>LSTM 감성분석 REST API</li>
+      <li>AWS EC2 배포</li>
+    </ul>
+  </article>
 </section>
 
+<!-- ================= CTA ================= -->
 <section>
   <h3>Contact</h3>
-  <p>AI 서비스와 안정적인 백엔드 설계가 필요한 팀이라면 언제든지 연락 주세요.</p>
+  <p>AI 서비스와 안정적인 백엔드 설계가 필요한 팀이라면 연락 주세요.</p>
 </section>
 
 <script>
-function toggle(id) {
-  document.getElementById(id).classList.toggle("hidden");
-}
+  function toggleContact(id) {
+    document.getElementById(id).classList.toggle("hidden");
+  }
 </script>
 
 </body>

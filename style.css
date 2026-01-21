@@ -1,32 +1,35 @@
-/* =========================
-   BASE
-========================= */
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #fdfcf8; /* PDF 아이보리 톤 */
+  background: #fdfcf8;
   color: #1a1a1a;
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
-/* =========================
-   HERO (LANDING) – 유지
-========================= */
+/* ===== HERO ===== */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 20px 60px;
   background: linear-gradient(180deg, #f5f7fa, #ffffff);
 }
 
+/* PROFILE IMAGE */
 .profile-img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
   border: 3px solid #ddd;
+  margin-bottom: 20px;
 }
 
+/* TEXT */
 h1 {
   margin: 10px 0 0;
 }
@@ -42,175 +45,61 @@ h2 {
   color: #666;
 }
 
-/* =========================
-   CONTACT ICONS
-========================= */
+/* ===== CONTACT ICONS ===== */
 .contact-icons {
-  margin-top: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .contact-icons button {
-  background: none;
-  border: none;
-  font-size: 20px;
-  margin: 0 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #ddd;
   cursor: pointer;
+  font-size: 18px;
   color: #333;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .contact-icons button:hover {
-  color: #4aa3a3; /* PDF 포인트 민트 */
+  color: #4aa3a3;
+  border-color: #4aa3a3;
   transform: translateY(-2px);
 }
 
+/* ===== CONTACT INFO ===== */
 .contact-info {
   margin-top: 15px;
-}
-
-.contact-info p {
-  margin: 6px 0;
 }
 
 .contact-info a {
   color: #4aa3a3;
   text-decoration: none;
-  font-weight: 500;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
 }
 
 .hidden {
   display: none;
 }
 
-/* =========================
-   SECTIONS (PDF 스타일 핵심)
-========================= */
+/* ===== SECTIONS ===== */
 section {
   max-width: 900px;
   margin: 0 auto;
   padding: 70px 20px;
-  background: #fdfcf8;
 }
 
-/* 섹션 구분선 (PDF 느낌) */
-section:not(:first-of-type) {
-  border-top: 1px solid #e6e4dc;
-}
-
-/* =========================
-   HEADINGS
-========================= */
 h3 {
-  font-size: 22px;
-  margin-bottom: 30px;
+  border-bottom: 2px solid #cfdedb;
   padding-bottom: 10px;
-  border-bottom: 2px solid #cfdedb; /* 연한 민트 라인 */
-  letter-spacing: 0.5px;
+  margin-bottom: 30px;
 }
 
-h4 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #2b2b2b;
-}
-
-/* =========================
-   TEXT
-========================= */
-p {
-  margin-bottom: 18px;
-  color: #2a2a2a;
-}
-
-/* =========================
-   LISTS
-========================= */
-ul {
-  padding-left: 20px;
-  margin-top: 10px;
-}
-
-li {
-  margin-bottom: 8px;
-  position: relative;
-}
-
-/* subtle bullet refinement */
-li::marker {
-  color: #4aa3a3;
-}
-
-/* =========================
-   EXPERIENCE / PROJECT CARD
-========================= */
 article {
-  margin-top: 40px;
-  padding-left: 20px;
   border-left: 3px solid #e0edea;
-  transition: border-color 0.2s ease;
-}
-
-article:hover {
-  border-left-color: #4aa3a3;
-}
-
-/* =========================
-   AWARDS / EDUCATION
-========================= */
-section ul li strong {
-  font-weight: 600;
-}
-
-/* =========================
-   CTA SECTION
-========================= */
-section:last-of-type {
-  background: #f7f9f6;
-}
-
-section:last-of-type p {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  section {
-    padding: 50px 16px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 16px;
-  }
-
-  article {
-    padding-left: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .contact-icons button {
-    font-size: 18px;
-    margin: 0 8px;
-  }
-
-  section {
-    padding: 45px 14px;
-  }
+  padding-left: 20px;
+  margin-top: 30px;
 }
