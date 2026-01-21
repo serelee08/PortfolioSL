@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Backend Engineer | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiae Lee | AI Backend Engineer</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- CSS (캐시 무력화) -->
-  <link rel="stylesheet" href="style.css?v=2" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<!-- ================= Header ================= -->
 <header class="hero">
-  <img src="images/myself.jpg" alt="profile image" class="profile-img"/>
+  <img src="./images/myself.jpg" alt="profile" class="profile-img">
 
   <h1>이지애</h1>
-  <p class="headline">AI 백엔드 엔지니어</p>
+  <p class="headline">AI Backend Engineer</p>
 
-  <!-- Contact Icons -->
   <div class="contact-icons">
-    <button class="contact-btn" data-type="email">📧</button>
-    <button class="contact-btn" data-type="phone">📱</button>
-    <button class="contact-btn" data-type="github">🌐</button>
+    <button class="contact-btn" data-type="email">Email</button>
+    <button class="contact-btn" data-type="phone">Phone</button>
+    <button class="contact-btn" data-type="github">GitHub</button>
   </div>
 
-  <!-- Contact Card -->
   <div class="contact-card" id="contactCard">
     <p id="contactText"></p>
   </div>
@@ -38,173 +35,90 @@
 
 <main class="wrapper">
 
-<!-- ================= About ================= -->
 <section>
   <h2>About</h2>
   <p class="about-text">
-    AI 모델과 안정적인 백엔드 아키텍처를 결합하여
-    실제 비즈니스 환경에서 동작하는 서비스를 구현하는 엔지니어입니다.
-    기능 구현을 넘어 운영 효율과 사용자 경험까지 고려한 설계를 지향합니다.
+    AI 모델과 안정적인 백엔드 아키텍처를 결합하여  
+    실제 서비스 환경에서 동작하는 시스템을 설계·구현합니다.
   </p>
 </section>
 
-<!-- ================= Skills ================= -->
 <section>
   <h2>Skills</h2>
-
   <div class="skill-grid">
     <div class="skill-card">
       <h3>Backend</h3>
       <ul>
-        <li>Java, Spring Boot (REST API, Security, JWT)</li>
-        <li>JPA / MyBatis, MVC</li>
-        <li>MySQL, MariaDB, Oracle</li>
+        <li>Java / Spring Boot / REST API</li>
+        <li>Spring Security / JWT / OAuth2</li>
+        <li>MySQL / MariaDB / Oracle</li>
       </ul>
     </div>
 
     <div class="skill-card">
-      <h3>AI / Data</h3>
+      <h3>AI & Data</h3>
       <ul>
-        <li>Python, Django</li>
-        <li>NLP, LSTM, BERT</li>
-        <li>TensorFlow, Keras</li>
+        <li>Python / Django</li>
+        <li>NLP / LSTM / BERT</li>
+        <li>TensorFlow / Keras</li>
       </ul>
     </div>
 
     <div class="skill-card">
       <h3>Frontend</h3>
       <ul>
-        <li>React, TypeScript</li>
-        <li>HTML5, CSS3, Figma</li>
+        <li>React / TypeScript</li>
+        <li>HTML / CSS / Figma</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- ================= Experience ================= -->
 <section>
   <h2>Experience</h2>
 
-  <!-- Project 01 -->
   <article class="project">
     <h3>EVLink – AI 기반 전기차 충전기 공유 플랫폼</h3>
-    <span class="period">2025.08.25 ~ 2025.09.25</span>
-
-    <p class="project-desc">
-      AI 기반 전기차 충전기 공유 플랫폼
-    </p>
+    <p class="period">2025.08 ~ 2025.09</p>
 
     <ul>
-      <li>Gemini + Django 기반 AI 대화형 챗봇 개발</li>
-      <li>LSTM 감성분석 모델 설계 및 REST API 연동</li>
-      <li>Spring Boot 기반 인증·보안 백엔드 설계</li>
+      <li>Gemini 기반 AI 챗봇 설계 및 구현</li>
+      <li>LSTM 감성분석 모델 API 연동</li>
+      <li>Spring Boot 인증·보안 백엔드</li>
     </ul>
 
-    <a class="portfolio-link" href="https://drive.google.com/여기에_링크" target="_blank">
-      ▶ 포트폴리오 보기 (Google Drive)
-    </a>
-
-    <div class="metric">
-      <span>성과지표</span>
-      <p>
-        AI 챗봇 자동 응답 도입으로 사용자 문의 처리 효율을 향상시키고
-        리뷰 분석 자동화를 통해 운영 리소스를 절감
-      </p>
-    </div>
-
-    <img src="images/evlink.png" alt="EVLink project image" class="project-img"/>
+    <img src="./images/evlink.png" alt="EVLink" class="project-img">
   </article>
 
-  <!-- Project 02 -->
   <article class="project">
     <h3>Wallet – 통계 기반 자산 관리 플랫폼</h3>
-    <span class="period">2025.10</span>
-
-    <p class="project-desc">
-      통계 기반 자산 관리 플랫폼
-    </p>
+    <p class="period">2025.10</p>
 
     <ul>
-      <li>수입·지출 데이터 모델링 및 API 설계</li>
-      <li>통계 기반 자산 흐름 분석 로직 구현</li>
+      <li>수입·지출 데이터 모델링</li>
+      <li>자산 흐름 통계 API 설계</li>
     </ul>
 
-    <div class="metric">
-      <span>성과지표</span>
-      <p>
-        자산 데이터를 구조화하여 사용자가 재무 흐름을
-        직관적으로 파악할 수 있도록 서비스 가시성 향상
-      </p>
-    </div>
-
-    <img src="images/wallet.png" alt="Wallet project image" class="project-img"/>
+    <img src="./images/wallet.png" alt="Wallet" class="project-img">
   </article>
 </section>
 
-<!-- ================= Award ================= -->
 <section>
-  <h2>Award</h2>
+  <h2>Awards & Certificates</h2>
   <div class="award-grid">
-    <div>
-      <h3>프로젝트 우수상</h3>
-      <p>한국 ICT 인재 개발원</p>
-      <img src="images/award1.png" alt="award image"/>
-    </div>
-    <div>
-      <h3>특모범상 (출석률 100%)</h3>
-      <p>한국 ICT 인재 개발원</p>
-      <img src="images/award2.png" alt="award image"/>
-    </div>
-  </div>
-</section>
-
-<!-- ================= Education ================= -->
-<section>
-  <h2>Education</h2>
-
-  <div class="edu">
-    <h3>클라우드 기반 AI 대화형 서비스 개발 과정</h3>
-    <p>한국 ICT 인재 개발원</p>
-    <ul>
-      <li>Spring Boot · React · AI 통합 프로젝트</li>
-      <li>REST API 및 클라우드 환경 실습</li>
-    </ul>
-  </div>
-
-  <div class="edu">
-    <h3>IBM AI Engineering Professional</h3>
-    <p>Coursera</p>
-    <ul>
-      <li>Transformer · RAG 시스템 구현</li>
-      <li>PyTorch 기반 모델 학습</li>
-    </ul>
-  </div>
-
-  <div class="edu">
-    <h3>캐나다 대학 입학 University Pathway 영어 과정</h3>
-    <p>ILAC Language School</p>
-    <ul>
-      <li>Academic English · Presentation · Research Writing</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ================= Certificate ================= -->
-<section>
-  <h2>Certificate</h2>
-  <div class="cert-grid">
-    <img src="images/certificate1.png" alt="certificate image"/>
-    <img src="images/certificate2.png" alt="certificate image"/>
+    <img src="./images/award1.png" alt="award">
+    <img src="./images/award2.png" alt="award">
+    <img src="./images/certificate1.png" alt="certificate">
+    <img src="./images/certificate2.png" alt="certificate">
   </div>
 </section>
 
 </main>
 
 <footer>
-  © 2026 SL. All rights reserved.
+  © 2026 Jiae Lee. All rights reserved.
 </footer>
 
-<!-- ================= JS ================= -->
 <script>
   const card = document.getElementById("contactCard");
   const text = document.getElementById("contactText");
@@ -215,11 +129,10 @@
     github: "https://github.com/serelee08"
   };
 
-  document.querySelectorAll(".contact-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const type = btn.dataset.type;
-      text.textContent = data[type];
-      card.classList.add("show");
+  document.querySelectorAll(".contact-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      text.textContent = data[btn.dataset.type];
+      card.style.display = "block";
     });
   });
 </script>
