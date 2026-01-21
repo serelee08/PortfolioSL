@@ -1,140 +1,178 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jiae Lee | AI Backend Engineer</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serena | AI Backend Engineer</title>
+  <link rel="stylesheet" href="style.css?v=200" />
 </head>
-
 <body>
 
-<header class="hero">
-  <img src="./images/myself.jpg" alt="profile" class="profile-img">
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>AI Backend Engineer</h1>
+    <p class="hero-desc">
+      AI 모델과 안정적인 백엔드 아키텍처를 결합해<br />
+      실제 서비스로 구현하는 엔지니어
+    </p>
 
-  <h1>이지애</h1>
-  <p class="headline">AI Backend Engineer</p>
-
-  <div class="contact-icons">
-    <button class="contact-btn" data-type="email">Email</button>
-    <button class="contact-btn" data-type="phone">Phone</button>
-    <button class="contact-btn" data-type="github">GitHub</button>
-  </div>
-
-  <div class="contact-card" id="contactCard">
-    <p id="contactText"></p>
-  </div>
-</header>
-
-<main class="wrapper">
-
-<section>
-  <h2>About</h2>
-  <p class="about-text">
-    AI 모델과 안정적인 백엔드 아키텍처를 결합하여  
-    실제 서비스 환경에서 동작하는 시스템을 설계·구현합니다.
-  </p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skill-grid">
-    <div class="skill-card">
-      <h3>Backend</h3>
-      <ul>
-        <li>Java / Spring Boot / REST API</li>
-        <li>Spring Security / JWT / OAuth2</li>
-        <li>MySQL / MariaDB / Oracle</li>
-      </ul>
+    <!-- Contact Buttons -->
+    <div class="contact-buttons">
+      <button class="contact-btn" onclick="toggleContact('email')">📧</button>
+      <button class="contact-btn" onclick="toggleContact('phone')">📱</button>
+      <button class="contact-btn" onclick="toggleContact('location')">📍</button>
+      <button class="contact-btn" onclick="toggleContact('github')">💻</button>
     </div>
 
-    <div class="skill-card">
-      <h3>AI & Data</h3>
-      <ul>
-        <li>Python / Django</li>
-        <li>NLP / LSTM / BERT</li>
-        <li>TensorFlow / Keras</li>
-      </ul>
-    </div>
-
-    <div class="skill-card">
-      <h3>Frontend</h3>
-      <ul>
-        <li>React / TypeScript</li>
-        <li>HTML / CSS / Figma</li>
-      </ul>
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p id="email">📧 serelee08@gmail.com</p>
+      <p id="phone">📱 010-XXXX-XXXX</p>
+      <p id="location">📍 Incheon, South Korea</p>
+      <p id="github">
+        💻 <a href="https://github.com/serelee08" target="_blank">github.com/serelee08</a>
+      </p>
     </div>
   </div>
 </section>
 
-<section>
+<!-- ================= EXPERIENCE ================= -->
+<section class="section">
   <h2>Experience</h2>
 
-  <article class="project">
-    <h3>EVLink – AI 기반 전기차 충전기 공유 플랫폼</h3>
-    <p class="period">2025.08 ~ 2025.09</p>
+  <div class="card">
+    <h3>
+      EVLink <span>(AI 기반 전기차 충전기 공유 플랫폼)</span>
+    </h3>
+    <p class="period">2025.08.25 ~ 2025.09.25</p>
 
-    <ul>
-      <li>Gemini 기반 AI 챗봇 설계 및 구현</li>
-      <li>LSTM 감성분석 모델 API 연동</li>
-      <li>Spring Boot 인증·보안 백엔드</li>
+    <p class="summary">
+      호스트/사용자 기반 전기차 충전기 공유 플랫폼 구축으로
+      예약·실시간 사용 현황 제공 및 운영 효율 향상
+    </p>
+
+    <ul class="list">
+      <li>Google Gemini + Django 기반 AI 대화형 챗봇 서비스 개발</li>
+      <li>LSTM 기반 감성분석 모델 설계 및 구현 (Python, Django)</li>
+      <li>React & Spring Boot 기반 REST API 설계·개발</li>
+      <li>OAuth2 로그인 인증 및 보안 아키텍처 설계</li>
+      <li>DB 설계 및 구축 (MySQL, MariaDB, Oracle)</li>
+      <li>전체 시스템 아키텍처 설계 및 Diagram / PPT 제작</li>
     </ul>
 
-    <img src="./images/evlink.png" alt="EVLink" class="project-img">
-  </article>
+    <a class="btn" href="https://drive.google.com" target="_blank">
+      ▶ 포트폴리오 보기 (Google Drive)
+    </a>
 
-  <article class="project">
-    <h3>Wallet – 통계 기반 자산 관리 플랫폼</h3>
-    <p class="period">2025.10</p>
-
-    <ul>
-      <li>수입·지출 데이터 모델링</li>
-      <li>자산 흐름 통계 API 설계</li>
-    </ul>
-
-    <img src="./images/wallet.png" alt="Wallet" class="project-img">
-  </article>
-</section>
-
-<section>
-  <h2>Awards & Certificates</h2>
-  <div class="award-grid">
-    <img src="./images/award1.png" alt="award">
-    <img src="./images/award2.png" alt="award">
-    <img src="./images/certificate1.png" alt="certificate">
-    <img src="./images/certificate2.png" alt="certificate">
+    <div class="highlight">
+      <strong>성과 지표</strong>
+      <p>
+        AI 챗봇과 LSTM 감성분석 모델을 활용해 사용자 문의 및 리뷰를
+        자동 분류·처리하고 REST API 및 DB 연동으로
+        운영 효율성과 문의 처리 속도 향상,
+        리뷰 긍·부정 피드백을 통한 사용자 편의 개선
+      </p>
+    </div>
   </div>
 </section>
 
-</main>
+<!-- ================= SKILLS ================= -->
+<section class="section">
+  <h2>Skills</h2>
+
+  <div class="grid-3">
+    <div class="card">
+      <h3>Backend</h3>
+      <ul class="list">
+        <li>Java, Spring Boot (REST API, Security, JWT)</li>
+        <li>MyBatis, JPA/Hibernate, SQL</li>
+        <li>Redis, Maven, Gradle</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>AI / Data</h3>
+      <ul class="list">
+        <li>Python, Django, ML/DL (LSTM, Transformer)</li>
+        <li>NLP: BERT, Sentiment Analysis</li>
+        <li>TensorFlow, Keras, PyTorch</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Frontend</h3>
+      <ul class="list">
+        <li>React, JavaScript, TypeScript</li>
+        <li>HTML5, CSS3, Figma</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AWARD ================= -->
+<section class="section">
+  <h2>Award</h2>
+
+  <div class="grid-2">
+    <div class="card center">
+      <h3>프로젝트 우수상</h3>
+      <p>한국 ICT 인재 개발원</p>
+      <img src="assets/award1.png" alt="프로젝트 우수상">
+    </div>
+
+    <div class="card center">
+      <h3>특모범상 (출석률 100%)</h3>
+      <p>한국 ICT 인재 개발원</p>
+      <img src="assets/award2.png" alt="특모범상">
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="section">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>클라우드 기반 AI 대화형 서비스 개발자 과정</h3>
+    <p class="period">2025.03.20 ~ 2025.09.25</p>
+    <p>
+      Spring Boot, React, DB 연동, AI 대화형 서비스 구현 중심 교육
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>IBM AI Engineering Professional 과정</h3>
+    <p class="period">2025.12 ~ 2026.03 (수료 예정)</p>
+    <p>
+      RAG 시스템 구축, Transformer 아키텍처, 모델 파인튜닝
+    </p>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATE ================= -->
+<section class="section">
+  <h2>Certificate</h2>
+
+  <div class="grid-1">
+    <div class="card center">
+      <img src="assets/cert1.png" alt="수료증">
+    </div>
+  </div>
+</section>
 
 <footer>
-  © 2026 Jiae Lee. All rights reserved.
+  © 2026 Serena Portfolio
 </footer>
 
 <script>
-  const card = document.getElementById("contactCard");
-  const text = document.getElementById("contactText");
+  function toggleContact(id) {
+    const items = document.querySelectorAll('.contact-info p');
+    items.forEach(item => item.style.display = 'none');
 
-  const data = {
-    email: "serelee08@gmail.com",
-    phone: "010-7713-9527",
-    github: "https://github.com/serelee08"
-  };
-
-  document.querySelectorAll(".contact-btn").forEach(function(btn) {
-    btn.addEventListener("click", function() {
-      text.textContent = data[btn.dataset.type];
-      card.style.display = "block";
-    });
-  });
+    const target = document.getElementById(id);
+    if (target) target.style.display = 'block';
+  }
 </script>
 
 </body>
