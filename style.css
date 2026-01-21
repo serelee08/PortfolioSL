@@ -1,201 +1,226 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-
-/* ===== Reset ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* ===== Base ===== */
 body {
-  font-family: "Pretendard", system-ui, sans-serif;
-  background: #f7f8fb;
-  color: #1f2937;
-  line-height: 1.7;
+  background: #fbf6e9;
+  font-family: "Times New Roman", "Noto Serif KR", serif;
+  color: #1f1f1f;
+  line-height: 1.8;
 }
 
-/* ===== Hero ===== */
-.hero {
-  background: linear-gradient(135deg, #1e3a8a, #2563eb);
-  color: #ffffff;
-  padding: 120px 20px;
+h1, h2, h3, h4 {
+  letter-spacing: 0.3px;
+}
+
+/* ===== Landing ===== */
+.landing {
   text-align: center;
+  padding: 90px 20px 70px;
 }
 
-.hero-inner {
-  max-width: 900px;
-  margin: 0 auto;
+.landing h1 {
+  font-size: 40px;
+  font-weight: 700;
 }
 
-.hero h1 {
-  font-size: 44px;
-  font-weight: 800;
-  margin-bottom: 14px;
+.landing-desc {
+  margin-top: 22px;
+  font-size: 17px;
+  color: #333;
 }
 
-.hero-desc {
-  font-size: 18px;
-  opacity: 0.9;
+/* ===== Contact Icons ===== */
+.contact-icons {
+  margin-top: 35px;
 }
 
-/* ===== Contact ===== */
-.contact-buttons {
-  margin-top: 32px;
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-}
-
-.contact-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: none;
-  font-size: 20px;
+.contact-icons img {
+  width: 42px;
+  margin: 0 14px;
   cursor: pointer;
-  background: rgba(255,255,255,0.2);
-  color: #fff;
-  transition: all 0.25s ease;
+  transition: all 0.35s ease;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.15));
 }
 
-.contact-btn:hover {
-  background: rgba(255,255,255,0.35);
-  transform: translateY(-3px);
-}
-
-.contact-info {
-  margin-top: 20px;
+.contact-icons img:hover {
+  transform: translateY(-6px) scale(1.15);
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.25));
 }
 
 .contact-info p {
   display: none;
+  margin-top: 14px;
   font-size: 15px;
-  color: #e5e7eb;
+  color: #444;
+  animation: fadeUp 0.4s ease;
 }
 
-.contact-info a {
-  color: #bfdbfe;
-  text-decoration: none;
+/* ===== Divider ===== */
+.line {
+  border: none;
+  border-top: 3px solid #8fd3e8;
+  margin: 70px 0;
 }
 
 /* ===== Section ===== */
 .section {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 90px 20px;
+  padding: 20px;
 }
 
 .section h2 {
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 40px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #e5e7eb;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 45px;
 }
 
-/* ===== Card ===== */
-.card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 32px;
-  margin-bottom: 32px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+/* ===== Project Card ===== */
+.project-card {
+  padding: 20px 10px;
 }
 
-.card h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 8px;
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.card h3 span {
+.project-card span {
   font-size: 14px;
-  color: #6b7280;
+  color: #555;
 }
 
 .period {
   font-size: 14px;
-  color: #6b7280;
   margin-bottom: 14px;
+  color: #666;
 }
 
-.summary {
+.goal {
   margin-bottom: 18px;
+  font-size: 15px;
 }
 
 /* ===== List ===== */
-.list {
-  padding-left: 20px;
-  margin-bottom: 20px;
+.project-card ul {
+  margin-left: 22px;
 }
 
-.list li {
+.project-card li {
   margin-bottom: 8px;
-}
-
-/* ===== Button ===== */
-.btn {
-  display: inline-block;
-  margin-top: 16px;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #6366f1, #3b82f6);
-  color: #fff;
-  border-radius: 12px;
-  font-weight: 600;
-  text-decoration: none;
   transition: all 0.25s ease;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(99,102,241,0.45);
+.project-card li:hover {
+  color: #0b6efd;
+  transform: translateX(4px);
 }
 
-/* ===== Highlight ===== */
-.highlight {
-  margin-top: 30px;
-  padding: 22px;
-  background: #fef3c7;
-  border-left: 6px solid #f59e0b;
-  border-radius: 12px;
+/* ===== Portfolio Link ===== */
+.portfolio-link {
+  display: inline-block;
+  margin-top: 22px;
+  font-size: 15px;
+  color: #6a1b9a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* ===== Grid ===== */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 28px;
+.portfolio-link:hover {
+  color: #3f51b5;
+  transform: translateX(6px);
 }
 
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 28px;
+/* ===== Result Box ===== */
+.result-box {
+  display: flex;
+  gap: 16px;
+  background: linear-gradient(135deg, #ffe9a3, #fff1c1);
+  padding: 20px;
+  margin-top: 28px;
+  border: 2px solid #f2c94c;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+  transition: all 0.35s ease;
 }
 
-.grid-1 {
-  display: grid;
-  grid-template-columns: 1fr;
+.result-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.25);
 }
 
-/* ===== Center ===== */
-.center {
-  text-align: center;
+.result-box img {
+  width: 42px;
 }
 
-.center img {
-  width: 80%;
-  max-width: 320px;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+.result-box strong {
+  font-size: 15px;
 }
 
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 50px 20px;
+.result-box p {
   font-size: 14px;
-  color: #9ca3af;
+  margin-top: 6px;
+}
+
+/* ===== Skill ===== */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 35px;
+}
+
+.skill-grid div {
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.skill-grid div:hover {
+  background: rgba(143, 211, 232, 0.15);
+  transform: translateY(-6px);
+}
+
+.skill-grid h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* ===== Award ===== */
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  text-align: center;
+}
+
+.award-grid img {
+  width: 220px;
+  margin-top: 18px;
+  box-shadow: 0 12px 22px rgba(0,0,0,0.25);
+  transition: all 0.35s ease;
+}
+
+.award-grid img:hover {
+  transform: scale(1.08);
+}
+
+/* ===== Certificate ===== */
+.cert-img {
+  width: 320px;
+  margin-top: 25px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  transition: all 0.35s ease;
+}
+
+.cert-img:hover {
+  transform: translateY(-6px) scale(1.05);
+}
+
+/* ===== Animation ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

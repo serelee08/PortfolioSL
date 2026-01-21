@@ -1,178 +1,137 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serena | AI Backend Engineer</title>
-  <link rel="stylesheet" href="style.css?v=200" />
+  <meta charset="UTF-8">
+  <title>Serena Portfolio</title>
+  <link rel="stylesheet" href="style.css?v=300">
 </head>
 <body>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="hero-inner">
-    <h1>AI Backend Engineer</h1>
-    <p class="hero-desc">
-      AI 모델과 안정적인 백엔드 아키텍처를 결합해<br />
-      실제 서비스로 구현하는 엔지니어
-    </p>
+<!-- ===== Landing ===== -->
+<section class="landing">
+  <h1>AI Backend Engineer</h1>
+  <p class="landing-desc">
+    AI 모델과 안정적인 백엔드 아키텍처를 결합해<br>
+    실제 서비스로 구현하는 엔지니어
+  </p>
 
-    <!-- Contact Buttons -->
-    <div class="contact-buttons">
-      <button class="contact-btn" onclick="toggleContact('email')">📧</button>
-      <button class="contact-btn" onclick="toggleContact('phone')">📱</button>
-      <button class="contact-btn" onclick="toggleContact('location')">📍</button>
-      <button class="contact-btn" onclick="toggleContact('github')">💻</button>
-    </div>
+  <div class="contact-icons">
+    <img src="assets/mail.png" onclick="toggle('email')">
+    <img src="assets/phone.png" onclick="toggle('phone')">
+    <img src="assets/github.png" onclick="toggle('github')">
+  </div>
 
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <p id="email">📧 serelee08@gmail.com</p>
-      <p id="phone">📱 010-XXXX-XXXX</p>
-      <p id="location">📍 Incheon, South Korea</p>
-      <p id="github">
-        💻 <a href="https://github.com/serelee08" target="_blank">github.com/serelee08</a>
-      </p>
-    </div>
+  <div class="contact-info">
+    <p id="email">📧 serelee08@gmail.com</p>
+    <p id="phone">📱 010-XXXX-XXXX</p>
+    <p id="github">💻 github.com/serelee08</p>
   </div>
 </section>
 
-<!-- ================= EXPERIENCE ================= -->
+<hr class="line">
+
+<!-- ===== Experience ===== -->
 <section class="section">
   <h2>Experience</h2>
 
-  <div class="card">
-    <h3>
-      EVLink <span>(AI 기반 전기차 충전기 공유 플랫폼)</span>
-    </h3>
-    <p class="period">2025.08.25 ~ 2025.09.25</p>
+  <div class="project-card">
+    <h3>Project01 : EVLink <span>(AI 기반 전기차 충전기 공유 플랫폼)</span></h3>
+    <p class="period">기간 : 25.08.25 ~ 25.09.25</p>
 
-    <p class="summary">
-      호스트/사용자 기반 전기차 충전기 공유 플랫폼 구축으로
-      예약·실시간 사용 현황 제공 및 운영 효율 향상
+    <p class="goal">
+      프로젝트 목적 : 호스트/사용자 기반 전기차 충전기 공유 플랫폼 구축으로
+      예약, 실시간 사용 현황 제공 및 운영 효율 향상
     </p>
 
-    <ul class="list">
+    <ul>
       <li>Google Gemini + Django 기반 AI 대화형 챗봇 서비스 개발</li>
-      <li>LSTM 기반 감성분석 모델 설계 및 구현 (Python, Django)</li>
-      <li>React & Spring Boot 기반 REST API 설계·개발</li>
-      <li>OAuth2 로그인 인증 및 보안 아키텍처 설계</li>
-      <li>DB 설계 및 구축 (MySQL, MariaDB, Oracle)</li>
-      <li>전체 시스템 아키텍처 설계 및 Diagram / PPT 제작</li>
+      <li>LSTM 기반 감성분석 모델 설계 및 구현</li>
+      <li>React & Spring Boot REST API 개발</li>
+      <li>OAuth2 로그인 인증 (Kakao/Naver/Google)</li>
+      <li>DB 설계 (MySQL, MariaDB, Oracle)</li>
+      <li>시스템 아키텍처 설계 및 Diagram/PPT 제작</li>
     </ul>
 
-    <a class="btn" href="https://drive.google.com" target="_blank">
-      ▶ 포트폴리오 보기 (Google Drive)
-    </a>
+    <a class="portfolio-link">▶ 포트폴리오 보기 (Google Drive)</a>
 
-    <div class="highlight">
-      <strong>성과 지표</strong>
-      <p>
-        AI 챗봇과 LSTM 감성분석 모델을 활용해 사용자 문의 및 리뷰를
-        자동 분류·처리하고 REST API 및 DB 연동으로
-        운영 효율성과 문의 처리 속도 향상,
-        리뷰 긍·부정 피드백을 통한 사용자 편의 개선
-      </p>
+    <!-- 성과지표 -->
+    <div class="result-box">
+      <img src="assets/bulb.png">
+      <div>
+        <strong>성과지표 (한 줄)</strong>
+        <p>
+          AI 챗봇과 LSTM 감성분석을 통해 사용자 문의·리뷰 자동 분류 및
+          REST API·DB 연동으로 운영 효율과 처리 속도 향상
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
+<hr class="line">
+
+<!-- ===== Skill ===== -->
 <section class="section">
-  <h2>Skills</h2>
+  <h2>Skill</h2>
 
-  <div class="grid-3">
-    <div class="card">
-      <h3>Backend</h3>
-      <ul class="list">
-        <li>Java, Spring Boot (REST API, Security, JWT)</li>
-        <li>MyBatis, JPA/Hibernate, SQL</li>
-        <li>Redis, Maven, Gradle</li>
-      </ul>
+  <div class="skill-grid">
+    <div>
+      <h4>Backend</h4>
+      <p>Java, Spring Boot, MyBatis, JPA, SQL, Redis</p>
     </div>
-
-    <div class="card">
-      <h3>AI / Data</h3>
-      <ul class="list">
-        <li>Python, Django, ML/DL (LSTM, Transformer)</li>
-        <li>NLP: BERT, Sentiment Analysis</li>
-        <li>TensorFlow, Keras, PyTorch</li>
-      </ul>
+    <div>
+      <h4>AI / Data</h4>
+      <p>Python, Django, LSTM, BERT, TensorFlow, PyTorch</p>
     </div>
-
-    <div class="card">
-      <h3>Frontend</h3>
-      <ul class="list">
-        <li>React, JavaScript, TypeScript</li>
-        <li>HTML5, CSS3, Figma</li>
-      </ul>
+    <div>
+      <h4>Frontend</h4>
+      <p>React, TypeScript, HTML, CSS, Figma</p>
     </div>
   </div>
 </section>
 
-<!-- ================= AWARD ================= -->
+<hr class="line">
+
+<!-- ===== Award ===== -->
 <section class="section">
   <h2>Award</h2>
 
-  <div class="grid-2">
-    <div class="card center">
-      <h3>프로젝트 우수상</h3>
-      <p>한국 ICT 인재 개발원</p>
-      <img src="assets/award1.png" alt="프로젝트 우수상">
+  <div class="award-grid">
+    <div>
+      <h4>프로젝트 우수상</h4>
+      <img src="assets/award1.png">
     </div>
-
-    <div class="card center">
-      <h3>특모범상 (출석률 100%)</h3>
-      <p>한국 ICT 인재 개발원</p>
-      <img src="assets/award2.png" alt="특모범상">
+    <div>
+      <h4>특모범상 (출석률 100%)</h4>
+      <img src="assets/award2.png">
     </div>
   </div>
 </section>
 
-<!-- ================= EDUCATION ================= -->
+<hr class="line">
+
+<!-- ===== Education ===== -->
 <section class="section">
   <h2>Education</h2>
 
-  <div class="card">
-    <h3>클라우드 기반 AI 대화형 서비스 개발자 과정</h3>
-    <p class="period">2025.03.20 ~ 2025.09.25</p>
-    <p>
-      Spring Boot, React, DB 연동, AI 대화형 서비스 구현 중심 교육
-    </p>
-  </div>
+  <p class="edu-title">클라우드 기반 AI 대화형 서비스 개발자 과정</p>
+  <p class="period">2025.03.20 ~ 2025.09.25</p>
 
-  <div class="card">
-    <h3>IBM AI Engineering Professional 과정</h3>
-    <p class="period">2025.12 ~ 2026.03 (수료 예정)</p>
-    <p>
-      RAG 시스템 구축, Transformer 아키텍처, 모델 파인튜닝
-    </p>
-  </div>
+  <p class="edu-title">IBM AI Engineering Professional 과정</p>
+  <p class="period">2025.12 ~ 2026.03</p>
 </section>
 
-<!-- ================= CERTIFICATE ================= -->
-<section class="section">
+<!-- ===== Certificate ===== -->
+<section class="section center">
   <h2>Certificate</h2>
-
-  <div class="grid-1">
-    <div class="card center">
-      <img src="assets/cert1.png" alt="수료증">
-    </div>
-  </div>
+  <img src="assets/cert1.png" class="cert-img">
 </section>
-
-<footer>
-  © 2026 Serena Portfolio
-</footer>
 
 <script>
-  function toggleContact(id) {
-    const items = document.querySelectorAll('.contact-info p');
-    items.forEach(item => item.style.display = 'none');
-
-    const target = document.getElementById(id);
-    if (target) target.style.display = 'block';
-  }
+function toggle(id){
+  document.querySelectorAll('.contact-info p').forEach(p=>p.style.display='none');
+  document.getElementById(id).style.display='block';
+}
 </script>
 
 </body>
