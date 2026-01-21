@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI 백엔드 엔지니어 | Portfolio</title>
+  <title>AI Backend Engineer | Portfolio</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,40 +15,47 @@
 
 <body>
 
-<header class="landing">
-  <img src="images/profile.jpg" class="profile-img" alt="profile"/>
-  <h1>이지애</h1>
-  <p class="subtitle">AI 백엔드 엔지니어</p>
+<!-- ================= Header ================= -->
+<header class="hero">
+  <img src="images/myself.jpg" alt="profile" class="profile-img"/>
 
-  <div class="contact-card">
-    <span>📧 Serelee08@gmail.com</span>
+  <h1>이지애</h1>
+  <p class="headline">AI 백엔드 엔지니어</p>
+
+  <div class="contact">
+    <span>📧 serelee08@gmail.com</span>
     <span>📱 010-7713-9527</span>
     <span>🌐 github.com/Serele08</span>
   </div>
 </header>
 
-<main class="container">
+<main class="wrapper">
 
+<!-- ================= About ================= -->
 <section>
   <h2>About</h2>
-  <p>
-    AI 기반 서비스와 안정적인 백엔드 아키텍처를 결합하여  
-    실제 비즈니스 환경에서 동작하는 시스템을 구현하는 엔지니어입니다.
+  <p class="about-text">
+    AI 모델과 안정적인 백엔드 아키텍처를 결합하여
+    실제 비즈니스 환경에서 동작하는 서비스를 구현하는 엔지니어입니다.
+    기능 구현을 넘어 운영 효율과 사용자 경험까지 고려한 설계를 지향합니다.
   </p>
 </section>
 
+<!-- ================= Skills ================= -->
 <section>
   <h2>Skills</h2>
-  <div class="grid-3">
-    <div>
+
+  <div class="skill-grid">
+    <div class="skill-card">
       <h3>Backend</h3>
       <ul>
-        <li>Java, Spring Boot</li>
-        <li>REST API, Security, JWT</li>
-        <li>JPA, MyBatis</li>
+        <li>Java, Spring Boot (REST API, Security, JWT)</li>
+        <li>JPA / MyBatis, MVC</li>
+        <li>MySQL, MariaDB, Oracle</li>
       </ul>
     </div>
-    <div>
+
+    <div class="skill-card">
       <h3>AI / Data</h3>
       <ul>
         <li>Python, Django</li>
@@ -56,52 +63,87 @@
         <li>TensorFlow, Keras</li>
       </ul>
     </div>
-    <div>
+
+    <div class="skill-card">
       <h3>Frontend</h3>
       <ul>
         <li>React, TypeScript</li>
-        <li>HTML, CSS, Figma</li>
+        <li>HTML5, CSS3, Figma</li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- ================= Experience ================= -->
 <section>
   <h2>Experience</h2>
 
+  <!-- Project 01 -->
   <article class="project">
     <h3>Project01. EVLink</h3>
     <span class="period">2025.08.25 ~ 2025.09.25</span>
-    <p class="desc">AI 기반 전기차 충전기 공유 플랫폼</p>
+
+    <p class="project-desc">
+      AI 기반 전기차 충전기 공유 플랫폼
+    </p>
+
     <ul>
-      <li>Gemini + Django AI 챗봇 개발</li>
-      <li>LSTM 감성분석 모델 및 REST API 연동</li>
-      <li>Spring Boot 백엔드 인증/보안 설계</li>
+      <li>Gemini + Django 기반 AI 대화형 챗봇 개발</li>
+      <li>LSTM 감성분석 모델 설계 및 REST API 연동</li>
+      <li>Spring Boot 기반 인증·보안 백엔드 설계</li>
     </ul>
-    <img src="images/evlink.png" class="result-img"/>
+
+    <a class="portfolio-link" href="https://drive.google.com/여기에_링크" target="_blank">
+      ▶ 포트폴리오 보기 (Google Drive)
+    </a>
+
+    <div class="metric">
+      <span>성과지표 (한 줄)</span>
+      <p>
+        AI 챗봇과 감성분석 자동화를 통해 사용자 문의·리뷰 처리 효율을 개선하고
+        시스템 운영 안정성과 사용자 편의성을 향상
+      </p>
+    </div>
+
+    <img src="images/evlink.png" class="project-img"/>
   </article>
 
+  <!-- Project 02 -->
   <article class="project">
     <h3>Project02. Wallet</h3>
     <span class="period">2025.10</span>
-    <p class="desc">통계 기반 자산 관리 서비스</p>
+
+    <p class="project-desc">
+      통계 기반 자산 관리 플랫폼
+    </p>
+
     <ul>
-      <li>수입·지출 데이터 모델링</li>
-      <li>비즈니스 로직 중심 API 설계</li>
+      <li>수입·지출 데이터 모델링 및 API 설계</li>
+      <li>통계 기반 자산 흐름 분석 로직 구현</li>
     </ul>
-    <img src="images/wallet.png" class="result-img"/>
+
+    <div class="metric">
+      <span>성과지표 (한 줄)</span>
+      <p>
+        자산 데이터를 구조화하여 사용자가 재무 흐름을 직관적으로
+        이해할 수 있도록 서비스 가시성 향상
+      </p>
+    </div>
+
+    <img src="images/wallet.png" class="project-img"/>
   </article>
 </section>
 
+<!-- ================= Award ================= -->
 <section>
   <h2>Award</h2>
-  <div class="grid-2">
-    <div class="award-card">
+  <div class="award-grid">
+    <div>
       <h3>프로젝트 우수상</h3>
       <p>한국 ICT 인재 개발원</p>
       <img src="images/award1.png"/>
     </div>
-    <div class="award-card">
+    <div>
       <h3>특모범상 (출석률 100%)</h3>
       <p>한국 ICT 인재 개발원</p>
       <img src="images/award2.png"/>
@@ -109,22 +151,43 @@
   </div>
 </section>
 
+<!-- ================= Education ================= -->
 <section>
   <h2>Education</h2>
 
   <div class="edu">
-    <h3>클라우드 기반 AI 서비스 개발 과정</h3>
+    <h3>클라우드 기반 AI 대화형 서비스 개발 과정</h3>
     <p>한국 ICT 인재 개발원</p>
     <ul>
-      <li>Spring Boot · React 통합 프로젝트</li>
-      <li>REST API & 클라우드 실습</li>
+      <li>Spring Boot · React · AI 통합 프로젝트</li>
+      <li>REST API 및 클라우드 환경 실습</li>
     </ul>
   </div>
+
+  <div class="edu">
+    <h3>IBM AI Engineering Professional</h3>
+    <p>Coursera</p>
+    <ul>
+      <li>Transformer · RAG 시스템 구현</li>
+      <li>PyTorch 기반 모델 학습</li>
+    </ul>
+  </div>
+
+    <div class="edu">
+    <h3>캐나다 대학 입학 University Pathway 영어 과정</h3>
+    <p>ILAC Language School |</p>
+    <ul>
+      <li>Spring Boot · React · AI 통합 프로젝트</li>
+      <li>REST API 및 클라우드 환경 실습</li>
+    </ul>
+  </div>
+  
 </section>
 
+<!-- ================= Certificate ================= -->
 <section>
-  <h2>🎓 Certificate</h2>
-  <div class="grid-2">
+  <h2>Certificate</h2>
+  <div class="cert-grid">
     <img src="images/certificate1.png"/>
     <img src="images/certificate2.png"/>
   </div>
