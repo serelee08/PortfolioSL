@@ -2,117 +2,62 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>Serena | AI Backend Engineer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Backend Engineer | Portfolio</title>
+  <meta name="description" content="AI Backend Engineer Portfolio">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- ================= Landing ================= -->
-<section class="landing">
-  <img src="assets/profile.jpg" class="profile-img" alt="profile">
+<header class="hero">
+  <img src="images/myself.jpg" class="profile-img" alt="profile">
 
-  <h1>Serena</h1>
+  <h1>이지애</h1>
   <h2>AI Backend Engineer</h2>
+  <p class="tagline">잘 설계된 파이프라인이 반복적인 가치를 만든다</p>
 
-  <p class="intro">
-    AI와 백엔드 기술을 결합해<br>
-    실제 서비스로 완성하는 엔지니어입니다.
-  </p>
-
-  <!-- Business Card -->
-  <div class="business-card">
-    <img src="assets/mail.png" onclick="toggle('email')">
-    <img src="assets/phone.png" onclick="toggle('phone')">
-    <img src="assets/github.png" onclick="toggle('github')">
-    <img src="assets/location.png" onclick="toggle('location')">
+  <div class="contact-icons">
+    <button onclick="toggle('email')"><i class="fa-solid fa-envelope"></i></button>
+    <button onclick="toggle('phone')"><i class="fa-solid fa-phone"></i></button>
+    <button onclick="toggle('url')"></button>
   </div>
 
   <div class="contact-info">
-    <p id="email">📧 serelee08@gmail.com</p>
-    <p id="phone">📱 010-XXXX-XXXX</p>
-    <p id="github">💻 github.com/serelee08</p>
-    <p id="location">📍 Incheon, South Korea</p>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ================= About ================= -->
-<section class="section">
-  <h3 class="section-title">About</h3>
-  <div class="box">
-    <p>
-      Spring Boot 기반 백엔드와 Django 기반 AI 서비스를 직접 설계·구현하며,
-      모델 학습부터 API, 배포까지 전 과정을 경험한 엔지니어입니다.
+    <p id="email" class="hidden">📧 Serelee08@gmail.com</p>
+    <p id="phone" class="hidden">📱 010-7713-9527</p>
+    <p id="url" class="hidden">🌐
+      🔗 <a href="https://USERNAME.github.io/REPO" target="_blank">
+        https://Serelee08.github.io/REPO
+      </a>
     </p>
   </div>
+</header>
+
+<section>
+  <h3>About</h3>
+  <p>Python · Java(Spring) · AWS 환경에서 AI 백엔드 개발 경험을 보유한 엔지니어입니다…</p>
 </section>
 
-<div class="divider"></div>
-
-<!-- ================= Skill ================= -->
-<section class="section">
-  <h3 class="section-title">Skill</h3>
-  <div class="skill-grid">
-    <div class="box">
-      <h4>Backend</h4>
-      <p>Java, Spring Boot, MyBatis, JPA, SQL, Redis</p>
-    </div>
-    <div class="box">
-      <h4>AI / Data</h4>
-      <p>Python, Django, LSTM, BERT, TensorFlow, PyTorch</p>
-    </div>
-    <div class="box">
-      <h4>Frontend</h4>
-      <p>React, TypeScript, HTML, CSS, Figma</p>
-    </div>
-  </div>
+<section>
+  <h3>Skills</h3>
+  <!-- 위 서술 그대로 -->
 </section>
 
-<div class="divider"></div>
-
-<!-- ================= Award ================= -->
-<section class="section">
-  <h3 class="section-title">Award</h3>
-  <div class="award-grid">
-    <div class="box center">
-      <h4>프로젝트 우수상</h4>
-      <img src="assets/award1.png">
-    </div>
-    <div class="box center">
-      <h4>특모범상 (출석률 100%)</h4>
-      <img src="assets/award2.png">
-    </div>
-  </div>
+<section>
+  <h3>Experience</h3>
+  <!-- EVLink / Walley -->
 </section>
 
-<div class="divider"></div>
-
-<!-- ================= Education ================= -->
-<section class="section">
-  <h3 class="section-title">Education</h3>
-  <div class="box">
-    <strong>클라우드 기반 AI 대화형 서비스 개발자 과정</strong>
-    <p>2025.03 ~ 2025.09</p>
-  </div>
-  <div class="box">
-    <strong>IBM AI Engineering Professional</strong>
-    <p>2025.12 ~ 2026.03 (예정)</p>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ================= Certificate ================= -->
-<section class="section center">
-  <h3 class="section-title">Certificate</h3>
-  <img src="assets/cert1.png" class="cert-img">
+<section>
+  <h3>Contact</h3>
+  <p>AI 서비스와 안정적인 백엔드 설계가 필요한 팀이라면 언제든지 연락 주세요.</p>
 </section>
 
 <script>
-function toggle(id){
-  document.querySelectorAll('.contact-info p').forEach(p=>p.style.display='none');
-  document.getElementById(id).style.display='block';
+function toggle(id) {
+  document.getElementById(id).classList.toggle("hidden");
 }
 </script>
 
