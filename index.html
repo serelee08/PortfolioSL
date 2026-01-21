@@ -10,22 +10,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- CSS (캐시 무력화) -->
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 
 <body>
 
 <!-- ================= Header ================= -->
 <header class="hero">
-  <img src="images/myself.jpg" alt="profile" class="profile-img"/>
+  <img src="images/myself.jpg" alt="profile image" class="profile-img"/>
 
   <h1>이지애</h1>
   <p class="headline">AI 백엔드 엔지니어</p>
 
-  <div class="contact">
-    <span>📧 serelee08@gmail.com</span>
-    <span>📱 010-7713-9527</span>
-    <span>🌐 github.com/Serele08</span>
+  <!-- Contact Icons -->
+  <div class="contact-icons">
+    <button class="contact-btn" data-type="email">📧</button>
+    <button class="contact-btn" data-type="phone">📱</button>
+    <button class="contact-btn" data-type="github">🌐</button>
+  </div>
+
+  <!-- Contact Card -->
+  <div class="contact-card" id="contactCard">
+    <p id="contactText"></p>
   </div>
 </header>
 
@@ -80,7 +87,7 @@
 
   <!-- Project 01 -->
   <article class="project">
-    <h3>Project01. EVLink</h3>
+    <h3>EVLink – AI 기반 전기차 충전기 공유 플랫폼</h3>
     <span class="period">2025.08.25 ~ 2025.09.25</span>
 
     <p class="project-desc">
@@ -98,19 +105,19 @@
     </a>
 
     <div class="metric">
-      <span>성과지표 (한 줄)</span>
+      <span>성과지표</span>
       <p>
-        AI 챗봇과 감성분석 자동화를 통해 사용자 문의·리뷰 처리 효율을 개선하고
-        시스템 운영 안정성과 사용자 편의성을 향상
+        AI 챗봇 자동 응답 도입으로 사용자 문의 처리 효율을 향상시키고
+        리뷰 분석 자동화를 통해 운영 리소스를 절감
       </p>
     </div>
 
-    <img src="images/evlink.png" class="project-img"/>
+    <img src="images/evlink.png" alt="EVLink project image" class="project-img"/>
   </article>
 
   <!-- Project 02 -->
   <article class="project">
-    <h3>Project02. Wallet</h3>
+    <h3>Wallet – 통계 기반 자산 관리 플랫폼</h3>
     <span class="period">2025.10</span>
 
     <p class="project-desc">
@@ -123,14 +130,14 @@
     </ul>
 
     <div class="metric">
-      <span>성과지표 (한 줄)</span>
+      <span>성과지표</span>
       <p>
-        자산 데이터를 구조화하여 사용자가 재무 흐름을 직관적으로
-        이해할 수 있도록 서비스 가시성 향상
+        자산 데이터를 구조화하여 사용자가 재무 흐름을
+        직관적으로 파악할 수 있도록 서비스 가시성 향상
       </p>
     </div>
 
-    <img src="images/wallet.png" class="project-img"/>
+    <img src="images/wallet.png" alt="Wallet project image" class="project-img"/>
   </article>
 </section>
 
@@ -141,12 +148,12 @@
     <div>
       <h3>프로젝트 우수상</h3>
       <p>한국 ICT 인재 개발원</p>
-      <img src="images/award1.png"/>
+      <img src="images/award1.png" alt="award image"/>
     </div>
     <div>
       <h3>특모범상 (출석률 100%)</h3>
       <p>한국 ICT 인재 개발원</p>
-      <img src="images/award2.png"/>
+      <img src="images/award2.png" alt="award image"/>
     </div>
   </div>
 </section>
@@ -173,23 +180,21 @@
     </ul>
   </div>
 
-    <div class="edu">
+  <div class="edu">
     <h3>캐나다 대학 입학 University Pathway 영어 과정</h3>
-    <p>ILAC Language School |</p>
+    <p>ILAC Language School</p>
     <ul>
-      <li>Spring Boot · React · AI 통합 프로젝트</li>
-      <li>REST API 및 클라우드 환경 실습</li>
+      <li>Academic English · Presentation · Research Writing</li>
     </ul>
   </div>
-  
 </section>
 
 <!-- ================= Certificate ================= -->
 <section>
   <h2>Certificate</h2>
   <div class="cert-grid">
-    <img src="images/certificate1.png"/>
-    <img src="images/certificate2.png"/>
+    <img src="images/certificate1.png" alt="certificate image"/>
+    <img src="images/certificate2.png" alt="certificate image"/>
   </div>
 </section>
 
@@ -198,6 +203,26 @@
 <footer>
   © 2026 SL. All rights reserved.
 </footer>
+
+<!-- ================= JS ================= -->
+<script>
+  const card = document.getElementById("contactCard");
+  const text = document.getElementById("contactText");
+
+  const data = {
+    email: "serelee08@gmail.com",
+    phone: "010-7713-9527",
+    github: "https://github.com/serelee08"
+  };
+
+  document.querySelectorAll(".contact-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const type = btn.dataset.type;
+      text.textContent = data[type];
+      card.classList.add("show");
+    });
+  });
+</script>
 
 </body>
 </html>
