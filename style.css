@@ -96,6 +96,13 @@ h2 {
   margin-bottom: 24px;
 }
 
+/* ================= Skills ================= */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
 /* ================= Cards ================= */
 .skill-card,
 .project,
@@ -122,6 +129,16 @@ h2 {
   border-radius: 12px;
 }
 
+.metric {
+  margin-top: 16px;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
+}
+
+.metric span {
+  font-weight: 600;
+}
+
 /* ================= Button ================= */
 .portfolio-link {
   display: inline-block;
@@ -140,10 +157,45 @@ h2 {
   box-shadow: 0 12px 30px var(--accent-soft);
 }
 
+/* ================= Award ================= */
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.award-grid img {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 12px;
+}
+
+/* ================= Certificate ================= */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.cert-grid img {
+  width: 100%;
+  border-radius: 12px;
+}
+
 /* ================= Footer ================= */
 footer {
   text-align: center;
   padding: 40px 0;
   color: var(--text-sub);
   font-size: 14px;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 16px 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
 }
