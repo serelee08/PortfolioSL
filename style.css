@@ -203,8 +203,9 @@ a {
 section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 90px 24px;
+  padding: 70px 24px;   /* 90px → 70px */
 }
+
 
 section h2 {
   font-size: 1.6rem;
@@ -306,6 +307,6 @@ footer {
   max-width: 220px;
   height: auto;
   border: 1px solid #000;    /* 🔥 검정 테두리 */
-  border-radius: 2px;        /* 상장 느낌 살짝 */
+  border-radius: 1px;        /* 상장 느낌 살짝 */
   box-shadow: none;
 }
