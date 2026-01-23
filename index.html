@@ -4,59 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>이지애 | AI Backend Engineer</title>
-
+d
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= Landing / Business Card ================= -->
+<!-- ================= Landing ================= -->
 <section class="landing">
   <div class="card">
-
-    <div class="card-profile">
-      <img src="images/myself.jpg" alt="profile">
-    </div>
-
     <h1>이지애</h1>
     <h2>AI Backend Engineer</h2>
-    <p class="tagline">
-      잘 설계된 파이프라인이 반복적인 가치를 만든다고 믿는 엔지니어
-    </p>
+    <p class="tagline">잘 설계된 파이프라인이 반복적인 가치를 만든다고 믿는 엔지니어</p>
 
     <div class="contact-icons">
-      <button onclick="toggleInfo('emailBox')">📧</button>
-      <button onclick="toggleInfo('phoneBox')">📱</button>
-      <button onclick="toggleInfo('gitBox')">💻</button>
+      <a href="mailto:serelee08@gmail.com">Email</a>
+      <a href="tel:01077139527">Phone</a>
+      <a href="https://github.com/serelee08" target="_blank">GitHub</a>
     </div>
-
-    <div class="contact-info" id="emailBox">serelee08@gmail.com</div>
-    <div class="contact-info" id="phoneBox">010-7713-9527</div>
-    <div class="contact-info" id="gitBox">github.com/serelee08</div>
-
   </div>
 </section>
 
 <!-- ================= About ================= -->
-<section class="about-preview">
+<section>
   <div class="wrap">
     <h2 class="section-title">About</h2>
-    <p class="about-text">
-      <strong>Python · Java(Spring) · TypeScript 기반의 AWS 환경에서 AI 백엔드 개발 경험을 보유한 엔지니어입니다.</strong><br><br>
-      클라이언트 요청부터 서버, 데이터베이스를 거쳐 응답에 이르기까지 전체 흐름과
-      데이터 파이프라인 설계에 집중해 왔습니다.<br><br>
-      팀원들과의 소통을 바탕으로 전체 시스템 아키텍처를 설계하고 Diagram으로
-      시각화하여 공유한 경험이 있습니다.<br><br>
-      Django 기반 Gemini AI 대화형 서비스와 LSTM 감성분석 모델을 REST API로 구현하였으며,
-      AWS EC2 리눅스 환경에서 AI 모델 운영 및 백엔드 서비스 연동을 경험했습니다.<br><br>
-      또한 데이터 모델링, Schema 설계, MyBatis 기반 SQL 최적화와 Postman API 검증을 통해
-      안정적인 데이터 처리와 유지보수성을 확보했습니다.
-    </p>
+
+    <div class="about">
+      <div class="profile">
+        <img src="images/myself.jpg" alt="profile">
+      </div>
+
+      <div class="about-text">
+        <p><strong>Python · Java(Spring) · TypeScript 기반의 AWS 환경에서 AI 백엔드 개발 경험을 보유한 엔지니어입니다.</strong></p>
+        <p>클라이언트 요청부터 서버, 데이터베이스를 거쳐 응답에 이르기까지 전체 흐름과 데이터 파이프라인 설계에 집중해 왔습니다.</p>
+        <p>팀원들과의 소통을 바탕으로 전체 시스템 아키텍처를 설계하고 Diagram으로 시각화하여 공유한 경험이 있습니다.</p>
+        <p>Django 기반 Gemini AI 대화형 서비스와 LSTM 감성분석 모델을 REST API로 구현하였으며, AWS EC2 리눅스 환경에서 AI 모델 운영 및 백엔드 서비스 연동을 경험했습니다.</p>
+        <p>또한 데이터 모델링, Schema 설계, MyBatis 기반 SQL 최적화와 Postman API 검증을 통해 안정적인 데이터 처리와 유지보수성을 확보했습니다.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ================= Skills ================= -->
-<section class="tight">
+<section>
   <div class="wrap">
     <h2 class="section-title">Skills</h2>
 
@@ -65,8 +56,9 @@
         <h3>Backend</h3>
         <ul>
           <li>Java, Spring Boot (REST API, Security, JWT)</li>
-          <li>Spring MVC, Servlet, JSP</li>
-          <li>MyBatis, JPA, SQL</li>
+          <li>Spring MVC, Servlet, JSP(Model2), Tomcat</li>
+          <li>MyBatis, JPA/Hibernate, SQL, PL/SQL</li>
+          <li>Redis, Maven, Gradle</li>
         </ul>
       </div>
 
@@ -75,33 +67,18 @@
         <ul>
           <li>Python, Django</li>
           <li>LSTM, Transformer</li>
-          <li>BERT, Sentiment Analysis</li>
+          <li>BERT, KoNLPy, Sentiment Analysis</li>
+          <li>TensorFlow, Keras</li>
         </ul>
       </div>
 
       <div class="skill-box">
-        <h3>Frontend</h3>
+        <h3>Frontend / Tools</h3>
         <ul>
-          <li>React, TypeScript</li>
-          <li>HTML, CSS</li>
-        </ul>
-      </div>
-
-      <div class="skill-box">
-        <h3>Cloud / Infra</h3>
-        <ul>
-          <li>AWS EC2</li>
-          <li>Linux (Ubuntu, Rocky)</li>
+          <li>React, TypeScript, HTML, CSS</li>
+          <li>AWS EC2, Linux</li>
           <li>MySQL, MariaDB, Oracle</li>
-        </ul>
-      </div>
-
-      <div class="skill-box">
-        <h3>Collaboration / Tools</h3>
-        <ul>
           <li>Git, GitHub</li>
-          <li>Postman, ERD Cloud</li>
-          <li>Slack</li>
         </ul>
       </div>
     </div>
@@ -109,72 +86,80 @@
 </section>
 
 <!-- ================= Experience ================= -->
-<section class="tight">
+<section>
   <div class="wrap">
     <h2 class="section-title">Experience</h2>
 
+    <!-- Project 01 -->
     <div class="project">
-      <h3>EVLink <span>(AI 기반 전기차 충전기 공유 플랫폼)</span></h3>
-      <img class="project-image" src="images/evlink-architecture.png" alt="EVLink">
+      <h3>Project 01. EVLink <span>(AI 기반 전기차 충전기 공유 플랫폼)</span></h3>
+      <p class="period">기간: 25.08.25 ~ 25.09.25</p>
+
+      <p class="purpose">
+        <strong>프로젝트 목적</strong><br>
+        호스트/사용자 기반 전기차 충전기 공유 플랫폼 구축으로 개인·공공 충전기 예약,
+        실시간 사용 현황 제공 및 호스트 수익 창출을 통해 사용자 편의와 운영 효율 향상
+      </p>
+
+      <img class="project-image" src="images/evlink-architecture.png" alt="EVLink architecture">
+
       <ul>
-        <li>Gemini + Django 기반 AI 챗봇</li>
-        <li>LSTM 감성분석 REST API</li>
-        <li>Spring Boot REST API</li>
+        <li>Google Gemini + Django 기반 AI 대화형 챗봇</li>
+        <li>LSTM 감성분석 모델 REST API 구현</li>
+        <li>Spring Boot REST API (공지사항, FAQ)</li>
+        <li>OAuth2 인증 (Kakao/Naver/Google)</li>
+        <li>DB 설계 (MySQL, MariaDB, Oracle)</li>
         <li>AWS EC2 배포</li>
       </ul>
-      <div class="metric-chip">
-        💡 <strong>성과지표(한 줄)</strong>
-        사용자 문의·리뷰 자동 분류로 운영 효율 향상
+
+      <a class="portfolio-btn" href="#" target="_blank">▶ 포트폴리오 보기 (Google Drive)</a>
+
+      <div class="metric-box">
+        <span>💡</span>
+        <p>AI 챗봇과 LSTM 감성분석 모델을 활용해 사용자 문의 및 리뷰를 자동 분류하고
+        REST API·DB 연동으로 시스템 운영 효율과 처리 속도 향상</p>
       </div>
     </div>
 
+    <!-- Project 02 -->
     <div class="project">
-      <h3>Walley <span>(통계 기반 자산 관리 플랫폼)</span></h3>
-      <img class="project-image" src="images/walley-dashboard.png" alt="Walley">
+      <h3>Project 02. Walley <span>(통계 기반 자산 관리 플랫폼)</span></h3>
+      <p class="period">기간: 25.05.30 ~ 25.07.15</p>
+
+      <p class="purpose">
+        <strong>프로젝트 목적</strong><br>
+        개인 수입·지출 데이터 구조화와 소비 패턴 분석을 통해 자산 관리 효율 극대화
+      </p>
+
+      <img class="project-image" src="images/walley-dashboard.png" alt="Walley dashboard">
+
       <ul>
-        <li>Spring Boot REST API</li>
-        <li>Oracle + MyBatis</li>
-        <li>소비 패턴 분석</li>
+        <li>Spring Boot REST API 설계</li>
+        <li>MyBatis 기반 Oracle DB 연동</li>
+        <li>영수증 이미지 업로드 및 관리</li>
+        <li>소비 패턴 분석 및 시각화</li>
       </ul>
-      <div class="metric-chip">
-        💡 <strong>성과지표(한 줄)</strong>
-        소비 데이터 분석을 통한 재무 관리 효율 극대화
+
+      <a class="portfolio-btn" href="#" target="_blank">▶ 포트폴리오 보기 (Google Drive)</a>
+
+      <div class="metric-box">
+        <span>💡</span>
+        <p>소비 데이터를 구조화하여 카테고리·기간별 분석 및 시각화를 통해
+        재무 관리 효율 극대화</p>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- ================= Awards ================= -->
-<section class="tight">
-  <div class="wrap">
-    <h2 class="section-title">Awards</h2>
-    <div class="image-row">
-      <img src="images/award-1.png" alt="award 1">
-      <img src="images/award-2.png" alt="award 2">
-    </div>
   </div>
 </section>
 
 <!-- ================= Education ================= -->
-<section class="tight">
+<section>
   <div class="wrap">
-    <h2 class="section-title">Education</h2>
-    <ul class="education-list">
-      <li>클라우드 기반 AI 대화형 서비스 개발자 과정 (7개월)</li>
-      <li>IBM AI Engineering Professional 과정 (수료 예정)</li>
-      <li>캐나다 ILAC University Pathway 영어 과정</li>
-    </ul>
-  </div>
-</section>
+    <h2 class="section-title">Education & Certificate</h2>
 
-<!-- ================= Certificate ================= -->
-<section class="tight">
-  <div class="wrap">
-    <h2 class="section-title">Certificate (Reference)</h2>
-    <div class="image-row small">
-      <img src="images/cert-ai.png" alt="certificate ai">
-      <img src="images/cert-cloud.png" alt="certificate cloud">
+    <div class="certificates">
+      <img src="images/cert-ai.png" alt="AI certificate">
+      <img src="images/cert-cloud.png" alt="Cloud certificate">
     </div>
   </div>
 </section>
@@ -182,18 +167,6 @@
 <footer>
   © 2026 이지애 | AI Backend Engineer
 </footer>
-
-<script>
-function toggleInfo(id){
-  document.querySelectorAll('.contact-info').forEach(el=>{
-    if(el.id === id){
-      el.classList.toggle('show');
-    } else {
-      el.classList.remove('show');
-    }
-  });
-}
-</script>
 
 </body>
 </html>
