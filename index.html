@@ -10,23 +10,27 @@
 </head>
 <body>
 
-<!-- ================= Landing ================= -->
+<!-- ================= Landing / Business Card ================= -->
 <section class="landing">
   <div class="card">
     <h1>이지애</h1>
     <h2>AI Backend Engineer</h2>
     <p class="tagline">잘 설계된 파이프라인이 반복적인 가치를 만든다고 믿는 엔지니어</p>
 
-    <div class="contact-icons">
-      <a href="mailto:serelee08@gmail.com">Email</a>
-      <a href="tel:01077139527">Phone</a>
-      <a href="https://github.com/serelee08" target="_blank">GitHub</a>
+    <!-- Toggle Button -->
+    <button class="contact-toggle" onclick="toggleContact()">Contact</button>
+
+    <!-- Hidden Contact -->
+    <div id="contactBox" class="contact-box">
+      <p>Email: serelee08@gmail.com</p>
+      <p>Phone: 010-7713-9527</p>
+      <p>GitHub: github.com/serelee08</p>
     </div>
   </div>
 </section>
 
 <!-- ================= About ================= -->
-<section>
+<section class="tight">
   <div class="wrap">
     <h2 class="section-title">About</h2>
 
@@ -47,7 +51,7 @@
 </section>
 
 <!-- ================= Skills ================= -->
-<section>
+<section class="tight">
   <div class="wrap">
     <h2 class="section-title">Skills</h2>
 
@@ -86,14 +90,14 @@
 </section>
 
 <!-- ================= Experience ================= -->
-<section>
+<section class="tight">
   <div class="wrap">
     <h2 class="section-title">Experience</h2>
 
     <!-- Project 01 -->
     <div class="project">
       <h3>Project 01. EVLink <span>(AI 기반 전기차 충전기 공유 플랫폼)</span></h3>
-      <p class="period">기간: 25.08.25 ~ 25.09.25</p>
+      <p class="period">25.08.25 ~ 25.09.25</p>
 
       <p class="purpose">
         <strong>프로젝트 목적</strong><br>
@@ -112,19 +116,21 @@
         <li>AWS EC2 배포</li>
       </ul>
 
-      <a class="portfolio-btn" href="#" target="_blank">▶ 포트폴리오 보기 (Google Drive)</a>
+      <a class="portfolio-btn" href="#" target="_blank">▶ 포트폴리오 보기</a>
 
       <div class="metric-box">
-        <span>💡</span>
-        <p>AI 챗봇과 LSTM 감성분석 모델을 활용해 사용자 문의 및 리뷰를 자동 분류하고
-        REST API·DB 연동으로 시스템 운영 효율과 처리 속도 향상</p>
+        <span class="metric-icon">💡</span>
+        <div>
+          <strong>성과지표 (한 줄)</strong>
+          <p>AI 챗봇과 감성분석 모델을 통해 사용자 문의·리뷰 자동 분류 → 운영 효율 및 처리 속도 향상</p>
+        </div>
       </div>
     </div>
 
     <!-- Project 02 -->
     <div class="project">
       <h3>Project 02. Walley <span>(통계 기반 자산 관리 플랫폼)</span></h3>
-      <p class="period">기간: 25.05.30 ~ 25.07.15</p>
+      <p class="period">25.05.30 ~ 25.07.15</p>
 
       <p class="purpose">
         <strong>프로젝트 목적</strong><br>
@@ -140,12 +146,14 @@
         <li>소비 패턴 분석 및 시각화</li>
       </ul>
 
-      <a class="portfolio-btn" href="#" target="_blank">▶ 포트폴리오 보기 (Google Drive)</a>
+      <a class="portfolio-btn" href="#" target="_blank">▶ 포트폴리오 보기</a>
 
       <div class="metric-box">
-        <span>💡</span>
-        <p>소비 데이터를 구조화하여 카테고리·기간별 분석 및 시각화를 통해
-        재무 관리 효율 극대화</p>
+        <span class="metric-icon">💡</span>
+        <div>
+          <strong>성과지표 (한 줄)</strong>
+          <p>소비 데이터 분석 및 시각화를 통해 재무 관리 효율 극대화</p>
+        </div>
       </div>
     </div>
 
@@ -153,10 +161,21 @@
 </section>
 
 <!-- ================= Education ================= -->
-<section>
+<section class="tight">
   <div class="wrap">
-    <h2 class="section-title">Education & Certificate</h2>
+    <h2 class="section-title">Education</h2>
+    <ul class="education-list">
+      <li>클라우드 기반 AI 대화형 서비스 개발자 과정 (7개월)</li>
+      <li>IBM AI Engineering Professional 과정 (수료 예정)</li>
+      <li>캐나다 ILAC University Pathway 영어 과정</li>
+    </ul>
+  </div>
+</section>
 
+<!-- ================= Certificate ================= -->
+<section class="tight">
+  <div class="wrap">
+    <h2 class="section-title">Certificate (Reference)</h2>
     <div class="certificates">
       <img src="images/cert-ai.png" alt="AI certificate">
       <img src="images/cert-cloud.png" alt="Cloud certificate">
@@ -167,6 +186,13 @@
 <footer>
   © 2026 이지애 | AI Backend Engineer
 </footer>
+
+<script>
+function toggleContact(){
+  const box = document.getElementById('contactBox');
+  box.classList.toggle('show');
+}
+</script>
 
 </body>
 </html>

@@ -10,12 +10,13 @@ body{
   font-family:Inter,'Noto Serif KR',serif;
   background:var(--bg);
   color:var(--ink);
-  line-height:1.7;
+  line-height:1.6;
 }
 
-section{padding:90px 20px}
+section{padding:60px 20px}
+section.tight{padding:40px 20px}
 .wrap{max-width:1080px;margin:0 auto}
-.section-title{text-align:center;font-size:32px;margin-bottom:50px}
+.section-title{text-align:center;font-size:30px;margin-bottom:30px}
 
 /* Landing */
 .landing{
@@ -26,22 +27,37 @@ section{padding:90px 20px}
 }
 .card{
   background:#fff;
-  padding:40px 50px;
+  padding:36px 44px;
   border-radius:16px;
   text-align:center;
   box-shadow:0 20px 50px rgba(0,0,0,.12);
 }
-.tagline{margin-top:10px}
+.tagline{margin:10px 0 16px}
+
+/* Contact Toggle */
+.contact-toggle{
+  margin-top:10px;
+  padding:8px 16px;
+  border:1px solid var(--line);
+  background:#fff;
+  cursor:pointer;
+}
+.contact-box{
+  display:none;
+  margin-top:14px;
+  font-size:14px;
+}
+.contact-box.show{display:block}
 
 /* About */
 .about{
   display:grid;
-  grid-template-columns:200px 1fr;
-  gap:40px;
+  grid-template-columns:180px 1fr;
+  gap:32px;
 }
 .profile img{
-  width:180px;
-  height:220px;
+  width:160px;
+  height:200px;
   object-fit:cover;
   border-radius:12px;
   border:1px solid var(--line);
@@ -51,72 +67,84 @@ section{padding:90px 20px}
 .skills{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:28px;
+  gap:24px;
 }
 .skill-box{
   background:#fff;
   border:1px solid var(--line);
-  padding:24px;
+  padding:20px;
   border-radius:14px;
 }
 
 /* Project */
 .project{
   background:#fff;
-  padding:32px;
-  border-radius:18px;
+  padding:28px;
+  border-radius:16px;
   border:1px solid var(--line);
-  margin-bottom:40px;
+  margin-bottom:32px;
 }
 .project span{font-size:14px;color:#666}
-.period{font-size:14px;margin-bottom:10px}
+.period{font-size:14px;margin-bottom:8px}
 
 .purpose{
   background:#faf7f2;
   border-left:4px solid var(--accent);
-  padding:14px;
-  margin:20px 0;
+  padding:12px;
+  margin:16px 0;
 }
 
 .project-image{
   width:100%;
-  max-width:720px;
-  margin:20px 0;
-  border-radius:12px;
+  max-width:680px;
+  margin:16px 0;
+  border-radius:10px;
   border:1px solid var(--line);
 }
 
 .portfolio-btn{
   display:inline-block;
-  margin:12px 0 18px;
+  margin:10px 0 14px;
   font-weight:600;
   color:#6a1b9a;
 }
 
+/* Metric */
 .metric-box{
   display:flex;
   gap:12px;
   background:#fff7e6;
   border:1px solid #f0d9a6;
-  padding:16px;
+  padding:14px;
   border-radius:8px;
+  font-size:14px;
 }
+.metric-icon{font-size:20px}
 
-/* Certificates */
+/* Education */
+.education-list{
+  max-width:720px;
+  margin:0 auto;
+}
+.education-list li{margin-bottom:8px}
+
+/* Certificate */
 .certificates{
   display:flex;
   gap:20px;
   justify-content:center;
 }
 .certificates img{
-  width:260px;
-  border-radius:10px;
+  width:220px;
+  opacity:0.85;
+  border-radius:8px;
   border:1px solid var(--line);
 }
 
+/* Footer */
 footer{
   text-align:center;
-  padding:40px;
+  padding:30px;
   font-size:14px;
   color:#666;
 }
