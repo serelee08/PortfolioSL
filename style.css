@@ -294,8 +294,9 @@ footer {
 }
 
 .award-item img {
-  width: 260px;
+  width: 120px;          /* ← 핵심: 작게 */
   max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  opacity: 0.9;
 }
