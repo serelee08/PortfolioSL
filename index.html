@@ -12,23 +12,28 @@
 
 <header>
   <div class="header-inner">
-    <div class="logo">It's <strong>JIAE LEE</strong> <span>| AI · Backend</span></div>
+    <div class="logo">
+      <div class="ai-icon">AI</div>
+      <div>It's <strong>JIAE LEE</strong> <span>| AI · Backend</span></div>
+    </div>
+
     <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 
   <nav class="nav-menu" id="navMenu">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#awards">Awards</a>
-    <a href="#education">Education</a>
-    <a href="#certificate">Certificate</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#experience" onclick="closeMenu()">Experience</a>
+    <a href="#awards" onclick="closeMenu()">Awards</a>
+    <a href="#education" onclick="closeMenu()">Education</a>
+    <a href="#certificate" onclick="closeMenu()">Certificate</a>
   </nav>
 </header>
 
-<!-- ================= Landing ================= -->
 <section class="landing">
   <div class="card">
     <div class="card-profile">
@@ -116,79 +121,22 @@
   </div>
 </section>
 
-<section class="section" id="experience">
-  <div class="wrap">
-    <h2 class="section-title">Experience</h2>
-
-    <div class="project">
-      <h3>Project 01. EVLink <span>(AI 기반 전기차 충전기 공유 플랫폼)</span></h3>
-      <p class="period">기간: 25.08.25 ~ 25.09.25</p>
-      <p class="purpose"><strong>프로젝트 목적</strong><br>전기차 충전기 공유 플랫폼 구축</p>
-      <img class="project-image small" src="images/evlink-architecture.png">
-      <ul>
-        <li>Gemini + Django 기반 AI 챗봇</li>
-        <li>LSTM 감성분석 REST API</li>
-        <li>Spring Boot REST API</li>
-        <li>AWS EC2 배포</li>
-      </ul>
-      <div class="metric-box">💡 사용자 문의 자동 분류</div>
-    </div>
-
-    <div class="project">
-      <h3>Project 02. Walley <span>(통계 기반 자산 관리 플랫폼)</span></h3>
-      <p class="period">기간: 25.05.30 ~ 25.07.15</p>
-      <p class="purpose"><strong>프로젝트 목적</strong><br>소비 데이터 분석</p>
-      <img class="project-image small" src="images/walley-dashboard.png">
-      <ul>
-        <li>Spring Boot REST API</li>
-        <li>Oracle + MyBatis</li>
-        <li>소비 패턴 분석</li>
-      </ul>
-      <div class="metric-box">💡 재무 관리 효율 향상</div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="awards">
-  <div class="wrap">
-    <h2 class="section-title">Awards</h2>
-    <div class="image-row">
-      <img src="images/award-1.png">
-      <img src="images/award-2.png">
-    </div>
-  </div>
-</section>
-
-<section class="section" id="education">
-  <div class="wrap">
-    <h2 class="section-title">Education</h2>
-    <ul class="education-list">
-      <li>클라우드 기반 AI 대화형 서비스 개발자 과정 (7개월)</li>
-      <li>IBM AI Engineering Professional 과정</li>
-      <li>캐나다 ILAC University Pathway 영어 과정</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" id="certificate">
-  <div class="wrap">
-    <h2 class="section-title">Certificate (Reference)</h2>
-    <div class="image-row small">
-      <img src="images/cert-ai.png">
-      <img src="images/cert-cloud.png">
-    </div>
-  </div>
-</section>
-
 <footer>© 2026 이지애 | AI Backend Engineer</footer>
 
 <script>
 function toggleInfo(id){
-  document.querySelectorAll('.contact-info').forEach(el=>el.classList.remove('show'));
+  document.querySelectorAll('.contact-info').forEach(el=>{
+    el.classList.remove('show');
+  });
   document.getElementById(id).classList.toggle('show');
 }
+
 function toggleMenu(){
   document.getElementById('navMenu').classList.toggle('show');
+}
+
+function closeMenu(){
+  document.getElementById('navMenu').classList.remove('show');
 }
 </script>
 

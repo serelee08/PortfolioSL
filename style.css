@@ -19,7 +19,7 @@ body{
 
 .section{
   padding:50px 20px;
-  scroll-margin-top:90px;
+  scroll-margin-top:100px;
 }
 
 .section-title{
@@ -27,39 +27,67 @@ body{
   margin-bottom:20px;
 }
 
-/* ================= Header ================= */
+/* ================= Header (Premium) ================= */
 header{
   position:fixed;
   top:0;
   left:0;
   width:100%;
-  background:rgba(246,241,233,0.95);
-  backdrop-filter:blur(6px);
-  border-bottom:1px solid var(--line);
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,0.94),
+    rgba(248,245,238,0.94)
+  );
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(0,0,0,0.06);
   z-index:1000;
 }
 
 .header-inner{
   max-width:1080px;
   margin:0 auto;
-  padding:14px 20px;
+  padding:16px 20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
 
+/* Logo */
 .logo{
-  font-family:Inter,sans-serif;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont;
   font-size:15px;
+  font-weight:600;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+}
+
+.ai-icon{
+  width:22px;
+  height:22px;
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
   font-weight:700;
-  letter-spacing:1px;
+  letter-spacing:.05em;
+  color:#fff;
+  background:linear-gradient(135deg,#1f2933,#4b5563);
+}
+
+.logo strong{
+  font-weight:700;
 }
 
 .logo span{
   font-weight:400;
-  opacity:.7;
+  opacity:.55;
 }
 
+/* Hamburger */
 .hamburger{
   width:26px;
   height:18px;
@@ -78,13 +106,14 @@ header{
 /* Menu */
 .nav-menu{
   position:fixed;
-  top:60px;
+  top:72px;
   right:20px;
   background:#fff;
-  border:1px solid var(--line);
-  border-radius:12px;
-  box-shadow:0 12px 30px rgba(0,0,0,.15);
-  padding:12px 0;
+  border-radius:14px;
+  border:1px solid rgba(0,0,0,.06);
+  box-shadow:0 20px 50px rgba(0,0,0,.18);
+  padding:10px 0;
+  min-width:180px;
   display:none;
 }
 
@@ -94,14 +123,16 @@ header{
 
 .nav-menu a{
   display:block;
-  padding:10px 22px;
+  padding:12px 24px;
+  font-family:Inter,sans-serif;
   font-size:14px;
+  letter-spacing:0.04em;
   color:var(--ink);
   text-decoration:none;
 }
 
 .nav-menu a:hover{
-  background:#faf7f2;
+  background:#f6f1e9;
 }
 
 /* ================= Landing ================= */
@@ -159,18 +190,17 @@ header{
   display:block;
 }
 
-/* ================= About ================= */
+/* About */
 .about-text p{
   margin-bottom:10px;
 }
 
-/* ================= Skills (ONLY layout refined) ================= */
+/* ================= Skills (size unified) ================= */
 .skills-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(3,260px);
   gap:28px;
-  max-width:900px;
-  margin:0 auto;
+  justify-content:center;
 }
 
 .skill-box{
@@ -178,14 +208,17 @@ header{
   border:1px solid var(--line);
   padding:18px;
   border-radius:14px;
+  min-height:200px;
 }
 
-/* 아래 두 개 가운데 정렬 */
+/* 아래 2개 중앙 정렬 */
 .skills-grid .skill-box:nth-child(4){
   grid-column:1 / span 2;
+  justify-self:center;
 }
 .skills-grid .skill-box:nth-child(5){
   grid-column:2 / span 2;
+  justify-self:center;
 }
 
 /* ================= Project ================= */
@@ -228,7 +261,7 @@ header{
   margin-top:10px;
 }
 
-/* ================= Images ================= */
+/* Images */
 .image-row{
   display:flex;
   gap:24px;
@@ -245,12 +278,12 @@ header{
   opacity:0.85;
 }
 
-/* ================= Education ================= */
+/* Education */
 .education-list li{
   margin-bottom:8px;
 }
 
-/* ================= Footer ================= */
+/* Footer */
 footer{
   text-align:left;
   padding:30px 20px;
