@@ -277,33 +277,35 @@ footer {
 
 
 /* ================= AWARD (SMALL + INLINE) ================= */
-.award-row {
+/* ================= AWARD FINAL (VISIBLE SIZE + BLACK BORDER) ================= */
+#awards .award-row {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
+  gap: 48px;
+  margin-top: 24px;
 }
 
-.award-item {
+#awards .award-item {
   text-align: center;
 }
 
-.award-title {
+#awards .award-title {
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 2px;
 }
 
-.award-org {
+#awards .award-org {
   font-size: 0.75rem;
   color: #777;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-.award-item img {
-  width: 130px;          /* ← 너무 작지도, 크지도 않음 */
-  max-width: 100%;
-  border-radius: 6px;
+#awards .award-item img {
+  width: 130px;              /* 🔥 스샷 기준 체감 사이즈 */
+  max-width: 130px;
+  height: auto;
+  border: 2px solid #000;    /* 🔥 검정 테두리 */
+  border-radius: 2px;        /* 상장 느낌 살짝 */
   box-shadow: none;
-  opacity: 0.9;
 }
