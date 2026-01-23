@@ -132,7 +132,12 @@ background: linear-gradient(
 
 
 .card {
-  background: white;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #faf6f0 50%,
+    #f0e9df 100%
+  );
   width: 360px;
   padding: 42px 32px;
   border-radius: 28px;
