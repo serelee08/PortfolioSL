@@ -301,9 +301,9 @@ footer {
 }
 
 .award-item img {
-  width: 120px;          /*  핵심: 아주 작게 */
-  max-width: 120%;
+  width: 130px;          /* ← 너무 작지도, 크지도 않음 */
+  max-width: 100%;
   border-radius: 6px;
-  box-shadow: none;     /* 참고용이라 그림자 제거 */
-  opacity: 0.85;
+  box-shadow: none;
+  opacity: 0.9;
 }
