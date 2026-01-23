@@ -132,21 +132,19 @@ background: linear-gradient(
 
 
 .card {
-    .card {
   background: linear-gradient(
     to bottom,
     #ffffff 0%,
     #f5efe6 45%,
     #e8dccb 100%
   );
-}
-
   width: 360px;
   padding: 42px 32px;
   border-radius: 28px;
   text-align: center;
   box-shadow: 0 30px 60px rgba(0,0,0,0.15);
 }
+
 
 .card-profile {
   width: 120px;
