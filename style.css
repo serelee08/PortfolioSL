@@ -138,12 +138,14 @@ background: linear-gradient(
     #faf6f0 45%,
     #f0e9df 100%
   );
+  border: 1px solid rgba(0,0,0,0.04); /*  줄만 추가 */
   width: 360px;
   padding: 42px 32px;
   border-radius: 28px;
   text-align: center;
   box-shadow: 0 30px 60px rgba(0,0,0,0.15);
 }
+
 
 
 
