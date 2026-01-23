@@ -275,7 +275,7 @@ footer {
   }
 }
 
-/* ================= AWARD (TEXT + IMAGE ONLY) ================= */
+
 /* ================= AWARD (SMALL + INLINE) ================= */
 .award-row {
   display: flex;
@@ -301,8 +301,8 @@ footer {
 }
 
 .award-item img {
-  width: 90px;          /*  핵심: 아주 작게 */
-  max-width: 100%;
+  width: 120px;          /*  핵심: 아주 작게 */
+  max-width: 120%;
   border-radius: 6px;
   box-shadow: none;     /* 참고용이라 그림자 제거 */
   opacity: 0.85;
