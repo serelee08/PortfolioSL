@@ -3,119 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>It's JIAE LEE | Engineer</title>
+  <title>이지애 | AI 백엔드 엔지니어</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- TOP BAR -->
+<!-- ================= TOP BAR ================= -->
 <div class="topbar">
   <div class="brand">
-    <div class="logo">🤖</div>
+    <img src="robot-logo.png" alt="robot logo">
     <span>It's JIAE LEE | Engineer</span>
   </div>
 
-  <div style="position: relative;">
+  <div class="nav-wrapper">
     <div class="burger" onclick="toggleMenu()">☰</div>
     <div class="menu" id="menu">
       <a href="#landing">Landing</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#skills">Skill</a>
       <a href="#experience">Experience</a>
-      <a href="#awards">Awards</a>
+      <a href="#awards">Award</a>
       <a href="#education">Education</a>
       <a href="#certificate">Certificate</a>
     </div>
   </div>
 </div>
 
-<header id="landing">
-  <div class="landing">
-    <div class="avatar"></div>
-    <h1>AI Backend Engineer</h1>
-    <div class="subtitle">Spring Boot · Django · AI · Cloud</div>
-  </div>
-</header>
+<!-- ================= LANDING ================= -->
+<section class="landing" id="landing">
+  <div class="card">
+    <div class="card-profile">
+      <img src="images/myself.jpg" alt="profile">
+    </div>
+    <h1>이지애</h1>
+    <h2>AI Backend Engineer</h2>
+    <p class="tagline">잘 설계된 파이프라인이 반복적인 가치를 만든다고 믿는 엔지니어</p>
 
+    <div class="contact-icons">
+      <button onclick="toggleInfo('emailBox')">📧</button>
+      <button onclick="toggleInfo('phoneBox')">📱</button>
+      <button onclick="toggleInfo('gitBox')">💻</button>
+    </div>
+
+    <div class="contact-info" id="emailBox">serelee08@gmail.com</div>
+    <div class="contact-info" id="phoneBox">010-7713-9527</div>
+    <div class="contact-info" id="gitBox">github.com/serelee08</div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
 <section id="about">
   <h2>About</h2>
   <div class="box">
     <p>
-AI와 안정적인 백엔드 아키텍처로
-복잡한 비즈니스 문제를 해결하는 엔지니어입니다.
+“Python · Java(Spring) · TypeScript 기반의 AWS 환경에서  
+AI 백엔드 개발 경험을 보유한 엔지니어입니다.”
+
+잘 설계된 파이프라인이 반복적인 가치를 창출한다는 점에 매력을 느껴,  
+클라이언트 요청부터 서버, 데이터베이스를 거쳐 응답에 이르기까지  
+흐름에 집중해 왔습니다.
+
+팀원들과 소통을 바탕으로 전체 시스템 아키텍처를  
+설계하였으며 Diagram으로 시각화해 공유하였습니다.
+
+Django 기반으로 Gemini AI 대화형 서비스 및  
+LSTM 감성분석 모델을 REST API로 구현하였으며,  
+AWS EC2 리눅스 환경에서 AI 모델 운영 및  
+백엔드 서비스와 연동했습니다.
+
+API 문서화를 통해 팀 내 협업과 유지보수 효율을 높였으며,  
+데이터 모델링 및 Schema 설계,  
+MyBatis 기반 SQL 쿼리 최적화와  
+Postman에서 API 검증을 통해 데이터 처리 안정성을 확보했습니다.
     </p>
   </div>
 </section>
 
+<!-- ================= SKILL ================= -->
 <section id="skills">
-  <h2>Skills</h2>
+  <h2>Skill</h2>
   <div class="grid">
-    <div class="box"><h3>Spring Boot</h3></div>
-    <div class="box"><h3>Django</h3></div>
-    <div class="box"><h3>AI Integration</h3></div>
-    <div class="box"><h3>Database</h3></div>
-    <div class="box"><h3>Cloud</h3></div>
+    <div class="box">
+      <h3>Backend</h3>
+      <p>
+Java, Spring Boot (REST API, Security, JWT, Transaction), Spring MVC  
+Servlet, JSP (Model2), Apache Tomcat  
+MyBatis, JPA/Hibernate, Lombok  
+SQL, PL/SQL  
+Redis, Maven, Gradle
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>AI / Data</h3>
+      <p>
+Python, Django, Machine Learning, Deep Learning  
+(Classification, Regression, NLP, RNN/LSTM, Transformer)  
+NLP: BERT, KoNLPy, Sentiment Analysis  
+Computer Vision: OpenCV  
+TensorFlow, Keras  
+Pandas, NumPy, Scikit-learn
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Frontend</h3>
+      <p>
+React, JavaScript, TypeScript, HTML5, CSS3, Figma  
+Axios, NPM, Yarn  
+Visual Studio Code, STS4
+      </p>
+    </div>
   </div>
 </section>
 
+<!-- ================= EXPERIENCE ================= -->
 <section id="experience">
   <h2>Experience</h2>
-  <div class="grid">
-    <div class="box">
-      <h3>AI 대화형 서비스</h3>
-      <p>
-목표: 사용자 감정 이해형 AI 구현
-성과지표: 응답 정확도 30% 개선
-      </p>
-    </div>
-    <div class="box">
-      <h3>자산관리 플랫폼</h3>
-      <p>
-목표: 안정적인 재무 데이터 API 구축
-성과지표: API 응답속도 40% 개선
-      </p>
-    </div>
+
+  <div class="box">
+    <h3>EVLink – AI 기반 전기차 충전기 공유 플랫폼</h3>
+    <p>
+기간: 2025.08.25 ~ 2025.09.25
+
+• Google Gemini + Django 기반 AI 대화형 챗봇 서비스 개발  
+• LSTM 기반 감성분석 모델 설계 및 구현  
+• React & Spring Boot 기반 REST API 설계·개발  
+• OAuth2 기반 로그인 인증/보안 아키텍처 설계  
+• DB 설계 및 구축 (MySQL, MariaDB, Oracle)  
+• 전체 시스템 아키텍처 설계 및 Diagram / PPT 제작
+
+성과지표(한 줄):  
+AI 챗봇과 감성분석 모델을 활용해  
+문의 처리 자동화 및 시스템 운영 효율 향상
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>Walley – 통계 기반 자산 관리 플랫폼</h3>
+    <p>
+기간: 2025.05.30 ~ 2025.07.15
+
+• Spring Boot 기반 RESTful API 설계  
+• MyBatis + Oracle DB 데이터 모델링  
+• 영수증 이미지 업로드 및 관리 기능 구현  
+• React + TypeScript 기반 UI/UX 구성
+
+성과지표(한 줄):  
+수입·지출 데이터 시각화 및 소비 패턴 분석을 통해  
+재무 관리 효율 극대화
+    </p>
   </div>
 </section>
 
+<!-- ================= AWARD ================= -->
 <section id="awards">
-  <h2>Awards</h2>
+  <h2>Award</h2>
   <div class="grid">
-    <div class="box"><h3>Award 1</h3></div>
-    <div class="box"><h3>Award 2</h3></div>
+    <div class="box">프로젝트 우수상</div>
+    <div class="box">특모범상 (출석률 · 한국 ICT 인재개발원)</div>
   </div>
 </section>
 
+<!-- ================= EDUCATION ================= -->
 <section id="education">
   <h2>Education</h2>
-  <div class="grid">
-    <div class="box"><h3>Education 1</h3></div>
-    <div class="box"><h3>Education 2</h3></div>
-    <div class="box"><h3>Education 3</h3></div>
+
+  <div class="box">
+    <h3>클라우드 기반 AI 대화형 서비스 개발자 과정</h3>
+    <p>
+한국 ICT 인재개발원 | 2025.03.20 – 2025.09.25  
+풀타임 7개월 오프라인 과정  
+Spring Boot, React, AI 통합 프로젝트 실습
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>IBM AI Engineering Professional 과정</h3>
+    <p>
+Coursera | 2025.12 – 2026.03(예정)  
+RAG, Transformer, PyTorch, TensorFlow
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>캐나다 대학 입학 University Pathway 영어 과정</h3>
+    <p>
+ILAC Toronto | 2017.05 – 2018.05
+    </p>
   </div>
 </section>
 
+<!-- ================= CERTIFICATE ================= -->
 <section id="certificate">
   <h2>Certificate</h2>
   <div class="grid">
-    <div class="box"><h3>Certificate 1</h3></div>
-    <div class="box"><h3>Certificate 2</h3></div>
+    <div class="box">IBM AI Engineering Professional Certificate</div>
+    <div class="box">AI 대화형 서비스 개발자 수료증</div>
   </div>
 </section>
 
 <footer>
-  © 2026 JIAE LEE · AI Backend Engineer
+© 2026 JIAE LEE · AI Backend Engineer
 </footer>
 
 <script>
 function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
+function toggleInfo(id) {
+  const boxes = document.querySelectorAll('.contact-info');
+  boxes.forEach(box => {
+    box.style.display = box.id === id && box.style.display !== 'block'
+      ? 'block'
+      : 'none';
+  });
 }
 </script>
 
