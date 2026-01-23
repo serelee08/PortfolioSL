@@ -15,14 +15,14 @@
 <!-- ================= TOP BAR ================= -->
 <div class="topbar">
   <div class="brand">
-    <img src="robot-logo.png" alt="robot logo">
+    <div class="robot-logo">🤖</div>
     <span>It's JIAE LEE | Engineer</span>
   </div>
 
   <div class="nav-wrapper">
     <div class="burger" onclick="toggleMenu()">☰</div>
     <div class="menu" id="menu">
-      <a href="#landing">Landing</a>
+      <a href="#landing">Profile</a>
       <a href="#about">About</a>
       <a href="#skills">Skill</a>
       <a href="#experience">Experience</a>
@@ -36,22 +36,28 @@
 <!-- ================= LANDING ================= -->
 <section class="landing" id="landing">
   <div class="card">
+
     <div class="card-profile">
       <img src="images/myself.jpg" alt="profile">
     </div>
+
     <h1>이지애</h1>
     <h2>AI Backend Engineer</h2>
-    <p class="tagline">잘 설계된 파이프라인이 반복적인 가치를 만든다고 믿는 엔지니어</p>
+
+    <p class="tagline">
+      잘 설계된 파이프라인이 반복적인 가치를 만든다고 믿는 엔지니어
+    </p>
 
     <div class="contact-icons">
-      <button onclick="toggleInfo('emailBox')">📧</button>
-      <button onclick="toggleInfo('phoneBox')">📱</button>
-      <button onclick="toggleInfo('gitBox')">💻</button>
+      <button onclick="toggleInfo('emailBox')" title="Email">📧</button>
+      <button onclick="toggleInfo('phoneBox')" title="Phone">📱</button>
+      <button onclick="toggleInfo('gitBox')" title="GitHub">💻</button>
     </div>
 
     <div class="contact-info" id="emailBox">serelee08@gmail.com</div>
     <div class="contact-info" id="phoneBox">010-7713-9527</div>
     <div class="contact-info" id="gitBox">github.com/serelee08</div>
+
   </div>
 </section>
 
