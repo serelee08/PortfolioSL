@@ -4,37 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>이지애 | AI Backend Engineer</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=final">
 </head>
 <body>
 
 <header>
   <div class="header-inner">
     <div class="logo">
-      <!-- AI / IT Icon (Robot-Chip style) -->
-      <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="4"></rect>
-        <path d="M9 9h6v6H9z"></path>
-        <path d="M9 1v2M15 1v2M9 21v2M15 21v2M1 9h2M1 15h2M21 9h2M21 15h2"></path>
+      <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3" y="3" width="18" height="18" rx="4"/>
+        <path d="M9 9h6v6H9z"/>
       </svg>
-
-      <div>It's <strong>JIAE LEE</strong> <span>| AI · Backend</span></div>
+      <div>It's <strong>JIAE LEE</strong> <span>| ML · Backend</span></div>
     </div>
-
     <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
   </div>
 
   <nav class="nav-menu" id="navMenu">
-    <a href="#about" onclick="closeMenu()">About</a>
     <a href="#skills" onclick="closeMenu()">Skills</a>
     <a href="#experience" onclick="closeMenu()">Experience</a>
-    <a href="#awards" onclick="closeMenu()">Awards</a>
+    <a href="#awards" onclick="closeMenu()">Award</a>
     <a href="#education" onclick="closeMenu()">Education</a>
     <a href="#certificate" onclick="closeMenu()">Certificate</a>
   </nav>
@@ -43,108 +35,46 @@
 <section class="landing">
   <div class="card">
     <div class="card-profile">
-      <img src="images/myself.jpg" alt="profile">
+      <img src="images/myself.jpg">
     </div>
-
     <h1>이지애</h1>
     <h2>AI Backend Engineer</h2>
     <p class="tagline">잘 설계된 파이프라인이 반복적인 가치를 만든다고 믿는 엔지니어</p>
 
     <div class="contact-icons">
-      <button onclick="toggleInfo('emailBox')">📧</button>
-      <button onclick="toggleInfo('phoneBox')">📱</button>
-      <button onclick="toggleInfo('gitBox')">💻</button>
+      <button onclick="toggleInfo('email')">📧</button>
+      <button onclick="toggleInfo('phone')">📱</button>
+      <button onclick="toggleInfo('git')">💻</button>
     </div>
-
-    <div class="contact-info" id="emailBox">serelee08@gmail.com</div>
-    <div class="contact-info" id="phoneBox">010-7713-9527</div>
-    <div class="contact-info" id="gitBox">github.com/serelee08</div>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="wrap">
-    <h2 class="section-title">About</h2>
-    <div class="about-text">
-      <p><strong>Python · Java(Spring) · TypeScript 기반의 AWS 환경에서 AI 백엔드 개발 경험을 보유한 엔지니어입니다.</strong></p>
-      <p>클라이언트 요청부터 서버, 데이터베이스를 거쳐 응답에 이르기까지 전체 흐름과 데이터 파이프라인 설계에 집중해 왔습니다.</p>
-      <p>팀원들과의 소통을 바탕으로 전체 시스템 아키텍처를 설계하고 Diagram으로 시각화하여 공유한 경험이 있습니다.</p>
-      <p>Django 기반 Gemini AI 대화형 서비스와 LSTM 감성분석 모델을 REST API로 구현하였으며, AWS EC2 리눅스 환경에서 AI 모델 운영 및 백엔드 서비스 연동을 경험했습니다.</p>
-      <p>또한 데이터 모델링, Schema 설계, MyBatis 기반 SQL 최적화와 Postman API 검증을 통해 안정적인 데이터 처리와 유지보수성을 확보했습니다.</p>
-    </div>
+    <div class="contact-info" id="email">serelee08@gmail.com</div>
+    <div class="contact-info" id="phone">010-7713-9527</div>
+    <div class="contact-info" id="git">github.com/serelee08</div>
   </div>
 </section>
 
 <section class="section" id="skills">
-  <div class="wrap">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill-box">
-        <h3>Backend</h3>
-        <ul>
-          <li>Java, Spring Boot</li>
-          <li>Spring MVC, Servlet, JSP</li>
-          <li>MyBatis, JPA, SQL</li>
-        </ul>
-      </div>
-
-      <div class="skill-box">
-        <h3>AI / Data</h3>
-        <ul>
-          <li>Python, Django</li>
-          <li>LSTM, Transformer</li>
-          <li>BERT, Sentiment Analysis</li>
-        </ul>
-      </div>
-
-      <div class="skill-box">
-        <h3>Frontend</h3>
-        <ul>
-          <li>React, TypeScript</li>
-          <li>HTML, CSS</li>
-        </ul>
-      </div>
-
-      <div class="skill-box">
-        <h3>Cloud / Infra</h3>
-        <ul>
-          <li>AWS EC2</li>
-          <li>Linux</li>
-          <li>MySQL, Oracle</li>
-        </ul>
-      </div>
-
-      <div class="skill-box">
-        <h3>Collaboration</h3>
-        <ul>
-          <li>Git, GitHub</li>
-          <li>Postman, ERD Cloud</li>
-          <li>Slack</li>
-        </ul>
-      </div>
-    </div>
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-box"><h3>Backend</h3><ul><li>Java · Spring Boot</li><li>MyBatis · JPA</li></ul></div>
+    <div class="skill-box"><h3>AI / Data</h3><ul><li>Python · Django</li><li>LSTM · Transformer</li></ul></div>
+    <div class="skill-box"><h3>Frontend</h3><ul><li>React · TypeScript</li></ul></div>
+    <div class="skill-box"><h3>Cloud / Infra</h3><ul><li>AWS EC2 · Linux</li></ul></div>
+    <div class="skill-box"><h3>Collaboration</h3><ul><li>Git · GitHub</li><li>Postman</li></ul></div>
   </div>
 </section>
 
-<footer>© 2026 이지애 | AI Backend Engineer</footer>
+<section class="section" id="experience">
+  <h2 class="section-title">Experience</h2>
+  <div class="wrap">
+    <div class="project">
+      <h3>EVLink <span>(AI 기반 전기차 충전 플랫폼)</span></h3>
+      <p class="period">2025.08 – 2025.09</p>
+      <ul>
+        <li>Gemini 기반 AI 챗봇</li>
+        <li>LSTM 감성분석 API</li>
+        <li>AWS EC2 배포</li>
+      </ul>
+    </div>
 
-<script>
-function toggleInfo(id){
-  document.querySelectorAll('.contact-info').forEach(el=>{
-    el.classList.remove('show');
-  });
-  document.getElementById(id).classList.toggle('show');
-}
-
-function toggleMenu(){
-  document.getElementById('navMenu').classList.toggle('show');
-}
-
-function closeMenu(){
-  document.getElementById('navMenu').classList.remove('show');
-}
-</script>
-
-</body>
-</html>
+    <div class="project">
+      <h3>Walley <span>(통계 기
