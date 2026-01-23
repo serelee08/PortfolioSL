@@ -116,12 +116,15 @@ a {
 
 /* ================= LANDING ================= */
 .landing {
-  min-height: calc(100vh - 120px);
-  padding-top: 110px;
+  min-height: calc(100vh - 140px);
+  padding-top: 100px;
+  padding-bottom: 60px;
+
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
+
 
 
 .card {
