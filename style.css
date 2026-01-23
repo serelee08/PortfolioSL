@@ -302,8 +302,8 @@ footer {
 }
 
 #awards .award-item img {
-  width: 130px;              /* 🔥 스샷 기준 체감 사이즈 */
-  max-width: 130px;
+  width: 180px;              /* 🔥 스샷 기준 체감 사이즈 */
+  max-width: 180px;
   height: auto;
   border: 2px solid #000;    /* 🔥 검정 테두리 */
   border-radius: 2px;        /* 상장 느낌 살짝 */
