@@ -125,6 +125,9 @@ a {
   align-items: flex-start;
 }
 
+.landing .card {
+  margin-top: 40px;
+}
 
 
 .card {
@@ -218,6 +221,7 @@ section h2 {
 #skills .box {
   display: flex;
   flex-direction: column;
+  min-height: 340px;
 }
 
 
@@ -269,4 +273,29 @@ footer {
   .menu {
     right: -10px;
   }
+}
+
+/* ================= AWARD (TEXT + IMAGE ONLY) ================= */
+.award-item {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.award-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.award-org {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.award-item img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
