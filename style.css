@@ -90,7 +90,7 @@ section{padding:90px 20px}
   width:180px;
   height:220px;
   border-radius:12px;
-  background:#e5e7eb url('profile.jpg') center/cover no-repeat;
+  background:#e5e7eb url('myself.jpg') center/cover no-repeat;
   border:1px solid var(--line);
 }
 
