@@ -193,43 +193,43 @@ background: linear-gradient(
 .contact-icons button {
   width: 44px;
   height: 44px;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 50%;
+  border: 1px solid rgba(20, 30, 60, 0.25);
 
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
-    #ffffff 0%,
-    #f6f1e9 55%,
-    #e9ddcd 100%
+    #2f3a55 0%,   /* 딥 네이비 */
+    #3b4a6b 45%,
+    #4a5d82 100%  /* 블루그레이 */
   );
 
+  color: #ffffff; /* 아이콘 가독성 */
   cursor: pointer;
   font-size: 20px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0 6px 14px rgba(30, 40, 70, 0.25);
 
   transition:
-    transform 0.25s ease,
+    transform 0.2s ease,
     box-shadow 0.25s ease,
-    
+    background-image 0.25s ease;
 }
 
 .contact-icons button:hover {
   transform: translateY(-3px);
-  background: linear-gradient(
+  box-shadow: 0 10px 22px rgba(30, 40, 70, 0.35);
+
+  background-image: linear-gradient(
     to bottom,
-    #fffdf8 0%,
-    #efe3d4 60%,
-    #e1d1bb 100%
+    #344064 0%,
+    #41527a 50%,
+    #53679a 100%
   );
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 .contact-icons button:active {
   transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 10px rgba(30, 40, 70, 0.25);
 }
 
 .contact-info {
