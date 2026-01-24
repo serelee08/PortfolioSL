@@ -267,25 +267,22 @@ section h2 {
 #skills .grid-skill {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  gap: 16px;
   justify-content: center;
 }
 
 
 #skills .box {
   width: 100%;
-  max-width: 220px;  
   aspect-ratio: 1 / 1;        
-  padding: 14px;
+  padding: 16px;
   border-radius: 18px;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
 
 }
-
 
 
 #skills .box h3 {
@@ -301,7 +298,12 @@ section h2 {
   margin: 0;
   line-height: 1.55;
 
-  overflow: visible;
+  flex: 1;                    /* 🔥 남은 공간 차지 */
+  display: flex;
+  align-items: center;        /* 🔥 세로 중앙 고정 */
+
+
+  overflow: hidden;         /* 글 많아도 박스 크기 고정 */
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -343,18 +345,17 @@ section h2 {
 }
 
 
-/* ===== SKILL : 2-COLUMN ON SMALL SCREEN ===== */
-@media (max-width: 900px) {
+/* ===== SKILL : NATURAL FLOW ON SMALL SCREEN ===== */
+@media (max-width: 800px) {
   #skills .grid-skill {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 
-  /* 데스크톱용 강제 위치 해제 */
+  /* 데스크톱에서 쓰던 강제 위치 해제 */
   .grid-skill > .box {
     grid-column: auto;
   }
 }
-
 
 
 
