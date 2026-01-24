@@ -469,19 +469,19 @@ footer {
 }
 
 #awards .award-item img {
-  width: 220px;
-  max-width: 220px;
+  width: 170px;          /* 220 → 170 */
+  max-width: 170px;
   height: auto;
-  border: 1px solid #000;
-  border-radius: 1px;
+
+  border: 1px solid rgba(0,0,0,0.25);
+  border-radius: 2px;
   box-shadow: none;
 }
 
 
-/* 모바일 대응 */
 @media (max-width: 768px) {
-  .project-row {
-    flex-direction: column;
+  #awards .award-item img {
+    width: 140px;
   }
 }
 
