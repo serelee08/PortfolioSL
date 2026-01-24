@@ -370,6 +370,15 @@ section h2 {
 
 
 
+#core-tech .core-group span {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+
+  border-bottom: 1px solid rgba(75, 145, 221, 0.12);
+}
 
 
 
