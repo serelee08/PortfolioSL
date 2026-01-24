@@ -272,20 +272,16 @@ section h2 {
 }
 
 
-.grid-skill {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-}
-
 #skills .box {
   width: 100%;
   aspect-ratio: 1 / 1;        
-  padding: 16px 18px;
+  padding: 16px;
   border-radius: 18px;
 
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+
 }
 
 
