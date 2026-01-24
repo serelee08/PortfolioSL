@@ -41,12 +41,12 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #faf6f0 45%,
-    #f0e9df 100%
-  );
+background: linear-gradient(
+  to bottom,
+  #ffffff 0%,
+  #faf6f0 45%,
+  #f0e9df 100%
+);
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
@@ -249,29 +249,19 @@ section h2 {
 
 /* ===== SKILL BOX SAME SIZE (ADD ONLY) ===== */
 
-/*
-#skills .grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); 
-  gap: 24px;
-  align-items: stretch;
-  justify-items: center;
-}
-*/
-
 #skills .grid-skill {
   display: grid;
   grid-template-columns: repeat(6, 180px);
-  gap: 14px;
+  gap: 10px;                    /* 🔧 간격 축소 */
   justify-content: center;
-  justify-items: center; /* ✅ 중앙 정렬 핵심 수정 */
+  justify-items: center;
 }
 
 #skills .skill-box {
   width: 180px;
-  padding: 14px;
+  aspect-ratio: 1 / 1;          /* 🔧 정사각형 */
+  padding: 12px;                /* 🔧 높이 줄임 */
   border-radius: 18px;
-
   background: white;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 
@@ -281,14 +271,14 @@ section h2 {
 
 #skills .skill-box h3 {
   margin: 0 0 6px 0;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   flex-shrink: 0;
 }
 
 #skills .skill-box p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin: 0;
-  line-height: 1.55;
+  line-height: 1.45;            /* 🔧 세로 길이 압축 */
   white-space: pre-line;
   word-break: keep-all;
 }
@@ -322,6 +312,7 @@ section h2 {
 
   #skills .skill-box {
     grid-column: auto;
+    aspect-ratio: auto;
   }
 }
 
