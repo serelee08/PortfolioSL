@@ -339,6 +339,21 @@ section h2 {
   line-height: 1.8;
 }
 
+
+/* ===== SKILL : NATURAL FLOW ON SMALL SCREEN ===== */
+@media (max-width: 800px) {
+  #skills .grid-skill {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  /* 데스크톱에서 쓰던 강제 위치 해제 */
+  .grid-skill > .box {
+    grid-column: auto;
+  }
+}
+
+
+
 /* ================= FOOTER ================= */
 footer {
   text-align: center;
