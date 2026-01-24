@@ -351,7 +351,13 @@ section h2 {
 }
 
 
-@media (max-width: 600px) {
+/* ===== SKILL : 2-COLUMN ON SMALL SCREEN ===== */
+@media (max-width: 900px) {
+  #skills .grid-skill {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 데스크톱용 강제 위치 해제 */
   .grid-skill > .box {
     grid-column: auto;
   }
