@@ -267,7 +267,7 @@ section h2 {
 #skills .grid-skill {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+  gap: 16px;
   justify-content: center;
 }
 
@@ -279,22 +279,27 @@ section h2 {
 }
 
 #skills .box {
-  height: 220px;            /* 고정 높이 */
-  padding: 18px 20px;
+  width: 100%;
+  aspect-ratio: 1 / 1;        /* 🔥 정사각형 핵심 */
+  padding: 16px 18px;
   border-radius: 18px;
+
   display: flex;
   flex-direction: column;
 }
 
+
 #skills .box h3 {
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+
 }
 
 /* 내용 */
 #skills .box p {
   font-size: 0.85rem;
-  line-height: 1.6;
+  line-height: 1.55;
   overflow: hidden;         /* 글 많아도 박스 크기 고정 */
 }
 
