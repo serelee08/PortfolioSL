@@ -1,6 +1,7 @@
 /* ================= ROOT ================= */
 :root {
-  --bg-main: #f7f4ee;
+  /* --bg-main: #f7f4ee; */
+  --bg-main: #b5b9df;
   --bg-card: #ffffff;
   --text-main: #2b2b2b;
   --text-sub: #555;
