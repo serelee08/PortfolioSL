@@ -273,8 +273,8 @@ section h2 {
 
 
 #skills .box {
-  width: 150%;
-  height: 150;
+  width: 100%;
+  height: 100;
   /* aspect-ratio: 1 / 1;         */
   padding: 13px;
   border-radius: 18px;
@@ -341,7 +341,7 @@ section h2 {
 
 
 /* ===== SKILL : NATURAL FLOW ON SMALL SCREEN ===== */
-@media (max-width: 900px) {
+@media (max-width: 300px) {
   .grid-skill > .box {
     grid-column: auto;
   }
