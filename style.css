@@ -273,8 +273,8 @@ section h2 {
 
 
 #skills .box {
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   /* aspect-ratio: 1 / 1;         */
   padding: 13px;
   border-radius: 18px;
@@ -282,7 +282,7 @@ section h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
+  overflow: hidden;
 }
 
 
