@@ -280,12 +280,12 @@ section h2 {
 
 /* 위 3개 */
 #skills .skill-row:first-child {
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 250px);
 }
 
 /* 아래 2개 (조금 더 넓게) */
 #skills .skill-row:last-child {
-  grid-template-columns: repeat(2, 340px);
+  grid-template-columns: repeat(2, 300px);
 }
 
 /* 카드 배경 + hover (이게 핵심) */
@@ -297,7 +297,7 @@ section h2 {
     #f1e9dd 100%
   );
   border-radius: 24px;
-  padding: 26px 24px;
+  padding: 18px 16px;
 
   box-shadow:
     0 14px 32px rgba(0,0,0,0.12),
