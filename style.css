@@ -266,8 +266,8 @@ section h2 {
 
 #skills .grid-skill {
   display: grid;
-  grid-template-columns: repeat(6, 130px);
-  gap: 12px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
   justify-content: center;
 }
 
@@ -341,8 +341,18 @@ section h2 {
 
 
 /* ===== SKILL : NATURAL FLOW ON SMALL SCREEN ===== */
+@media (max-width: 900px) {
+  #skills .grid-skill {
+    grid-template-columns: repeat(auto-fit, 130px);
+    justify-content: center;
+    gap: 12px;
+  }
 
-
+  /* 강제 위치 해제 */
+  .grid-skill > .box {
+    grid-column: auto;
+  }
+}
 
 
 
