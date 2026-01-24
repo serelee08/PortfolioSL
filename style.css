@@ -274,8 +274,9 @@ section h2 {
 
 #skills .box {
   width: 100%;
+  max-width: 220px;  
   aspect-ratio: 1 / 1;        
-  padding: 16px;
+  padding: 14px;
   border-radius: 18px;
 
   display: flex;
@@ -283,6 +284,11 @@ section h2 {
   align-items: flex-start;
 
 }
+.grid-skill > .box:nth-child(1) { grid-column: 1 / 3; }
+.grid-skill > .box:nth-child(2) { grid-column: 3 / 5; }
+.grid-skill > .box:nth-child(3) { grid-column: 5 / 7; }
+.grid-skill > .box:nth-child(4) { grid-column: 2 / 4; }
+.grid-skill > .box:nth-child(5) { grid-column: 4 / 6; }
 
 
 #skills .box h3 {
