@@ -287,17 +287,22 @@ section h2 {
 
 #skills .box h3 {
   margin: 0 0 6px 0; 
-  font-size: 1rem;
-  margin-bottom: 8px;
+  font-size: 1.05rem;
   flex-shrink: 0;
 
 }
 
 /* 내용 */
 #skills .box p {
-  font-size: 0.85rem;
+  font-size: 1rem;
   margin: 0;
   line-height: 1.55;
+
+  flex: 1;                    /* 남은 공간 차지 */
+  display: flex;
+  align-items: center;        /* 세로 중앙 고정 */
+
+
   overflow: hidden;         /* 글 많아도 박스 크기 고정 */
   word-break: keep-all;
   overflow-wrap: anywhere;
