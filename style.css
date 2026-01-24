@@ -248,44 +248,75 @@ section h2 {
 }
 
 /* ================================================= */
-/* ================= SKILLS (REPLACED) ============== */
+/* ================= SKILLS (CLEAN GRID) ============ */
 /* ================================================= */
 
 #skills .grid-skill {
   display: flex;
   flex-direction: column;
+  gap: 18px;
   align-items: center;
-  gap: 8px;
 }
 
+/* 각 줄 */
 #skills .skill-row {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: 900px;
 }
 
+/* 스킬 카드 */
 #skills .skill-box {
-  width: 180px;
-  padding: 14px;
-  border-radius: 18px;
-  background: #ffffff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #faf8f3 100%
+  );
+  border-radius: 20px;
+  padding: 22px 22px 20px;
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
+/* hover 효과 (과하지 않게) */
+#skills .skill-box:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 16px 36px rgba(0,0,0,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* 제목 */
 #skills .skill-box h3 {
-  margin: 0 0 6px 0;
   font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
+/* 내용 */
 #skills .skill-box p {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
   margin: 0;
-  line-height: 1.45;
+  color: #444;
   white-space: pre-line;
-  word-break: keep-all;
 }
+
+/* 모바일 */
+@media (max-width: 768px) {
+  #skills .skill-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* ================= GRID / BOX ================= */
 .grid {
