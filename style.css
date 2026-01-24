@@ -272,7 +272,7 @@ section h2 {
 }
 
 
-#skills .box {
+#skills .skill-box {
   width: 180px;
   /* aspect-ratio: 1 / 1;         */
   padding: 13px;
@@ -284,7 +284,7 @@ section h2 {
 }
 
 
-#skills .box h3 {
+#skills .skill-box h3 {
   margin: 0 0 6px 0; 
   font-size: 1.05rem;
   flex-shrink: 0;
@@ -292,7 +292,7 @@ section h2 {
 }
 
 /* 내용 */
-#skills .box p {
+#skills .skill-box p {
   font-size: 1rem;
   margin: 0;
   line-height: 1.55;
