@@ -264,31 +264,45 @@ section h2 {
 }  */
 
 
+#skills .grid-skill {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
 
 .grid-skill {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 24px;
-}
-
-.grid-skill > .box {
-  width: 100%;
+  gap: 20px;
 }
 
 #skills .box {
+  height: 220px;            /* 고정 높이 */
+  padding: 18px 20px;
+  border-radius: 18px;
   display: flex;
   flex-direction: column;
-  min-height: 300px;
-  padding: 20px 22px;
-  border-radius: 18px; 
-
 }
-/* 위 3개 */
+
+#skills .box h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* 내용 */
+#skills .box p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow: hidden;         /* 글 많아도 박스 크기 고정 */
+}
+
 .grid-skill > .box:nth-child(1) { grid-column: 1 / 3; }
 .grid-skill > .box:nth-child(2) { grid-column: 3 / 5; }
 .grid-skill > .box:nth-child(3) { grid-column: 5 / 7; }
 
-/* 아래 2개 — 진짜 중앙 */
+/* 아래 2개 — 중앙 정렬 */
 .grid-skill > .box:nth-child(4) { grid-column: 2 / 4; }
 .grid-skill > .box:nth-child(5) { grid-column: 4 / 6; }
 
