@@ -278,8 +278,8 @@ section h2 {
 #skills .box {
   display: flex;
   flex-direction: column;
-  min-height: 260px;
-  padding: 18px 22px;
+  min-height: 300px;
+  padding: 20px 22px;
   border-radius: 18px; 
 
 }
@@ -289,14 +289,8 @@ section h2 {
 .grid-skill > .box:nth-child(3) { grid-column: 5 / 7; }
 
 /* 아래 2개 — 진짜 중앙 */
-.grid-skill > .box:nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
-.grid-skill > .box:nth-child(5) {
-  grid-column: 4 / span 2;
-}
-
+.grid-skill > .box:nth-child(4) { grid-column: 2 / 4; }
+.grid-skill > .box:nth-child(5) { grid-column: 4 / 6; }
 
 
 /* ================= GRID / BOX ================= */
@@ -376,7 +370,7 @@ footer {
 }
 
 #awards .award-item img {
-  width: 220px;             
+  width: 220px;              /* 스샷 기준 체감 사이즈 */
   max-width: 220px;
   height: auto;
   border: 1px solid #000;    /* 검정 테두리 */
