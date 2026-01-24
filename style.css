@@ -264,6 +264,7 @@ section h2 {
 }  */
 
 
+
 .grid-skill {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -271,19 +272,27 @@ section h2 {
   justify-content: center;
 }
 
-/* 전체 Skill 박스 사이즈 통일 */
-#skills .box {
-  min-height: 240px;
-  padding: 18px 20px;
-}
 
-/* 아래 2개만 중앙 느낌 */
+#skills .box {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  padding: 18px 20px;
+  border-radius: 18px; 
+
+}
+/* 위 3개 */
+.grid-skill > .box:nth-child(1) { grid-column: 1 / 3; }
+.grid-skill > .box:nth-child(2) { grid-column: 3 / 5; }
+.grid-skill > .box:nth-child(3) { grid-column: 5 / 7; }
+
+
 .grid-skill > .box:nth-child(4),
 .grid-skill > .box:nth-child(5) {
+  grid-column: span 1;
   justify-self: center;
   width: 85%;
 }
-
 
 
 
