@@ -478,89 +478,62 @@ footer {
 }
 
 
-/* ================= PROJECT IMAGE (RIGHT, OVERLAP) ================= */
-
-.project-row {
-  display: flex;
-  gap: 36px;
-  align-items: flex-start;
-}
-
-.project-left-text {
-  flex: 1;
-}
-
-.project-right.overlap-frame {
-  position: relative;
-  width: 180px;
-  height: 230px;
-  flex-shrink: 0;
-}
-
-.project-right.overlap-frame img {
-  position: absolute;
-  width: 160px;
-  background: #ffffff;
-  padding: 6px;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.12);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
-}
-
-.project-right.overlap-frame img:first-child {
-  top: 0;
-  right: 0;
-}
-
-.project-right.overlap-frame img:last-child {
-  top: 42px;
-  right: 26px;
-}
-
-/* ================= ACHIEVEMENT BOX ================= */
-
-.achievement-box {
-  display: flex;
-  gap: 14px;
-  margin-top: 22px;
-  padding: 18px 20px;
-  border-radius: 14px;
-  background: #fff4cc;
-  border: 1px solid #f1d98a;
-}
-
-.achievement-icon {
-  font-size: 22px;
-  line-height: 1;
-}
-
-.achievement-content strong {
-  display: block;
-  font-size: 0.9rem;
-  margin-bottom: 6px;
-}
-
-.achievement-content p {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
 /* 모바일 대응 */
 @media (max-width: 768px) {
   .project-row {
     flex-direction: column;
   }
-
-  .project-right.overlap-frame {
-    width: 100%;
-    height: auto;
-    display: flex;
-    gap: 12px;
-  }
-
-  .project-right.overlap-frame img {
-    position: static;
-    width: 48%;
-  }
 }
+
+
+
+
+/* ================= ACHIEVEMENT BOX (ONE LINE) ================= */
+
+.achievement-box {
+  align-items: center;
+  padding: 10px 14px;     /* 작게 */
+  margin-top: 16px;
+}
+
+.achievement-icon {
+  font-size: 18px;
+}
+
+.achievement-content strong {
+  display: none;          /* '성과지표(한 줄)' 문구 숨김 */
+}
+
+.achievement-content p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+
+
+
+
+/* ================= PROJECT IMAGE TUNE ================= */
+
+.project-right.overlap-frame {
+  width: 200px;
+  height: 250px;
+}
+
+.project-right.overlap-frame img {
+  width: 175px; /* 약간 크게 */
+}
+
+/* 앞 이미지 */
+.project-right.overlap-frame img:first-child {
+  top: 0;
+  right: 0;
+}
+
+/* 뒤 이미지 (겹침 줄이기) */
+.project-right.overlap-frame img:last-child {
+  top: 24px;    /* 42px → 24px */
+  right: 14px;  /* 26px → 14px */
+}
+
+ 
