@@ -273,9 +273,10 @@ section h2 {
 
 
 #skills .box {
-  width: 100%;
-  aspect-ratio: 1 / 1;        
-  padding: 16px;
+  width: 150%;
+  height: 150;
+  /* aspect-ratio: 1 / 1;         */
+  padding: 13px;
   border-radius: 18px;
 
   display: flex;
@@ -340,16 +341,18 @@ section h2 {
 
 
 /* ===== SKILL : NATURAL FLOW ON SMALL SCREEN ===== */
-@media (max-width: 800px) {
-  #skills .grid-skill {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+@media (max-width: 900px) {
+  .grid-skill > .box {
+    grid-column: auto;
   }
+}
+
 
   /* 데스크톱에서 쓰던 강제 위치 해제 */
   .grid-skill > .box {
     grid-column: auto;
   }
-}
+
 
 
 
