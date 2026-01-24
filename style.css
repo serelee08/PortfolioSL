@@ -269,11 +269,11 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 24px;
-  align-items: stretch;
-  justify-items: center;
 }
 
-
+.grid-skill > .box {
+  width: 100%;
+}
 
 
 #skills .box {
@@ -290,7 +290,6 @@ section h2 {
 
 .grid-skill > .box:nth-child(4) { grid-column: 2 / 4; }
 .grid-skill > .box:nth-child(5) { grid-column: 4 / 6; }
-
 
 
 /* ================= GRID / BOX ================= */
