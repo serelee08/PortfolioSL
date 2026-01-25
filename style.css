@@ -628,6 +628,32 @@ footer {
 }
 
 
+
+
+
+.portfolio-link {
+  margin-top: 24px;
+}
+
+.portfolio-link a {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #8ed6df, #5fb3c4);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-link a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+
+
 /* ================= CONTACT ICON FINAL ================= */
 
 #contact {
