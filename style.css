@@ -561,6 +561,7 @@ footer {
   width: 470px;          /* ❗ 프로젝트 내용량과 무관하게 고정 */
   min-height: 280px;     /* ❗ 텍스트 길이 달라도 안정 */
   flex-shrink: 0;
+  margin-left: 20px;    
 }
 .project-box .project-right.overlap-frame img {
   position: relative;     /* absolute 제거 */
