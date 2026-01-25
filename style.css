@@ -515,6 +515,39 @@ footer {
 
 
 /* ================= PROJECT IMAGE TUNE ================= */
+/* ================= PROJECT LAYOUT CORE ================= */
+
+.project-row {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.project-left-text {
+  flex: 1;
+}
+
+.project-right.overlap-frame {
+  position: relative;   /* ★ 이거 없으면 겹침 불가 */
+  width: 200px;
+  height: 250px;
+  flex-shrink: 0;
+}
+
+.project-right.overlap-frame img {
+  position: absolute;   /* ★ 이거 없으면 안 겹침 */
+  width: 175px;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+
+
+
+
+
+/* 프로젝트이미지 */
+
 
 .project-right.overlap-frame {
   width: 200px;
