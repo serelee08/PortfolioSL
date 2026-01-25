@@ -560,8 +560,7 @@ footer {
   justify-content: flex-end;
   width: 470px;          /* ❗ 프로젝트 내용량과 무관하게 고정 */
   min-height: 280px;     /* ❗ 텍스트 길이 달라도 안정 */
-  flex-shrink: 0;
-  margin-left: 20px;    
+  flex-shrink: 0; 
 }
 .project-box .project-right.overlap-frame img {
   position: relative;     /* absolute 제거 */
@@ -576,14 +575,14 @@ footer {
   height: auto;
   z-index: 2;
   margin-top: 30px; 
-  margin-right: -10px;
+  margin-right: -50px;
 }
 
 /* 뒤 이미지 : Chatbot (세로형, 모서리만 겹침) */
 .project-box .project-right.overlap-frame img:last-child {
   width: 210px;           /* 세로 비율 */
   height: auto;
-  margin-left: -10px;     /* ❗ 모서리만 살짝 겹치게 */
+  margin-left: -15px;     /* ❗ 모서리만 살짝 겹치게 */
   margin-top: 58px;
   z-index: 1;
 }
