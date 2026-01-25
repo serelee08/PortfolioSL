@@ -595,17 +595,17 @@ footer {
 /* ===================================================== */
 
 /* Walley ERD : 조금 더 큼 */
-.walley-images img:first-child {
-  width: 335px;        /* 320 → 335 : 아주 약간만 키움 */
-  margin-top: 34px;    /* 살짝 아래 */
-}
+/* .walley-images img:first-child {
+  width: 335px;       
+  margin-top: 34px;    
+} */
 
 /* Walley check 이미지 : 더 아래 + 살짝 겹침 */
-.walley-images img:last-child {
+/* .walley-images img:last-child {
   width: 210px;
-  margin-top: 72px;    /* ❗ 첫 이미지보다 확실히 아래 */
-  margin-left: -14px;  /* 겹침은 유지하되 과하지 않게 */
-}
+  margin-top: 72px;   
+  margin-left: -14px;  
+} */
 
 
 
