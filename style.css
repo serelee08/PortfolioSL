@@ -549,9 +549,9 @@ footer {
   line-height: 1.7;
 }
 
-.project-left-text {
+/* .project-left-text {
   flex: 1;
-}
+} */
 /* ================= 2) PROJECT IMAGE ================= */
 /* 아키텍처: 가로 / 챗봇: 세로 / 모서리만 살짝 겹침 */
 
@@ -592,28 +592,6 @@ footer {
   margin-top: 70px;
   z-index: 1;
 }
-
-
-
-
-/* ===================================================== */
-/* PROJECT 2 – Walley 전용 덮어쓰기 */
-/* 기존 Project 1 CSS는 그대로 유지됨 */
-/* ===================================================== */
-
-/* Walley ERD : 조금 더 큼 */
-/* .walley-images img:first-child {
-  width: 335px;       
-  margin-top: 34px;    
-} */
-
-/* Walley check 이미지 : 더 아래 + 살짝 겹침 */
-/* .walley-images img:last-child {
-  width: 210px;
-  margin-top: 72px;   
-  margin-left: -14px;  
-} */
-
 
 
 
