@@ -583,7 +583,7 @@ footer {
 
 .project-left-text .project-goal {
   display: block;
-  font-size: 3rem;
+  font-size: 1.05rem;
   color: #333;
   line-height: 1.7;
   margin-top: 20px;     /* 기간 아래 여백 */
