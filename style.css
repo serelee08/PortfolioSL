@@ -885,6 +885,44 @@ footer {
   letter-spacing: 0.2px;
 }
 
+
+
+
+/* ===== VISION SECTION FINAL ===== */
+#vision {
+  margin-top: 80px;
+}
+
+#vision .vision-box {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 32px 16px 0;
+  text-align: center;
+}
+
+#vision .vision-box p {
+  font-size: 1.05rem;
+  color: #444;
+  letter-spacing: -0.01em;
+  position: relative;
+  padding-top: 20px;
+}
+
+/* 얇은 엔딩 라인 */
+#vision .vision-box p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60px;
+  height: 1px;
+  background: rgba(0,0,0,0.15);
+  transform: translateX(-50%);
+}
+
+
+
 /* 모바일 */
 @media (max-width: 768px) {
   .contact-icons-final {
