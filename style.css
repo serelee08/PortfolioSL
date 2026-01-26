@@ -600,6 +600,19 @@ footer {
   margin-bottom: 25px;
 }
 
+
+
+.project-left-text .project-role {
+  display: block;
+  margin: 20px 0 4px;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+
+
+
+
 /* 프로젝트 목적 문장만 살짝 숨 쉬게 */
 .project-left-text b {
   display: inline;
