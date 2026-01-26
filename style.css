@@ -549,6 +549,23 @@ footer {
   line-height: 1.7;
 }
 
+
+
+/* Experience 프로젝트 텍스트 정렬용 - 신규 추가 */
+.project-left-text .project-period {
+  display: block;
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.project-left-text .project-goal {
+  font-size: 0.96rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
 /* .project-left-text {
   flex: 1;
 } */
@@ -722,6 +739,8 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 10px 22px rgba(0,0,0,0.18);
 }
+
+
 
 
 
