@@ -558,12 +558,12 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  width: 470px;          /* ❗ 프로젝트 내용량과 무관하게 고정 */
-  min-height: 280px;     /* ❗ 텍스트 길이 달라도 안정 */
+  width: 470px;          
+  min-height: 280px;    
   flex-shrink: 0; 
 }
 .project-box .project-right.overlap-frame img {
-  position: relative;     /* absolute 제거 */
+  position: relative;     
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 12px 28px rgba(0,0,0,0.18);
@@ -583,7 +583,7 @@ footer {
 .project-box .project-right.overlap-frame img:last-child {
   width: 220px;           /* 세로 비율 */
   height: auto;
-  margin-left: -20px;     /* ❗ 모서리만 살짝 겹치게 */
+  margin-left: -10px;     /* ❗ 모서리만 살짝 겹치게 */
   margin-top: 58px;
   z-index: 1;
 }
