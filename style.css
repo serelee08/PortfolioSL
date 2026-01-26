@@ -557,7 +557,7 @@ footer {
 
 /* PROJECT TITLE SIZE UP */
 .project-left-text h3 {
-  font-size: 1.5em;   /* 목적 텍스트보다 확실히 큼 */
+  font-size: 1.2em;   /* 목적 텍스트보다 확실히 큼 */
   margin-bottom: 6px;
 }
 
@@ -613,7 +613,7 @@ footer {
   padding-top: 30px;
   /* margin-top: 10px; */
   padding-left: 20px;  /* 점 들여쓰기 */
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 
