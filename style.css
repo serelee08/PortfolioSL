@@ -613,7 +613,7 @@ footer {
   padding-top: 30px;
   /* margin-top: 10px; */
   padding-left: 20px;  /* 점 들여쓰기 */
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 
@@ -642,7 +642,7 @@ footer {
   cursor: default;
 }
 
-/* ❗ img 전역 규칙 덮어쓰기 방지 */
+/*  img 전역 규칙 덮어쓰기 방지 */
 .project-box .project-right.overlap-frame > img {
   position: relative;
   border-radius: 12px;
