@@ -614,11 +614,12 @@ footer {
 .img-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.75);
+  background: rgba(250, 245, 245, 0.75);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  position: fixed;
 }
 
 .img-modal img {
@@ -632,7 +633,7 @@ footer {
 
 /* ================= IMAGE MODAL CLOSE BUTTON ================= */
 .modal-close {
-  position: absolute;
+  position: fixed;
   top: 24px;
   right: 28px;
   background: rgba(0,0,0,0.6);
