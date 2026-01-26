@@ -887,9 +887,8 @@ footer {
 
 
 
-
-/* ===== VISION SECTION FINAL ===== */
 /* ===== FINAL VISION (END SCENE) ===== */
+
 #vision {
   margin: 120px 0 80px;
 }
@@ -912,6 +911,7 @@ footer {
   /* 엔딩 라인 */
   border-top: 1px solid rgba(0,0,0,0.12);
 }
+
 
 
 /* 모바일 */
