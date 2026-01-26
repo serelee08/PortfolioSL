@@ -277,6 +277,70 @@ AI 챗봇과 감성분석 모델을 활용해
 
 </div>
 
+
+
+<!-- ================= PROJECT 02 ================= -->
+<div class="project-box">
+
+  <div class="project-row">
+
+    <!-- LEFT : TEXT -->
+    <div class="project-left-text">
+      <h3>Walley – 통계 기반 자산 관리 플랫폼</h3>
+      <p>
+기간: 2025.05.30 ~ 2025.07.15
+
+• Spring Boot 기반 RESTful API 설계  
+• MyBatis + Oracle DB 데이터 모델링  
+• 영수증 이미지 업로드 및 관리 기능 구현  
+• React + TypeScript 기반 UI/UX 구성
+      </p>
+    </div>
+
+    <!-- RIGHT : OVERLAP IMAGES -->
+    <div class="project-right overlap-frame">
+      <img
+        src="images/erd.jpg"
+        alt="Walley ERD"
+        onclick="openModal(this.src)"
+      >
+      <img
+        src="images/check.jpg"
+        alt="Walley Feature"
+        onclick="openModal(this.src)"
+      >
+    </div>
+
+  </div> <!-- project-row 끝 -->
+
+  <div class="portfolio-link">
+    <a
+      href="https://drive.google.com/file/d/1Nqu_IvhZziX_aOnuyx6c47OsQPEBOHj2/view?usp=share_link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      포트폴리오 보기 (Google Drive)
+    </a>
+  </div>
+
+  <!-- 성과지표 -->
+  <div class="achievement-box">
+    <div class="achievement-icon">💡</div>
+    <div class="achievement-content">
+      <strong>성과지표(한 줄)</strong>
+      <p>
+수입·지출 데이터 시각화 및 소비 패턴 분석을 통해  
+재무 관리 효율 극대화
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
 <!-- ================= AWARD ================= -->
 
 <section id="awards">
@@ -421,12 +485,13 @@ function toggleInfo(id) {
 function openModal(src) {
   const modal = document.getElementById('img-modal');
   const modalImg = document.getElementById('img-modal-img');
-  modal.style.display = 'flex';
+
+  modal.classList.add('active');
   modalImg.src = src;
 }
 
 function closeModal() {
-  document.getElementById('img-modal').style.display = 'none';
+  document.getElementById('img-modal').classList.remove('active');
 }
 </script>
 
