@@ -693,17 +693,17 @@ footer {
 
 /* 앞 이미지 : Architecture (가로형) */
 .project-box .project-right.overlap-frame > img:first-child {
-  width: 280px;
+  width: 220px;
   height: auto;
   z-index: 2;
-  margin-top: 0;        /* ★ 기존 겹침 제거 */
+  margin-top: 15;        /* ★ 기존 겹침 제거 */
   margin-left: 0;       /* ★ */
   margin-right: 0;      /* ★ */
 }
 
 /* 뒤 이미지 : Chatbot (세로형) */
 .project-box .project-right.overlap-frame > img:last-child {
-  width: 230px;
+  width: 180px;
   height: auto;
   margin-top: 24px;     /* ★ 위 이미지와 간격 */
   margin-left: 0;       /* ★ */
