@@ -565,8 +565,8 @@ footer {
   font-size: 0.9rem;
   color: #333;
   line-height: 1.7;
-  margin-top: 18px;     /* 기간 아래 여백 */
-  margin-bottom: 20px;
+  margin-top: 20px;     /* 기간 아래 여백 */
+  margin-bottom: 25px;
 }
 
 /* 프로젝트 목적 문장만 살짝 숨 쉬게 */
@@ -579,14 +579,14 @@ footer {
 
 
 .project-desc {
-  padding-top: 20px;
+  padding-top: 30px;
   /* margin-top: 10px; */
-  padding-left: 18px;  /* 점 들여쓰기 */
+  padding-left: 20px;  /* 점 들여쓰기 */
 }
 
 
 .project-desc li {
-  margin-bottom: 4px;  /* 항목 간 간격 */
+  margin-bottom: 5px;  /* 항목 간 간격 */
   line-height: 1.6;
 }
 
