@@ -588,7 +588,7 @@ footer {
   display: block;
   font-size: 0.9rem;
   color: #666;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 }
 
 .project-left-text .project-goal {
@@ -604,9 +604,9 @@ footer {
 
 .project-left-text .project-role {
   display: block;
-  margin: 20px 0 4px;
+  margin-top: 30px;     /* 목적에서 역할까지 거리 */
+  margin-bottom: 6px;  /* 역할과 리스트 밀착 */
   font-weight: 600;
-  font-size: 1.05rem;
 }
 
 
@@ -622,10 +622,17 @@ footer {
 }
 
 
-.project-desc {
-  padding-top: 30px;
+/* .project-desc { */
+  /* padding-top: 30px; */
   /* margin-top: 10px; */
-  padding-left: 20px;  /* 점 들여쓰기 */
+  /* padding-left: 20px;
+  font-size: 1rem;
+} */
+
+
+.project-desc {
+  margin-top: 0;       /* 역할 바로 아래 붙이기 */
+  padding-left: 20px;
   font-size: 1rem;
 }
 
