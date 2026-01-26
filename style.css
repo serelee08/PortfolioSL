@@ -553,6 +553,16 @@ footer {
     inset 0 1px 0 rgba(255,255,255,0.7);
   overflow: hidden;
 }
+
+
+/* PROJECT TITLE SIZE UP */
+.project-left-text h3 {
+  font-size: 1.5em;   /* 목적 텍스트보다 확실히 큼 */
+  margin-bottom: 6px;
+}
+
+
+
 /* ================= PROJECT LAYOUT ================= */
 
 .project-box .project-row {
