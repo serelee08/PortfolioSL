@@ -270,6 +270,24 @@ section h2 {
 }
 
 
+
+
+/* ===== ABOUT SECTION READABILITY FIX ===== */
+#about .box {
+  max-width: 760px;     /* 읽기 좋은 폭 */
+  margin: 0 auto;       /* 중앙 정렬 */
+  padding: 48px 32px;   /* 숨 쉴 여백 */
+}
+
+#about .box p {
+  font-size: 1.05rem;   /* 살짝 키운 본문 */
+  line-height: 1.85;    /* 가독성 핵심 */
+  letter-spacing: -0.01em;
+  color: #2b2b2b;
+  text-align: center;   /* 문단 전체 중앙 정렬 */
+}
+
+
 /* ================= SKILLS : COMPACT CENTER ================= */
 
 .skills-center {
