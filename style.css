@@ -557,7 +557,7 @@ footer {
   display: block;
   font-size: 0.88rem;
   color: #666;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .project-left-text .project-goal {
@@ -565,8 +565,8 @@ footer {
   font-size: 0.9rem;
   color: #333;
   line-height: 1.7;
-  margin-top: 12px;     /* 기간 아래 여백 */
-  margin-bottom: 12px;
+  margin-top: 18px;     /* 기간 아래 여백 */
+  margin-bottom: 20px;
 }
 
 /* 프로젝트 목적 문장만 살짝 숨 쉬게 */
@@ -579,7 +579,7 @@ footer {
 
 
 .project-desc {
-  padding-top: 12px;
+  padding-top: 20px;
   /* margin-top: 10px; */
   padding-left: 18px;  /* 점 들여쓰기 */
 }
@@ -716,16 +716,16 @@ footer {
 }
 
 .project-box .achievement-icon {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 0px;
 }
 
-.project-box .achievement-content strong {
+/* .project-box .achievement-content strong {
   display: block;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 4px;
-}
+} */
 
 .project-box .achievement-content p {
   margin: 0 auto;
