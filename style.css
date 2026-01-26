@@ -547,6 +547,7 @@ footer {
 .project-left-text p {
   white-space: pre-line;
   line-height: 1.7;
+  max-width: 520px;
 }
 
 
@@ -559,10 +560,16 @@ footer {
   margin-bottom: 6px;
 }
 
-.project-left-text .project-goal {
+/* .project-left-text .project-goal {
   font-size: 0.96rem;
   color: #333;
   margin-bottom: 10px;
+} */
+
+/* 프로젝트 목적 문장만 살짝 숨 쉬게 */
+.project-left-text b {
+  display: block;
+  margin-bottom: 6px;
 }
 
 
@@ -702,9 +709,11 @@ footer {
 }
 
 .project-box .achievement-content p {
-  margin: 0;
+  margin: 0 auto;
   font-size: 0.85rem;
   line-height: 1.4;
+  max-width: 420px;        /* 🔥 이게 줄 균형 핵심 */
+  text-align: center;
 }
 
 /* ================= ACHIEVEMENT ================= */
