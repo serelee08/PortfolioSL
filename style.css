@@ -566,7 +566,7 @@ footer {
   color: #333;
   line-height: 1.7;
   margin-top: 6px;     /* 기간 아래 여백 */
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 /* 프로젝트 목적 문장만 살짝 숨 쉬게 */
@@ -574,11 +574,12 @@ footer {
   display: inline;
   margin-bottom: 0px;
   padding: 0;
+  margin-top: 3px;
 }
 
 
 .project-desc {
-  margin: 0;
+  margin-top: 10px;
   padding-left: 18px;  /* 점 들여쓰기 */
 }
 
@@ -745,7 +746,7 @@ footer {
 
 
 .portfolio-link {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .portfolio-link a {
