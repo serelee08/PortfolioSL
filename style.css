@@ -549,6 +549,9 @@ footer {
   line-height: 1.7;
 }
 
+.project-left-text {
+  flex: 1;
+}
 /* ================= 2) PROJECT IMAGE ================= */
 /* 아키텍처: 가로 / 챗봇: 세로 / 모서리만 살짝 겹침 */
 
@@ -572,7 +575,7 @@ footer {
 
 /* 앞 이미지 : Architecture (가로형) */
 .project-box .project-right.overlap-frame > img:first-child {
-  width: 320px;
+  width: 335px;
   height: auto;
   z-index: 2;
   margin-top: 50px;
@@ -582,10 +585,10 @@ footer {
 
 /* 뒤 이미지 : Chatbot (세로형, 모서리만 살짝 겹침) */
 .project-box .project-right.overlap-frame > img:last-child {
-  width: 220px;
+  width: 290px;
   height: auto;
   margin-left: 8px;
-  margin-top: 58px;
+  margin-top: 70px;
   z-index: 1;
 }
 
