@@ -816,11 +816,13 @@ footer {
 .edu-list {
   padding-left: 18px;
   margin: 0;
+ 
 }
 
 .edu-list li {
   margin-bottom: 6px;
   line-height: 1.7;
+  margin-top: 8px;
 }
 
 
