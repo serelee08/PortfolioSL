@@ -557,19 +557,19 @@ footer {
   display: block;
   font-size: 0.88rem;
   color: #666;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
-/* .project-left-text .project-goal {
-  font-size: 0.96rem;
+.project-left-text .project-goal {
+  font-size: 0.9rem;
   color: #333;
-  margin-bottom: 10px;
-} */
+  margin-bottom: 3px;
+}
 
 /* 프로젝트 목적 문장만 살짝 숨 쉬게 */
 .project-left-text b {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 
 
@@ -729,7 +729,7 @@ footer {
 
 
 .portfolio-link {
-  margin-top: 24px;
+  margin-top: 35px;
 }
 
 .portfolio-link a {
