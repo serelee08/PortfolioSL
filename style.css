@@ -561,11 +561,12 @@ footer {
 }
 
 .project-left-text .project-goal {
+  display: block;
   font-size: 0.9rem;
   color: #333;
-  margin: 0;
-  margin-bottom: 4px;
   line-height: 1.7;
+  margin-top: 6px;     /* 기간 아래 여백 */
+  margin-bottom: 4px;
 }
 
 /* 프로젝트 목적 문장만 살짝 숨 쉬게 */
@@ -578,8 +579,15 @@ footer {
 
 .project-desc {
   margin: 0;
-  line-height: 1.7;
+  padding-left: 18px;  /* 점 들여쓰기 */
 }
+
+
+.project-desc li {
+  margin-bottom: 1px;  /* 항목 간 간격 */
+  line-height: 1.6;
+}
+
 
 /* .project-left-text {
   flex: 1;
