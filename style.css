@@ -579,13 +579,13 @@ footer {
 
 
 .project-desc {
-  margin-top: 10px;
+  margin-top: 10px  !important; 
   padding-left: 18px;  /* 점 들여쓰기 */
 }
 
 
 .project-desc li {
-  margin-bottom: 1px;  /* 항목 간 간격 */
+  margin-bottom: 3px;  /* 항목 간 간격 */
   line-height: 1.6;
 }
 
