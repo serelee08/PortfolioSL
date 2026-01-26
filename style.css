@@ -563,13 +563,13 @@ footer {
 .project-left-text .project-goal {
   font-size: 0.9rem;
   color: #333;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 
 /* 프로젝트 목적 문장만 살짝 숨 쉬게 */
 .project-left-text b {
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 
