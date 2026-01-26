@@ -560,10 +560,10 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  width: 470px;
+  width: 430px;
   min-height: 280px;
   flex-shrink: 0;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 
 /* ❗ img 전역 규칙 덮어쓰기 방지 */
