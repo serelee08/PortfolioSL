@@ -576,14 +576,14 @@ footer {
   z-index: 2;
   margin-top: 50px; 
   margin-left: 30px;
-  margin-right: -50px;
+  margin-right: -30px;
 }
 
 /* 뒤 이미지 : Chatbot (세로형, 모서리만 겹침) */
 .project-box .project-right.overlap-frame img:last-child {
   width: 220px;           /* 세로 비율 */
   height: auto;
-  margin-left: -10px;     /* ❗ 모서리만 살짝 겹치게 */
+  margin-left: 8px;     /* ❗ 모서리만 살짝 겹치게 */
   margin-top: 58px;
   z-index: 1;
 }
