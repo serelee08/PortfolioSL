@@ -272,20 +272,19 @@ section h2 {
 
 
 
-/* ===== ABOUT FORCE STYLE (CLASS BASED) ===== */
-.about > .box {
-  max-width: 760px !important;   /* 읽기 좋은 폭 */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding: 48px 32px !important;
+/* ===== ABOUT SECTION FINAL TUNE ===== */
+#about .about {
+  max-width: 720px !important;     /* ⬅ 좌우 여백 더 확보 */
+  margin: 0 auto !important;
+  padding: 56px 40px !important;   /* ⬅ 좌우 공백 + 위아래 숨 */
 }
 
-.about > .box > p {
-  font-size: 1.08rem !important; /* 글씨 살짝 키움 */
-  line-height: 1.85 !important;  /* 가독성 */
+#about .about p {
+  font-size: 1.12rem !important;   /* ⬅ 한 단계만 키움 */
+  line-height: 1.9 !important;     /* 긴 글 가독성 */
   letter-spacing: -0.01em !important;
   color: #2b2b2b !important;
-  text-align: center !important; /* 중앙 정렬 */
+  text-align: center !important;
 }
 
 /* ================= SKILLS : COMPACT CENTER ================= */
