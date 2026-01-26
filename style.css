@@ -886,14 +886,12 @@ footer {
 }
 
 
-
-/* ===== FINAL VISION (END SCENE) ===== */
-
+/* ===== VISION FINAL GRADIENT (CSS ONLY) ===== */
 #vision {
   margin: 120px 0 80px;
 }
 
-.vision-final {
+#vision .vision-final {
   max-width: 760px;
   margin: 0 auto;
   padding-top: 28px;
@@ -903,13 +901,15 @@ footer {
   line-height: 1.8;
   letter-spacing: -0.01em;
 
-  /* 텍스트 강조 */
-  background: linear-gradient(90deg, #1f2933, #4b5563);
+  /* 🔥 그라데이션 텍스트 */
+  background: linear-gradient(90deg, #1f2933, #6b7280);
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 
   /* 엔딩 라인 */
-  border-top: 1px solid rgba(0,0,0,0.12);
+  border-top: 1px solid rgba(0,0,0,0.15);
 }
 
 
