@@ -222,7 +222,7 @@ Schema 설계, MyBatis 기반 SQL 쿼리 최적화와 Postman에서 API 검증�
 <!-- ================= EXPERIENCE ================= -->
 <section id="experience">
   <h2>Experience</h2>
-  
+
 <div class="project-box">
 
   <div class="project-row">
@@ -407,6 +407,11 @@ function toggleInfo(id) {
 
 <div id="img-modal" class="img-modal" onclick="closeModal()">
   
+ <button
+    class="modal-close"
+    onclick="event.stopPropagation(); closeModal();"
+  >×</button>
+
   <img
     id="img-modal-img"
     onclick="event.stopPropagation()"
