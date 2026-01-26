@@ -545,7 +545,7 @@ footer {
 /* 점 하나당 한 줄, 아래로 정렬 */
 
 .project-left-text p {
-  white-space: pre-line;
+  /* white-space: pre-line; */
   line-height: 1.7;
   max-width: 520px;
 }
