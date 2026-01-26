@@ -536,7 +536,7 @@ footer {
 
 .project-box .project-row {
   display: flex;
-  gap: 32px;
+  gap: 45px;
   align-items: flex-start;
   flex-wrap: nowrap;
 }
