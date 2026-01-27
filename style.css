@@ -1022,10 +1022,10 @@ footer {
   font-size: 1.15rem;
 }
 
-/* EDUCATION META TOP GAP FIX */
 #education .box .edu-meta {
-  margin-top: 0 !important;
+  margin: 3px 0 10px;
 }
+
 
 
 .edu-list {
