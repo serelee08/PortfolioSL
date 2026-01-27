@@ -456,7 +456,7 @@ section h2 {
 
 
 
-.skill-mini {
+/* .skill-mini {
   width: 190px;
   background: #ffffff;
   border-radius: 18px;
@@ -500,7 +500,87 @@ section h2 {
   padding-bottom: 8px;
 
   border-bottom: 2px solid rgba(31, 100, 174, 0.12);
+} */
+
+
+
+
+/* ================= CORE TECH ================= */
+
+#core-tech {
+  margin-top: 64px;
 }
+
+.core-title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.core-tech-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.core-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.core-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: 0.02em;
+}
+
+.core-icons {
+  display: flex;
+  gap: 16px;
+  padding: 14px 18px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.core-icons img {
+  width: 36px;
+  height: 36px;
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.core-icons img:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .core-tech-wrap {
+    gap: 24px;
+  }
+
+  .core-icons {
+    padding: 12px 14px;
+  }
+
+  .core-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+
+
+
+
 
 
 
