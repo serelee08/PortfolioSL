@@ -287,80 +287,6 @@ section h2 {
   text-align: center !important;
 }
 
-/* ================= SKILLS : COMPACT CENTER ================= */
-/* 
-.skills-center {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-} */
-
-
-/* 전체 정렬 */
-/* #skills .grid-skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-} */
-
-/* 각 줄 */
-/* #skills .skill-row {
-  display: grid;
-  gap: 14px;
-  justify-content: center;
-} */
-
-/* 위 3개 */
-/* #skills .skill-row:first-child {
-  grid-template-columns: repeat(3, 250px);
-} */
-
-/* 아래 2개 (조금 더 넓게) */
-/* #skills .skill-row:last-child {
-  grid-template-columns: repeat(2, 300px);
-} */
-
-/* 카드 배경 + hover (이게 핵심) */
-/* #skills .skill-box {
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #faf6f0 55%,
-    #f1e9dd 100%
-  );
-  border-radius: 24px;
-  padding: 18px 16px;
-
-  box-shadow:
-    0 14px 32px rgba(0,0,0,0.12),
-    inset 0 1px 0 rgba(255,255,255,0.7);
-
-  transition:
-    transform 0.28s ease,
-    box-shadow 0.28s ease;
-} */
-
-/* hover : lift만 */
-/* #skills .skill-box:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 24px 56px rgba(0,0,0,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.7);
-} */
-
-/* 텍스트 */
-/* #skills .skill-box h3 {
-  font-size: 1.15rem;
-  margin-bottom: 14px;
-}
-
-#skills .skill-box p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #444;
-} */
 
 
 
@@ -369,11 +295,6 @@ section h2 {
 #skills {
   margin-top: 80px;
 }
-
-/* #skills h2 {
-  text-align: left;
-  margin-bottom: 48px;
-} */
 
 /* 섹션 제목 (Backend, AI 등) */
 #skills h3 {
@@ -689,6 +610,21 @@ footer {
 }
 
 
+.award-desc {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* .award-desc strong {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+} */
 
 
 /* ================= ACHIEVEMENT BOX (ONE LINE) ================= */
