@@ -590,6 +590,7 @@ footer {
   text-align: center;
   display: flex;          /* ✅ 추가 */
   flex-direction: column; /* ✅ 추가 */
+  width: 260px;
 }
 
 
