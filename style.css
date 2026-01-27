@@ -370,15 +370,15 @@ section h2 {
   margin-top: 80px;
 }
 
-#skills h2 {
-  text-align: center;
+/* #skills h2 {
+  text-align: left;
   margin-bottom: 48px;
-}
+} */
 
 /* 섹션 제목 (Backend, AI 등) */
 #skills h3 {
   margin: 48px 0 16px;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -405,6 +405,7 @@ section h2 {
   width: 240px;
   padding: 16px 18px;
   font-weight: 600;
+  font-size: 1.05rem; 
   background: #f7f4ee;
   color: #2b2b2b;
   vertical-align: top;
@@ -414,7 +415,7 @@ section h2 {
 /* 오른쪽 : 설명 */
 #skills .skill-desc {
   padding: 16px 20px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #444;
 }
