@@ -369,6 +369,16 @@ section h2 {
 
 
 
+@media (max-width: 768px) {
+  #skills .skill-table {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+
 
 
 
