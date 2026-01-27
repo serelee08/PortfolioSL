@@ -614,17 +614,19 @@ footer {
   box-shadow: none;
 }
 
-/* 📌 기여도 박스 (여기만 수정) */
+/* 📌 기여도 박스 (사이즈 통일) */
 .award-desc {
-  position: relative;          /* 🔑 배지 기준 */
+  position: relative;
   margin-top: 16px;
-  padding: 18px 14px 14px;     /* 🔑 상단 여백 확보 */
+  padding: 18px 14px 14px;
   background: #f7f7f7;
   border-radius: 8px;
   font-size: 13px;
   line-height: 1.6;
   color: #333;
   text-align: left;
+
+  min-height: 140px;   /* 두 수상 기여도 박스 높이 통일 */
 }
 
 /* 🔥 기여도 배지 (좌측 상단) */
