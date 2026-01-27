@@ -577,100 +577,108 @@ footer {
   }
 }
 
-/* ================= AWARD (SMALL + INLINE) ================= */
+/* ================= AWARD ================= */
 
 #awards .award-row {
   display: flex;
   justify-content: center;
   gap: 48px;
   margin-top: 24px;
-  align-items: stretch;           /* ✅ 추가: 카드 높이 스트레치 */
 }
 
+/* 카드 */
 #awards .award-item {
-  text-align: center;
-  display: flex;                  /* 유지 */
-  flex-direction: column;         /* 유지 */
-  width: 260px;                   /* 유지 */
-  height: 420px;                  /* ✅ 추가: 두 카드 전체 높이 동일 */
+  width: 320px;                /* ⬅ 기여도 박스 가로 여유 */
+  display: flex;
+  flex-direction: column;
 }
 
 /* 제목 */
 #awards .award-title {
   font-weight: 600;
-  font-size: 0.9rem;
-  margin-bottom: 2px;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 4px;
 }
 
 /* 기관 */
 #awards .award-org {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #777;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
+/* 📌 사진 고정 영역 (좌우 정렬 문제 해결 핵심) */
 #awards .award-item img {
   width: 170px;
   max-width: 170px;
   height: auto;
 
-  display: block;        /* 🔑 inline 영향 제거 */
-  margin: 12px auto 0;   /* 🔑 가로 중앙 + 동일한 Y 위치 */
+  display: block;
+  margin: 0 auto;              /* ⬅ 항상 중앙 */
 
   border: 1px solid rgba(0,0,0,0.25);
   border-radius: 2px;
-  box-shadow: none;
 }
 
-
-/* 📌 기여도 박스 시각적 크기 통일 (BOX ONLY) */
+/* 📌 기여도 박스 (두 카드 동일 사이즈) */
 .award-desc {
   position: relative;
   margin-top: 16px;
-  padding: 18px 14px;
+  padding: 20px 18px 18px;
   background: #f7f7f7;
-  border-radius: 8px;
+  border-radius: 12px;
 
   font-size: 13px;
   line-height: 1.6;
   color: #333;
-  text-align: left;
 
-  flex: 1;
-
-  display: flex;              /* ✅ 핵심 */
-  flex-direction: column;
-  justify-content: center;    /* ✅ 내용 중앙 정렬 */
+  height: 220px;               /* ⬅ 좌우 동일 */
 }
 
-
-/* 🔥 기여도 배지 (좌측 상단) */
+/* 🔥 기여도 배지 */
 .award-desc strong {
   position: absolute;
-  top: -10px;
-  left: 12px;
-  padding: 4px 8px;
+  top: -12px;
+  left: 18px;
+
+  padding: 4px 10px;
   font-size: 11px;
   font-weight: 600;
+
   background: #ffffff;
   border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 6px;
-  color: #000;
+  border-radius: 999px;
   white-space: nowrap;
+}
+
+/* 기여도 불릿 리스트 */
+.award-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.award-list li {
+  margin-bottom: 6px;
 }
 
 /* 모바일 */
 @media (max-width: 768px) {
-  #awards .award-item img {
-    width: 140px;
+  #awards .award-row {
+    flex-direction: column;
+    align-items: center;
   }
+
+  #awards .award-item {
+    width: 100%;
+    max-width: 360px;
+  }
+
   .award-desc {
-    font-size: 12px;
-    line-height: 1.55;
+    height: auto;              /* 모바일은 자연스럽게 */
   }
 }
-
-
 
 
 /* ================= ACHIEVEMENT BOX (ONE LINE) ================= */
