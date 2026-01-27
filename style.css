@@ -651,7 +651,7 @@ footer {
 
 .project-desc {
   margin-top: 0;       /* 역할 바로 아래 붙이기 */
-  padding-left: 20px;
+  padding-left: 25px;
   font-size: 1.2rem;
 }
 
@@ -789,7 +789,7 @@ footer {
 }
 
 .project-box .achievement-icon {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 0px;
 }
 
@@ -802,7 +802,7 @@ footer {
 
 .project-box .achievement-content p {
   margin: 0 auto;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.4;
   max-width: 420px;        /* 🔥 이게 줄 균형 핵심 */
   text-align: center;
