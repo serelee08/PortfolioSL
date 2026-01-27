@@ -609,15 +609,19 @@ footer {
   margin-bottom: 10px;
 }
 
-/* 증서 이미지 */
 #awards .award-item img {
   width: 170px;
   max-width: 170px;
   height: auto;
+
+  display: block;        /* 🔑 inline 영향 제거 */
+  margin: 12px auto 0;   /* 🔑 가로 중앙 + 동일한 Y 위치 */
+
   border: 1px solid rgba(0,0,0,0.25);
   border-radius: 2px;
   box-shadow: none;
 }
+
 
 /* 📌 기여도 박스 시각적 크기 통일 (BOX ONLY) */
 .award-desc {
