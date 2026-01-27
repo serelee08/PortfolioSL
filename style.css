@@ -584,15 +584,16 @@ footer {
   justify-content: center;
   gap: 48px;
   margin-top: 24px;
+  align-items: stretch;           /* ✅ 추가: 카드 높이 스트레치 */
 }
 
 #awards .award-item {
   text-align: center;
-  display: flex;          /* ✅ 추가 */
-  flex-direction: column; /* ✅ 추가 */
-  width: 260px;
+  display: flex;                  /* 유지 */
+  flex-direction: column;         /* 유지 */
+  width: 260px;                   /* 유지 */
+  height: 420px;                  /* ✅ 추가: 두 카드 전체 높이 동일 */
 }
-
 
 /* 제목 */
 #awards .award-title {
@@ -618,7 +619,7 @@ footer {
   box-shadow: none;
 }
 
-/* 📌 기여도 박스 (두 수상 박스 높이 완전 고정) */
+/* 📌 기여도 박스 (같은 높이로 채움) */
 .award-desc {
   position: relative;
   margin-top: 16px;
@@ -629,26 +630,21 @@ footer {
   line-height: 1.6;
   color: #333;
   text-align: left;
-  flex: 1;   
-  height: 160px;        /* 두 박스 완전히 동일 */
+  flex: 1;                        /* ✅ 핵심: 남은 공간 동일 채움 */
 }
-
 
 /* 🔥 기여도 배지 (좌측 상단) */
 .award-desc strong {
   position: absolute;
   top: -10px;
   left: 12px;
-
   padding: 4px 8px;
   font-size: 11px;
   font-weight: 600;
-
   background: #ffffff;
   border: 1px solid rgba(0,0,0,0.15);
   border-radius: 6px;
   color: #000;
-
   white-space: nowrap;
 }
 
@@ -657,12 +653,12 @@ footer {
   #awards .award-item img {
     width: 140px;
   }
-
   .award-desc {
     font-size: 12px;
     line-height: 1.55;
   }
 }
+
 
 
 
