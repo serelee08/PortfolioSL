@@ -588,7 +588,10 @@ footer {
 
 #awards .award-item {
   text-align: center;
+  display: flex;          /* ✅ 추가 */
+  flex-direction: column; /* ✅ 추가 */
 }
+
 
 /* 제목 */
 #awards .award-title {
@@ -614,7 +617,7 @@ footer {
   box-shadow: none;
 }
 
-/* 📌 기여도 박스 (사이즈 통일) */
+/* 📌 기여도 박스 (두 수상 박스 높이 완전 고정) */
 .award-desc {
   position: relative;
   margin-top: 16px;
@@ -625,9 +628,10 @@ footer {
   line-height: 1.6;
   color: #333;
   text-align: left;
-
-  min-height: 140px;   /* 두 수상 기여도 박스 높이 통일 */
+  flex: 1;   
+  height: 160px;        /* 두 박스 완전히 동일 */
 }
+
 
 /* 🔥 기여도 배지 (좌측 상단) */
 .award-desc strong {
