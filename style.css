@@ -635,6 +635,10 @@ footer {
   color: #333;
 
   height: 220px;               /* ⬅ 좌우 동일 */
+
+  display: flex;              /* ✅ 추가 */
+  flex-direction: column;     /* ✅ 추가 */
+  justify-content: center;    /* ✅ 추가 */
 }
 
 /* 🔥 기여도 배지 */
@@ -677,6 +681,7 @@ footer {
 
   .award-desc {
     height: auto;              /* 모바일은 자연스럽게 */
+
   }
 }
 
