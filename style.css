@@ -686,29 +686,37 @@ footer {
 }
 
 
-/* ================= ACHIEVEMENT BOX (ONE LINE) ================= */
+/* ================= ACHIEVEMENT BOX ================= */
 
 .achievement-box {
+  display: flex;
   align-items: center;
-  padding: 10px 14px;     /* 작게 */
-  margin-top: 16px;
+  gap: 10px;
+
+  padding: 12px 16px;
+  margin: 22px 0 26px 0;
+
+  background: rgba(255,255,255,0.6);
+  border-radius: 14px;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(0,0,0,0.04);
 }
 
 .achievement-icon {
   font-size: 18px;
+  flex-shrink: 0;
 }
 
 .achievement-content strong {
-  display: none;          /* '성과지표(한 줄)' 문구 숨김 */
+  display: none;
 }
 
 .achievement-content p {
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #333;
 }
-
-
-
 
 
 /* ================= PROJECT BOX ================= */
@@ -721,167 +729,148 @@ footer {
     #f1e9dd 100%
   );
   border-radius: 24px;
-  padding: 28px 26px;
-  margin-bottom: 48px;
+  padding: 34px 32px;
+  margin-bottom: 56px;
 
   box-shadow:
     0 18px 40px rgba(0,0,0,0.12),
     inset 0 1px 0 rgba(255,255,255,0.7);
+
   overflow: hidden;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
-
-
-/* PROJECT TITLE SIZE UP */
-.project-left-text h3 {
-  font-size: 1.3em;   /* 목적 텍스트보다 확실히 큼 */
-  margin-bottom: 6px;
-}
-
 
 
 /* ================= PROJECT LAYOUT ================= */
 
 .project-box .project-row {
   display: flex;
-  gap: 45px;
   align-items: flex-start;
+  gap: 56px;
   flex-wrap: nowrap;
 }
 
-/* ================= 1) PROJECT TEXT ================= */
-/* 점 하나당 한 줄, 아래로 정렬 */
 
-.project-left-text p {
-  /* white-space: pre-line; */
-  line-height: 1.7;
-  max-width: 520px;
+/* ================= PROJECT TEXT ================= */
+
+.project-left-text {
+  flex: 1;
+  max-width: 560px;
 }
 
+.project-left-text h3 {
+  font-size: 1.35em;
+  margin-bottom: 6px;
+}
 
-
-/* Experience 프로젝트 텍스트 정렬용 - 신규 추가 */
+/* 기간 */
 .project-left-text .project-period {
   display: block;
   font-size: 0.9rem;
   color: #666;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
+/* 목적 */
 .project-left-text .project-goal {
   display: block;
   font-size: 1.05rem;
   color: #333;
   line-height: 1.7;
-  margin-top: 30px;     /* 기간 아래 여백 */
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 
-
-
+/* 역할 */
 .project-left-text .project-role {
   display: block;
-  margin-top: 30px;     /* 목적에서 역할까지 거리 */
-  margin-bottom: 6px;  /* 역할과 리스트 밀착 */
+  margin-top: 26px;
+  margin-bottom: 6px;
   font-size: 1.05rem;
   color: #333;
   line-height: 1.7;
 }
 
-
-
-
-
-/* 프로젝트 목적 문장만 살짝 숨 쉬게 */
-.project-left-text b {
-  display: inline;
-  margin-bottom: 0px;
-  padding: 0;
-  margin-top: 3px;
-}
-
-
-/* .project-desc { */
-  /* padding-top: 30px; */
-  /* margin-top: 10px; */
-  /* padding-left: 20px;
-  font-size: 1rem;
-} */
-
-
+/* 상세 설명 */
 .project-desc {
-  margin-top: 0;       /* 역할 바로 아래 붙이기 */
-  padding-left: 25px;
-  font-size: 1.2rem;
+  margin-top: 0;
+  padding-left: 22px;
+  font-size: 1.05rem;
 }
-
 
 .project-desc li {
-  margin-bottom: 5px;  /* 항목 간 간격 */
-  line-height: 1.7;
+  margin-bottom: 6px;
+  line-height: 1.65;
 }
 
 
-/* .project-left-text {
-  flex: 1;
-} */
-/* ================= 2) PROJECT IMAGE ================= */
-/* 아키텍처: 가로 / 챗봇: 세로 / 모서리만 살짝 겹침 */
+/* ================= PROJECT IMAGE ================= */
 
 .project-box .project-right.overlap-frame {
   position: relative;
-  display: flex;
-  flex-direction: column;        /* ★ 위–아래 배치 */
-  align-items: center;           /* ★ 가운데 정렬 */
-  justify-content: flex-start;   /* ★ 위에서부터 */
-  width: 430px;
-  min-height: 280px;
+  width: 400px;
   flex-shrink: 0;
-  padding-left: 40px;
-  margin-left: 72px;
-  cursor: default;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-top: 10px;
 }
 
-/* img 전역 규칙 덮어쓰기 방지 */
+/* 이미지 공통 */
 .project-box .project-right.overlap-frame > img {
   position: relative;
-  border-radius: 12px;
+  border-radius: 14px;
   background: #fff;
   box-shadow: 0 12px 28px rgba(0,0,0,0.18);
   cursor: zoom-in;
 }
 
-/* 앞 이미지 : Architecture (가로형) */
+/* Architecture */
 .project-box .project-right.overlap-frame > img:first-child {
-  width: 220px;
-  height: auto;
+  width: 230px;
   z-index: 2;
-  margin-top: 15;        /* ★ 기존 겹침 제거 */
-  margin-left: 0;       /* ★ */
-  margin-right: 0;      /* ★ */
 }
 
-/* 뒤 이미지 : Chatbot (세로형) */
+/* Chatbot */
 .project-box .project-right.overlap-frame > img:last-child {
   width: 180px;
-  height: auto;
-  margin-top: 24px;     /* ★ 위 이미지와 간격 */
-  margin-left: 0;       /* ★ */
+  margin-top: 26px;
   z-index: 1;
 }
 
-
-
-/* OPTIONAL: 이미지 클릭 힌트 (선택 사항) */
+/* 힌트 */
 .project-right.overlap-frame::after {
   content: "🔍";
   position: absolute;
-  bottom: 6px;
+  bottom: 4px;
   right: 6px;
-  font-size: 14px;
-  opacity: 0.6;
-  /* pointer-events: none; */
+  font-size: 13px;
+  opacity: 0.5;
 }
 
+
+/* ================= PRINT (A4 안정화) ================= */
+
+@media print {
+  .project-box {
+    padding: 30px 28px;
+  }
+
+  .project-box .project-row {
+    gap: 40px;
+  }
+
+  .project-box .project-right.overlap-frame {
+    width: 360px;
+  }
+}
+
+
+
+/* ///////////////////////////modal////////////////////////// */
 
 
 /* 이미지 클릭 시 확대용 */
