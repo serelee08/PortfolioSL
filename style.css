@@ -291,9 +291,10 @@ section h2 {
 
 
 /* ================= SKILL TABLE (DOCUMENT STYLE) ================= */
-
 #skills {
   margin-top: 80px;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 /* 섹션 제목 (Backend, AI 등) */
@@ -374,6 +375,10 @@ section h2 {
     max-width: none;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  #skills {
+    padding: 0 16px;
   }
 }
 
