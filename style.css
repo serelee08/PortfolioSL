@@ -371,10 +371,10 @@ section h2 {
 
 
 
-@media (max-width: 1100px) and (min-width: 769px) {
+@media (max-width: 1199px) {     /* 공백이 생기던 모든 구간을 덮도록 범위 확장 */
   #skills .skill-table {
-    max-width: none;
-    margin-left: 0;
+    max-width: none;             /* 880px 카드 제한 해제 → 공백 제거 */
+    margin-left: 0;              /* 중앙정렬 해제 */
     margin-right: 0;
   }
 }
