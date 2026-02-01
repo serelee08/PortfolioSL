@@ -291,12 +291,14 @@ section h2 {
 
 
 /* ================= SKILL TABLE (DOCUMENT STYLE) ================= */
+/* ================= SKILL TABLE (DOCUMENT STYLE) ================= */
 #skills {
   margin-top: 80px;
   padding: 0 24px;
   box-sizing: border-box;
-  /* [수정] 섹션 전체에서 미세하게 삐져나오는 가로 스크롤/공백 방지 */
-  overflow-x: hidden; 
+  /* [수정] 페이지를 줄였을 때 어떤 요소도 밖으로 나가지 못하게 차단 */
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* 섹션 제목 (Backend, AI 등) */
@@ -304,6 +306,10 @@ section h2 {
   margin: 48px 0 16px;
   font-size: 1.25rem;
   font-weight: 600;
+  /* [수정] 제목이 화면 밖으로 나가는 현상 방지 */
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-all;
 }
 
 /* 테이블 기본 */
@@ -318,6 +324,8 @@ section h2 {
   overflow: hidden;
   box-shadow: 0 10px 28px rgba(0,0,0,0.06);
   table-layout: fixed;
+  /* [수정] 테이블 자체가 화면을 밀어내지 않도록 설정 */
+  box-sizing: border-box;
 }
 
 /* 한 줄 */
@@ -343,37 +351,35 @@ section h2 {
   font-size: 1rem;
   line-height: 1.6;
   color: #444;
-  word-break: break-word;
+  /* [수정] 텍스트가 줄어들 때 테이블을 밀지 않고 줄바꿈되도록 강제 */
+  word-break: break-all;
 }
 
-/* hover (아주 미세하게만) */
+/* hover */
 #skills .skill-table tr:hover {
   background: rgba(0,0,0,0.015);
 }
 
-/* 모바일 대응 */
+/* 모바일 대응 (페이지를 줄였을 때 적용) */
 @media (max-width: 768px) {
   #skills .skill-table,
   #skills .skill-table tr,
   #skills .skill-table td {
     display: block;
-    width: 100%;
-    /* [수정] 패딩이 너비에 포함되도록 설정하여 오른쪽 돌출 방지 */
-    box-sizing: border-box; 
+    /* [수정] 패딩을 너비에 포함시켜 100%를 초과하지 않게 함 */
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   #skills .skill-name {
-    /* [수정] 모바일에서 너비가 어긋나지 않도록 강제 적용 */
-    width: 100% !important; 
+    width: 100% !important;
     border-bottom: none;
     background: #f1efe9;
   }
 
   #skills .skill-desc {
     padding-top: 8px;
-    /* [수정] 설명 박스도 너비 계산 오류 방지 */
-    width: 100%;
-    box-sizing: border-box;
+    width: 100% !important;
   }
 }
 
@@ -382,20 +388,26 @@ section h2 {
     max-width: none;
     margin-left: 0;
     margin-right: 0;
-    /* [수정] 화면을 줄일 때 테이블이 부모 너비를 초과하지 않도록 고정 */
+    /* [수정] 카드 형태가 화면 밖으로 밀려나지 않게 보정 */
     width: 100% !important;
+    box-sizing: border-box;
   }
 }
 
 @media (max-width: 1199px) {
   #skills {
-    padding-left: 0;
-    padding-right: 0;
-    /* [수정] 하단 스크롤바 생성을 막아 흰 공백 제거 */
-    overflow-x: hidden;
+    padding-left: 16px; /* [수정] 0이었던 패딩을 살짝 주어 벽에 붙는 것 방지 */
+    padding-right: 16px;
+    /* [수정] 흰 공백의 직접적인 원인인 가로 오버플로우 차단 */
+    overflow-x: hidden !important;
+  }
+  
+  /* [수정] 제목 부분도 줄어든 너비에 맞춰 정렬 */
+  #skills h3 {
+    margin-left: 0;
+    width: 100%;
   }
 }
-
 /* 
 .skill-mini h3 {
   font-size: 0.95rem;
