@@ -945,8 +945,14 @@ footer {
 
 
 
+/* --- Portfolio Link (Skill, Project 공통) --- */
 .portfolio-link {
   margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  /* 핵심: 부모 박스가 화면을 절대 넘지 않게 설정 */
+  box-sizing: border-box;
+  overflow: hidden; 
 }
 
 .portfolio-link a {
@@ -959,11 +965,24 @@ footer {
   font-size: 14px;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  /* [수정] 버튼이 화면보다 길어질 때 공백을 만드는 주범 차단 */
+  max-width: 90%;          /* 화면 양옆에 최소한의 여유를 둠 */
+  box-sizing: border-box;   /* 패딩이 너비를 먹지 않게 함 */
+  white-space: normal;      /* 글자가 길면 버튼 안에서 줄바꿈 허용 */
+  word-break: break-all;    /* 영어 단어가 길어도 강제 줄바꿈 */
 }
 
 .portfolio-link a:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+/* 추가 방어: 뷰포트가 좁아질 때 전체 레이아웃 보호 */
+#skills, #projects { /* 프로젝트 섹션 ID가 project라고 가정 */
+  overflow-x: hidden !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 
