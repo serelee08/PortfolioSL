@@ -290,60 +290,91 @@ section h2 {
 
 
 
-/* ================= SKILL SECTION (최종 검량본) ================= */
-
-/* 1. 부모는 무조건 화면 안에 가둡니다 */
+/* ================= SKILL TABLE (DOCUMENT STYLE) ================= */
 #skills {
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden; /* 공백 발생 원천 봉쇄 */
-  padding: 0 24px;
+  margin-top: 80px !important;
+  padding: 0 24px !important;
+  /* 핵심 1: 섹션 자체가 화면을 절대 안 넘게 함 */
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+  /* 핵심 2: 오른쪽 흰 공백(가로 스크롤) 원천 차단 */
+  overflow-x: hidden !important; 
+  position: relative !important;
 }
 
-/* 2. 테이블 레이아웃을 '내용물 중심'에서 '설계 중심'으로 변경 */
+/* 섹션 제목 - h3 때문에 밀리는 현상 방지 */
+#skills h3 {
+  margin: 48px 0 16px !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 테이블 기본 */
 #skills .skill-table {
-  width: 100%;
+  /* 핵심 3: 테이블이 어떤 경우에도 부모보다 커지지 않게 함 */
+  width: 100% !important;
   max-width: 880px;
-  margin: 0 auto 24px;
-  /* 핵심: 셀 너비 계산 방식을 강제로 고정시킴 */
-  table-layout: fixed; 
-  border-collapse: collapse; 
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+  margin: 0 auto 24px !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  background: #fff !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.06) !important;
+  table-layout: fixed !important;
+  box-sizing: border-box !important;
 }
 
-/* 3. 240px을 버리고 30% 비율로 변경 */
+#skills .skill-table tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+}
+
 #skills .skill-name {
-  width: 30%;             /* 240px 대신 비율 사용 */
-  min-width: 90px;        /* 최소한의 가독성 확보 */
-  padding: 16px 18px;
-  font-weight: 600;
-  background: #f7f4ee;
-  vertical-align: top;
-  word-break: break-all;  /* 단어가 길면 무조건 줄바꿈 */
+  width: 240px !important;
+  padding: 16px 18px !important;
+  font-weight: 600 !important;
+  background: #f7f4ee !important;
+  box-sizing: border-box !important;
 }
 
 #skills .skill-desc {
-  width: 70%;
-  padding: 16px 20px;
-  word-break: break-all;
+  padding: 16px 20px !important;
+  word-break: break-all !important; /* 글자가 길어질 때 오른쪽으로 미는 것 방지 */
+  box-sizing: border-box !important;
 }
 
-/* 4. 모바일 대응: 페이지를 아주 줄였을 때 공백의 싹을 자름 */
+/* 모바일 및 페이지 줄였을 때 (이 구간이 공백의 원인) */
 @media (max-width: 768px) {
-  #skills .skill-table, 
-  #skills .skill-table tr, 
+  #skills .skill-table,
+  #skills .skill-table tr,
   #skills .skill-table td {
-    display: block;       /* 테이블 형식을 파괴하고 세로로 나열 */
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #skills .skill-name {
+    width: 100% !important;
+    background: #f1efe9 !important;
+  }
+}
+
+/* 1199px 이하에서 공백 제거 */
+@media (max-width: 1199px) {
+  #skills {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: hidden !important;
   }
   
-  #skills .skill-name {
-    width: 100%;
-    background: #f1efe9;
-    border-bottom: none;
+  #skills .skill-table {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
