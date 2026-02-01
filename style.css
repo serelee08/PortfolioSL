@@ -295,6 +295,8 @@ section h2 {
   margin-top: 80px;
   padding: 0 24px;
   box-sizing: border-box;
+  /* [수정] 섹션 전체에서 미세하게 삐져나오는 가로 스크롤/공백 방지 */
+  overflow-x: hidden; 
 }
 
 /* 섹션 제목 (Backend, AI 등) */
@@ -356,31 +358,43 @@ section h2 {
   #skills .skill-table td {
     display: block;
     width: 100%;
+    /* [수정] 패딩이 너비에 포함되도록 설정하여 오른쪽 돌출 방지 */
+    box-sizing: border-box; 
   }
 
   #skills .skill-name {
-    width: 100%;
+    /* [수정] 모바일에서 너비가 어긋나지 않도록 강제 적용 */
+    width: 100% !important; 
     border-bottom: none;
     background: #f1efe9;
   }
 
   #skills .skill-desc {
     padding-top: 8px;
+    /* [수정] 설명 박스도 너비 계산 오류 방지 */
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
-
-
-@media (max-width: 1199px) {     /* 공백이 생기던 모든 구간을 덮도록 범위 확장 */
+@media (max-width: 1199px) {
   #skills .skill-table {
-    max-width: none;             /* 880px 카드 제한 해제 → 공백 제거 */
-    margin-left: 0;              /* 중앙정렬 해제 */
+    max-width: none;
+    margin-left: 0;
     margin-right: 0;
+    /* [수정] 화면을 줄일 때 테이블이 부모 너비를 초과하지 않도록 고정 */
+    width: 100% !important;
   }
 }
 
-
-
+@media (max-width: 1199px) {
+  #skills {
+    padding-left: 0;
+    padding-right: 0;
+    /* [수정] 하단 스크롤바 생성을 막아 흰 공백 제거 */
+    overflow-x: hidden;
+  }
+}
 
 /* 
 .skill-mini h3 {
