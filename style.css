@@ -981,12 +981,12 @@ footer {
   box-shadow: 0 10px 22px rgba(0,0,0,0.18);
 }
 
-/* 추가 방어: 뷰포트가 좁아질 때 전체 레이아웃 보호
+/* 추가 방어: 뷰포트가 좁아질 때 전체 레이아웃 보호 */
 #skills, #projects { /* 프로젝트 섹션 ID가 project라고 가정 */
-  /* overflow-x: hidden !important;
+  overflow-x: hidden !important;
   width: 100% !important;
   box-sizing: border-box !important;
-} */ 
+}
 
 
 
