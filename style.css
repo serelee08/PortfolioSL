@@ -409,7 +409,7 @@ section h2 {
   padding-bottom: 8px;
 
   border-bottom: 2px solid rgba(31, 100, 174, 0.12);
-} */
+} 
 
 
 
@@ -545,7 +545,7 @@ footer {
     width: 90%;
   }
 
-  section {
+  section:not(#skills) {
     padding: 70px 18px;
   }
 
