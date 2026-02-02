@@ -876,8 +876,8 @@ footer {
     width: 100%;
     flex-direction: row;    /* 이미지 가로 배치 */
     justify-content: center;
-    gap: 20px;
-    margin-top: 24px;
+    gap: 15px;
+    margin-top: 18px;
   }
 
   .project-box .project-right.overlap-frame > img {
