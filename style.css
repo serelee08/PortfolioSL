@@ -1089,21 +1089,24 @@ footer {
 
 
 .contact-icon-box {
-  padding: 18px 22px;
-  border-radius: 20px;
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #faf6f0 100%
-  );
+  width: 320px;              /* ★ 이거 없어서 박스가 미친 듯 커진 거 */
+  max-width: 90%;
+
+  display: flex;
+  flex-direction: row;       /* ★ column 금지 */
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 18px;
+  border-radius: 16px;
+
+  background: #ffffff;
 
   box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.08),
+    0 6px 16px rgba(0, 0, 0, 0.08),
     inset 0 0 0 1px rgba(0, 0, 0, 0.04);
-
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 
 /* 카드 전체 hover */
 .contact-icon-box:hover {
