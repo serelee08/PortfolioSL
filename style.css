@@ -1174,19 +1174,22 @@ footer {
     box-shadow: none;
   }
 
-    .topbar {
-    position: static;
+    /* PDF에서는 topbar 완전 제거 */
+  .topbar {
+    display: none;
   }
 
-  /*  topbar 바로 다음에서 페이지 강제 분리 */
-  .topbar + section {
-    page-break-before: always;
+
+   .project-box {
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
-    section {
-    margin-top: 18px;
-    margin-bottom: 18px;
-    padding-top: 0;
-    padding-bottom: 0;
+    body {
+    width: 768px;
+    margin: 0 auto;
   }
+
+
 }
