@@ -1029,7 +1029,7 @@ footer {
 
 /* ================= GITHUB ACTIVITY ================= */
 
-#github-activity {
+/* #github-activity {
   margin-top: 64px;
 }
 
@@ -1040,15 +1040,15 @@ footer {
 #github-activity img {
   max-width: 100%;
   height: auto;
-  display: block;   /* 모바일 안정성 */
+  display: block;  
 }
 
 /* PDF 출력 시 숨김 */
-@media print {
+/* @media print {
   #github-activity {
     display: none;
   }
-}
+} */ 
 
 
 
