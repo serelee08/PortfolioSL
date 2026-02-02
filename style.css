@@ -826,6 +826,7 @@ footer {
     padding: 30px 28px;
     break-inside: avoid;
     page-break-inside: avoid;
+    
   }
 
   /* 출력은 항상 가로 2단 고정 */
@@ -857,6 +858,10 @@ footer {
 /* 페이지를 줄였을 때만: 이미지가 아래로 내려가서 가로 2개 배치 */
 
 @media (max-width: 1024px) {
+
+  .project-box {
+    overflow: visible;   /* 🔥 이 줄만 추가 */
+  }
 
   .project-box .project-row {
     flex-wrap: wrap; /* [수정] 텍스트 아래로 이미지 이동 */
