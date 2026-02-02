@@ -188,7 +188,7 @@ background: linear-gradient(
 }
 
 .card h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #444;
 }
@@ -336,7 +336,7 @@ section h2 {
   width: 240px;
   padding: 16px 18px;
   font-weight: 600;
-  background: #f7f4ee;
+  background: #dfe5dc;
 }
 
 #skills .skill-desc {
@@ -353,7 +353,7 @@ section h2 {
 
   #skills .skill-name {
     width: 100%;
-    background: #f1efe9;
+    background: #dfe5dc;
   }
 }
 
