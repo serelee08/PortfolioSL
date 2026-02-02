@@ -889,7 +889,6 @@ footer {
 }
 
 
-
 /* ///////////////////////////modal////////////////////////// */
 
 .img-modal {
@@ -1010,6 +1009,28 @@ footer {
   box-shadow: 0 10px 22px rgba(0,0,0,0.18);
 }
 
+
+/* ================= GITHUB ACTIVITY ================= */
+
+#github-activity {
+  margin-top: 64px;
+}
+
+#github-activity h2 {
+  margin-bottom: 24px;
+}
+
+#github-activity img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media print {
+  #github-activity {
+    display: none;
+  }
+}
 
 
 
