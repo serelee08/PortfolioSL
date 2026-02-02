@@ -336,7 +336,7 @@ section h2 {
   width: 240px;
   padding: 16px 18px;
   font-weight: 600;
-  background: #dfe5dc;
+  background: #f6f2ea;
 }
 
 #skills .skill-desc {
@@ -353,7 +353,7 @@ section h2 {
 
   #skills .skill-table .skill-name {
     width: 100%;
-    background-color: #dfe5dc;
+    background-color:#f6f2ea;
   }
 }
 
@@ -1089,11 +1089,11 @@ footer {
 
 
 .contact-icon-box {
-  width: 320px;              /* ★ 이거 없어서 박스가 미친 듯 커진 거 */
+  width: 320px;          /* ⭐ 핵심: 박스가 커지는 거 차단 */
   max-width: 90%;
 
   display: flex;
-  flex-direction: row;       /* ★ column 금지 */
+  flex-direction: row;  /* ⭐ column 절대 금지 */
   align-items: center;
   gap: 14px;
 
@@ -1119,6 +1119,8 @@ footer {
 /* 아래 정보가 '살짝 더 살아나는' 느낌 */
 .contact-icon-box span {
   transition: opacity 0.25s ease, transform 0.25s ease;
+  
+  
 }
 
 .contact-icon-box:hover span {
@@ -1159,7 +1161,7 @@ footer {
 /* 모바일 */
 @media (max-width: 768px) {
   .contact-icons-final {
-    gap: 28px;
+    gap: 16px;
   }
 
   .contact-icon-box svg {
