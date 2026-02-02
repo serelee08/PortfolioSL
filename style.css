@@ -1033,24 +1033,22 @@ footer {
   margin-top: 64px;
 }
 
-#github-activity h2 {
+#github-activity h3 {
   margin-bottom: 24px;
 }
 
 #github-activity img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  display: block;   /* 모바일 안정성 */
 }
 
+/* PDF 출력 시 숨김 */
 @media print {
   #github-activity {
     display: none;
   }
 }
-
-
-
 
 
 
