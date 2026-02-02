@@ -351,11 +351,12 @@ section h2 {
     width: 100%;
   }
 
-  #skills .skill-name {
+  #skills .skill-table .skill-name {
     width: 100%;
-    background: #eef2ed;
+    background-color: #eef2ed;
   }
 }
+
 
 
 /* 
