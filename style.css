@@ -1089,22 +1089,23 @@ footer {
 
 
 .contact-icon-box {
-  width: 320px;          /* ⭐ 핵심: 박스가 커지는 거 차단 */
-  max-width: 90%;
+  width: 160px;              /* ⭐ 여기서 미감 결정 */
+  height: 56px;
 
   display: flex;
-  flex-direction: row;  /* ⭐ column 절대 금지 */
   align-items: center;
-  gap: 14px;
+  justify-content: center;
+  gap: 8px;
 
-  padding: 14px 18px;
-  border-radius: 16px;
+  padding: 0 12px;
+  border-radius: 12px;
 
-  background: #ffffff;
+  background: #fbfaf7;
+  border: 1px solid #e5e1d8;
 
   box-shadow:
-    0 6px 16px rgba(0, 0, 0, 0.08),
-    inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+    0 6px 14px rgba(0, 0, 0, 0.06),
+    0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 
@@ -1126,6 +1127,19 @@ footer {
 .contact-icon-box:hover span {
   opacity: 0.9;
   transform: translateY(2px);
+}
+
+
+@media (max-width: 520px) {
+  .contact-icons-final {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-icon-box {
+    width: 100%;
+    max-width: 260px;   /* 모바일에서도 과하게 커지지 않게 */
+    margin: 0 auto;
+  }
 }
 
 
