@@ -339,6 +339,9 @@ section h2 {
   background: #ebe6dc;
   border: 1px solid #d9d3c6;
   color: #2e2a24;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  
 }
 
 #skills .skill-desc {
@@ -358,6 +361,8 @@ section h2 {
     background: #ebe6dc;
     border: 1px solid #d9d3c6;
     color: #2e2a24;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 }
 
