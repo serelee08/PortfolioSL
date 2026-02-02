@@ -858,35 +858,52 @@ footer {
 /* 화면줄였을때 */
 @media (max-width: 768px) {
 
+  /* 기존 코드 유지 */
   .project-box {
-    overflow: visible;   /* 🔥 이미지 잘림 방지 */
+    overflow: visible;
   }
 
   .project-box .project-row {
-    flex-wrap: wrap;     /* 텍스트 위 / 이미지 아래 */
+    flex-wrap: wrap;
     gap: 10px;
   }
 
-  /* 🔥🔥 이게 빠져 있었음 (가장 중요) */
   .project-left-text {
-    width: 100%;         /* 텍스트를 skill처럼 가로 100% */
+    width: 100%;
     max-width: 100%;
     text-align: center;
   }
 
   .project-box .project-right.overlap-frame {
     width: 100%;
-    flex-direction: row;    /* 이미지 가로 배치 */
+    flex-direction: row;
     justify-content: center;
     gap: 13px;
     margin-top: 6px;
   }
 
   .project-box .project-right.overlap-frame > img {
-    width: 45%;             /* 이미지 2개 좌/우 */
+    width: 45%;
     margin-top: 0;
   }
+
+  /* 🔥🔥 모바일에서만 불릿 직접 제어 */
+  .project-left-text ul {
+    list-style: none;      /* 기본 점 제거 */
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .project-left-text li {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .project-left-text li::before {
+    content: "• ";
+  }
 }
+
 
 
 /* ///////////////////////////modal////////////////////////// */
