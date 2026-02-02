@@ -708,7 +708,7 @@ footer {
   display: flex;
   align-items: flex-start;
   gap: 56px;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* 데스크탑: 기존 가로 2단 유지 */
 }
 
 
@@ -773,7 +773,7 @@ footer {
   flex-shrink: 0;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* 데스크탑: 겹침 유지 */
   align-items: center;
   justify-content: flex-start;
 
@@ -813,15 +813,15 @@ footer {
 }
 
 
+/* ================= PRINT (A4 PDF 전용) ================= */
+
 @media print {
 
-  /* A4 기본 설정 */
   @page {
     size: A4;
     margin: 18mm 16mm;
   }
 
-  /* 프로젝트 박스 분리 방지 */
   .project-box {
     padding: 30px 28px;
     break-inside: avoid;
@@ -853,12 +853,32 @@ footer {
 }
 
 
+/* ================= 🔥 여기만 수정 ================= */
+/* 페이지를 줄였을 때만: 이미지가 아래로 내려가서 가로 2개 배치 */
+
+@media (max-width: 1024px) {
+
+  .project-box .project-row {
+    flex-wrap: wrap; /* [수정] 텍스트 아래로 이미지 이동 */
+  }
+
+  .project-box .project-right.overlap-frame {
+    width: 100%;            /* [수정] 전체 폭 사용 */
+    flex-direction: row;    /* [수정] 세로 겹침 → 가로 정렬 */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 24px;
+  }
+
+  .project-box .project-right.overlap-frame > img {
+    width: 45%;             /* [수정] 이미지 2개 나란히 */
+    margin-top: 0;          /* [수정] 기존 겹침 제거 */
+  }
+}
 
 
 /* ///////////////////////////modal////////////////////////// */
 
-
-/* 이미지 클릭 시 확대용 */
 .img-modal {
   position: fixed;
   inset: 0;
@@ -867,7 +887,6 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  position: fixed;
   pointer-events: auto;
 }
 
@@ -880,6 +899,7 @@ footer {
 .img-modal.active {
   display: flex;
 }
+
 
 
 /* ================= IMAGE MODAL CLOSE BUTTON ================= */
