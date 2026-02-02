@@ -856,7 +856,7 @@ footer {
 
 
 /* 화면줄였을때 */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
   .project-box {
     overflow: visible;   /* 🔥 이미지 잘림 방지 */
@@ -864,6 +864,7 @@ footer {
 
   .project-box .project-row {
     flex-wrap: wrap;     /* 텍스트 위 / 이미지 아래 */
+    gap: 20px;
   }
 
   /* 🔥🔥 이게 빠져 있었음 (가장 중요) */
@@ -876,8 +877,8 @@ footer {
     width: 100%;
     flex-direction: row;    /* 이미지 가로 배치 */
     justify-content: center;
-    gap: 15px;
-    margin-top: 18px;
+    gap: 18px;
+    margin-top: 10px;
   }
 
   .project-box .project-right.overlap-frame > img {
