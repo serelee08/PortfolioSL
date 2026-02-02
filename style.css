@@ -1091,13 +1091,15 @@ footer {
 
 
 
+/* final contact-icon-box */
 
-.contact-icon-box {
-  width: 320px;          /* ⭐ 핵심: 박스가 커지는 거 차단 */
+
+/* .contact-icon-box {
+  width: 320px;          
   max-width: 90%;
 
   display: flex;
-  flex-direction: row;  /* ⭐ column 절대 금지 */
+  flex-direction: row;  
   align-items: center;
   gap: 14px;
 
@@ -1109,20 +1111,20 @@ footer {
   box-shadow:
     0 6px 16px rgba(0, 0, 0, 0.08),
     inset 0 0 0 1px rgba(0, 0, 0, 0.04);
-}
+} */
 
 
 /* 카드 전체 hover */
-.contact-icon-box:hover {
+/* .contact-icon-box:hover {
   transform: translateY(-4px);
   box-shadow:
     0 14px 30px rgba(0, 0, 0, 0.14),
     inset 0 0 0 1px rgba(0, 0, 0, 0.06);
-}
+} */
 
 /* 아래 정보가 '살짝 더 살아나는' 느낌 */
-.contact-icon-box span {
-  transition: opacity 0.25s ease, transform 0.25s ease;
+/* .contact-icon-box span { 
+  /* transition: opacity 0.25s ease, transform 0.25s ease;
   
   
 }
@@ -1130,7 +1132,7 @@ footer {
 .contact-icon-box:hover span {
   opacity: 0.9;
   transform: translateY(2px);
-}
+} */
 
 
 
