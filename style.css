@@ -1173,4 +1173,20 @@ footer {
     color: #000;
     box-shadow: none;
   }
+
+    .topbar {
+    position: static;
+  }
+
+  /*  topbar 바로 다음에서 페이지 강제 분리 */
+  .topbar + section {
+    page-break-before: always;
+  }
+
+    section {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
