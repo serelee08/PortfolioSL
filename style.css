@@ -326,6 +326,7 @@ section h2 {
 
   /* Safari table width 계산 버그 회피용 (유일한 !important) */
   table-layout: auto !important;
+  overflow:hidden;
 }
 
 #skills .skill-table tr:not(:last-child) td {
