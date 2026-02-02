@@ -854,32 +854,38 @@ footer {
 }
 
 
-/* ================= 🔥 여기만 수정 ================= */
-/* 페이지를 줄였을 때만: 이미지가 아래로 내려가서 가로 2개 배치 */
 
+/* 화면줄였을때 */
 @media (max-width: 1024px) {
 
   .project-box {
-    overflow: visible;   /* 🔥 이 줄만 추가 */
+    overflow: visible;   /* 🔥 이미지 잘림 방지 */
   }
 
   .project-box .project-row {
-    flex-wrap: wrap; /* [수정] 텍스트 아래로 이미지 이동 */
+    flex-wrap: wrap;     /* 텍스트 위 / 이미지 아래 */
+  }
+
+  /* 🔥🔥 이게 빠져 있었음 (가장 중요) */
+  .project-left-text {
+    width: 100%;         /* 텍스트를 skill처럼 가로 100% */
+    max-width: 100%;
   }
 
   .project-box .project-right.overlap-frame {
-    width: 100%;            /* [수정] 전체 폭 사용 */
-    flex-direction: row;    /* [수정] 세로 겹침 → 가로 정렬 */
+    width: 100%;
+    flex-direction: row;    /* 이미지 가로 배치 */
     justify-content: center;
     gap: 20px;
     margin-top: 24px;
   }
 
   .project-box .project-right.overlap-frame > img {
-    width: 45%;             /* [수정] 이미지 2개 나란히 */
-    margin-top: 0;          /* [수정] 기존 겹침 제거 */
+    width: 45%;             /* 이미지 2개 좌/우 */
+    margin-top: 0;
   }
 }
+
 
 
 /* ///////////////////////////modal////////////////////////// */
