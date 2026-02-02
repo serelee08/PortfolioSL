@@ -336,7 +336,9 @@ section h2 {
   width: 240px;
   padding: 16px 18px;
   font-weight: 600;
-  background: #dfe5dc;
+  background: #ebe6dc;
+  border: 1px solid #d9d3c6;
+  color: #2e2a24;
 }
 
 #skills .skill-desc {
@@ -353,7 +355,9 @@ section h2 {
 
   #skills .skill-table .skill-name {
     width: 100%;
-    background-color: #dfe5dc;
+    background: #ebe6dc;
+    border: 1px solid #d9d3c6;
+    color: #2e2a24;
   }
 }
 
