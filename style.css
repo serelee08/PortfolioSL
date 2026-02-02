@@ -864,21 +864,22 @@ footer {
 
   .project-box .project-row {
     flex-wrap: wrap;     /* 텍스트 위 / 이미지 아래 */
-    gap: 20px;
+    gap: 10px;
   }
 
   /* 🔥🔥 이게 빠져 있었음 (가장 중요) */
   .project-left-text {
     width: 100%;         /* 텍스트를 skill처럼 가로 100% */
     max-width: 100%;
+    text-align: center;
   }
 
   .project-box .project-right.overlap-frame {
     width: 100%;
     flex-direction: row;    /* 이미지 가로 배치 */
     justify-content: center;
-    gap: 18px;
-    margin-top: 10px;
+    gap: 13px;
+    margin-top: 6px;
   }
 
   .project-box .project-right.overlap-frame > img {
