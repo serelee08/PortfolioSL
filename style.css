@@ -1225,5 +1225,50 @@ footer {
     content: none;
   }
 
+    /* 기존 코드 유지 */
+  .project-box {
+    overflow: visible;
+  }
+
+  .project-box .project-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-left-text {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-box .project-right.overlap-frame {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 6px;
+  }
+
+  .project-box .project-right.overlap-frame > img {
+    width: 45%;
+    margin-top: 0;
+  }
+
+  /* 🔥🔥 모바일에서만 불릿 직접 제어 */
+  .project-left-text ul {
+    list-style: none;      /* 기본 점 제거 */
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .project-left-text li {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .project-left-text li::before {
+    content: "• ";
+  }
+
 
 }
