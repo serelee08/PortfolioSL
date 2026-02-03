@@ -1144,10 +1144,17 @@ footer {
     margin: 18mm 16mm;
   }
 
+    /* 1. 크롬 PDF 색상 보존 (최소 개입) */
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   .project-box {
     padding: 30px 28px;
     break-inside: avoid;
     page-break-inside: avoid;
+    background-image: none;
     
   }
 
@@ -1186,9 +1193,15 @@ footer {
     page-break-inside: avoid;
   }
 
-    body {
+    /* body {
     width: 768px;
     margin: 0 auto;
+  } */
+
+    /* 3. 페이지 간격 과다 확장 방지 */
+  section {
+    margin-top: 0;
+    margin-bottom: 12px;
   }
 
 
