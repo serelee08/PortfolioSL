@@ -1136,7 +1136,6 @@ footer {
 
 
 /* ================= PRINT (A4 PDF 전용) ================= */
-
 @media print {
 
   @page {
@@ -1144,131 +1143,97 @@ footer {
     margin: 18mm 16mm;
   }
 
-    /* 1. 크롬 PDF 색상 보존 (최소 개입) */
-  html {
+  /* 1. 크롬 PDF 색상 보존 */
+  html,
+  body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  body {
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-}
-
-
-  .project-box {
-    padding: 30px 28px;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    background-image: none;
-    
-  }
-
-  /* 출력은 항상 가로 2단 고정 */
-  .project-box .project-row {
-    gap: 40px;
-    flex-wrap: nowrap;
-  }
-
-  /* 화면용 min-width 방어 해제 */
-  .project-left-text {
-    min-width: auto;
-  }
-
-  /* 이미지 영역 A4 최적 폭 */
-  .project-box .project-right.overlap-frame {
-    width: 360px;
-  }
-
-  /* 링크, 버튼은 PDF에서 톤 다운 */
-  .portfolio-link a {
-    background: #ddd;
-    color: #000;
-    box-shadow: none;
-  }
-
-    /* PDF에서는 topbar 완전 제거 */
+  /* PDF에서는 topbar 제거 */
   .topbar {
     display: none;
   }
 
-
-
-    /* 3. 페이지 간격 과다 확장 방지 */
+  /* 섹션 간격 컴팩트 */
   section {
     margin-top: 0;
     margin-bottom: 12px;
   }
 
-  /* 1️⃣ 이미지 색상 강제 보존 (핵심) */
+  /* ================= PROJECT CARD ================= */
+
+  .project-box {
+    padding: 30px 28px;
+    background-image: none;
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    overflow: visible;
+  }
+
+  /* 프로젝트 내부 레이아웃: 세로 스택 */
+  .project-box .project-row {
+    display: block;
+  }
+
+  /* ===== 텍스트 영역 (상단) ===== */
+  .project-left-text {
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  /* 불릿 문서형 */
+  .project-left-text ul {
+    padding-left: 18px;
+    margin: 8px auto 0;
+    list-style: disc;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .project-left-text li {
+    margin-bottom: 6px;
+  }
+
+  /* ===== 이미지 영역 (하단, 가로 2열) ===== */
+  .project-box .project-right.overlap-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 0;
+  }
+
   .project-box .project-right.overlap-frame > img {
+    width: 42%;
+    max-width: 320px;
+    margin: 0;
+
+    /* 이미지 색상 보존 핵심 */
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
 
-    /* 2️⃣ 색 탁해지는 주범 제거 */
+    /* 색 탁해지는 요소 제거 */
     box-shadow: none;
     background: #fff;
   }
 
-  /* 3️⃣ print에서는 겹침 구조 해제 (색 합성 오류 차단) */
-  .project-box .project-right.overlap-frame {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-box .project-right.overlap-frame > img + img {
-    margin-top: 12px;
-  }
-
-  /* 4️⃣ pseudo-element 제거 (은근히 색 망침) */
+  /* pseudo-element 제거 */
   .project-right.overlap-frame::after {
     content: none;
   }
 
-    /* 기존 코드 유지 */
-  .project-box {
-    overflow: visible;
+  /* 링크 버튼 톤다운 */
+  .portfolio-link a {
+    background: #ddd;
+    color: #000;
+    box-shadow: none;
   }
-
-  .project-box .project-row {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .project-left-text {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .project-box .project-right.overlap-frame {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 13px;
-    margin-top: 6px;
-  }
-
-  .project-box .project-right.overlap-frame > img {
-    width: 45%;
-    margin-top: 0;
-  }
-
-  /* 🔥🔥 모바일에서만 불릿 직접 제어 */
-  .project-left-text ul {
-    list-style: none;      /* 기본 점 제거 */
-    padding-left: 0;
-    margin: 0 auto;
-  }
-
-  .project-left-text li {
-    text-align: center;
-    margin-bottom: 8px;
-  }
-
-  .project-left-text li::before {
-    content: "• ";
-  }
-
 
 }
