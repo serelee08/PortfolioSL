@@ -1150,6 +1150,12 @@ footer {
     print-color-adjust: exact;
   }
 
+  body {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+
   .project-box {
     padding: 30px 28px;
     break-inside: avoid;
@@ -1187,21 +1193,36 @@ footer {
   }
 
 
-   .project-box {
-    box-shadow: none;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-    /* body {
-    width: 768px;
-    margin: 0 auto;
-  } */
 
     /* 3. 페이지 간격 과다 확장 방지 */
   section {
     margin-top: 0;
     margin-bottom: 12px;
+  }
+
+  /* 1️⃣ 이미지 색상 강제 보존 (핵심) */
+  .project-box .project-right.overlap-frame > img {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+
+    /* 2️⃣ 색 탁해지는 주범 제거 */
+    box-shadow: none;
+    background: #fff;
+  }
+
+  /* 3️⃣ print에서는 겹침 구조 해제 (색 합성 오류 차단) */
+  .project-box .project-right.overlap-frame {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-box .project-right.overlap-frame > img + img {
+    margin-top: 12px;
+  }
+
+  /* 4️⃣ pseudo-element 제거 (은근히 색 망침) */
+  .project-right.overlap-frame::after {
+    content: none;
   }
 
 
