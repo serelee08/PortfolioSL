@@ -79,7 +79,7 @@ Client → API Server → AI Model → Database → Response
 
 ## EVLink Portfolio
 
-🔗 https://drive.google.com/file/d/1Nqu_IvhZziX_aOnuyx6c47OsQPEBOHj2/view?usp=share_link
+🔗 https://drive.google.com/file/d/1E-vXRR4KNfZbl1OF5p5e5DchgeK0TajF/view?usp=sharing
 
 ---
 ## Walley Portfolio
