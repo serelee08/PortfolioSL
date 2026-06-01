@@ -21,7 +21,7 @@
 - LSTM 감성분석 모델 설계 및 백엔드 서비스 연동
 - OAuth2 기반 인증 구조 설계 및 AWS EC2 배포
 
-🔗 [포트폴리오 보기](https://drive.google.com/file/d/1WHECWwoLdS4O4JYRylPk6vEio3aPRkjs/view?usp=sharing) · [경력기술서 보기](https://drive.google.com/file/d/1BgnGuDL1T2Gh_8WSUTZQJILOteWh4fjEC/view?usp=sharing)
+🔗 [포트폴리오 보기](https://drive.google.com/file/d/1WHECWwoLdS4O4JYRylPk6vEio3aPRkjs/view?usp=sharing) 
 
 ---
 
