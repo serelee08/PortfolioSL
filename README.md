@@ -1,4 +1,4 @@
-# 백엔드 엔지니어 포트폴리오 입니다.
+# 이지애 | 백엔드 엔지니어
 
 > 명확한 API 설계와 AI 기능 통합으로 안정적인 백엔드 시스템을 구축합니다.
 
@@ -8,7 +8,7 @@
 
 ## 기술 스택
 `Java` `Spring Boot` `Python` `Django` `C#` `MyBatis` `React` `TypeScript`  
-`MySQL` `MariaDB` `Oracle` `AWS EC2` `OAuth2` `Spring Security` 
+`MySQL` `MariaDB` `Oracle` `AWS EC2` `OAuth2` `Spring Security`
 
 ---
 
@@ -38,13 +38,21 @@
 ---
 
 ## 경력
-**㈜엠지엘코리아** 소프트웨어 엔지니어 (계약직)  
-병원 급여/원무 ERP 유지보수 · WYD 국제 행사 프로젝트 (C#/Java · DevExpress ·Oracle)
+**㈜엠지엘코리아** 백엔드 개발자 (계약직) · 3개월
+
+**병원 급여/원무 ERP 유지보수**
+- Spring Boot/Java 기반 병원 ERP 시스템 유지보수 및 데이터 오류 수정
+
+**대형 규모 국제 행사 프로젝트**
+- 행사 관련 DB 테이블 설계
+- C#/Java 기반 서비스 로직 작성
+- DevExpress 출력물 개발 및 C# 화면 디자인 구현 및 Java 서비스 작성 
+- 모든 담당 업무 기한 내 100% 완료
 
 ---
 
 ## 수상
-🏆 AI 프로젝트 우수상 · 🏅 특모범상 (출석률 100%) – 한국 ICT 인재개발원
+🏆 프로젝트 우수상 · 🏅 특모범상 (출석률 100%) – 한국 ICT 인재개발원
 
 ---
 
