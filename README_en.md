@@ -2,7 +2,7 @@
   <a href="README.md">🇰🇷 한국어</a> &nbsp;|&nbsp; <a href="README.en.md">🇺🇸 English</a>
 </div>
 
-# Serena Jiae Lee | Backend Engineer
+# Serena Jiae Lee | Software Engineer
 > Building reliable backend systems through clear API design and AI feature integration.
 
 🌐 [Portfolio Site](https://serelee08.github.io/PortfolioSL) · 📧 serelee08@gmail.com · 💻 [github.com/serelee08](https://github.com/serelee08)
