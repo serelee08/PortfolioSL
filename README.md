@@ -1,5 +1,8 @@
-# 이지애 | 백엔드 엔지니어
+<div align="right">
+  <a href="README.md">🇰🇷 한국어</a> &nbsp;|&nbsp; <a href="README.en.md">🇺🇸 English</a>
+</div>
 
+# 이지애 | 백엔드 엔지니어
 > 명확한 API 설계와 AI 기능 통합으로 안정적인 백엔드 시스템을 구축합니다.
 
 🌐 [포트폴리오 사이트](https://serelee08.github.io/PortfolioSL) · 📧 serelee08@gmail.com · 💻 [github.com/serelee08](https://github.com/serelee08)
@@ -7,6 +10,7 @@
 ---
 
 ## 기술 스택
+
 `Java` `Spring Boot` `Python` `Django` `C#` `MyBatis` `React` `TypeScript`  
 `MySQL` `MariaDB` `Oracle` `AWS EC2` `OAuth2` `Spring Security`
 
@@ -21,7 +25,7 @@
 - LSTM 감성분석 모델 설계 및 백엔드 서비스 연동
 - OAuth2 기반 인증 구조 설계 및 AWS EC2 배포
 
-🔗 [포트폴리오 보기](https://drive.google.com/file/d/1WHECWwoLdS4O4JYRylPk6vEio3aPRkjs/view?usp=sharing) 
+🔗 [포트폴리오 보기](https://drive.google.com/file/d/1WHECWwoLdS4O4JYRylPk6vEio3aPRkjs/view?usp=sharing)
 
 ---
 
@@ -38,6 +42,7 @@
 ---
 
 ## 경력
+
 **㈜엠지엘코리아** 백엔드 개발자 (계약직) · 3개월
 
 **병원 급여/원무 ERP 유지보수**
@@ -46,22 +51,25 @@
 **대형 규모 국제 행사 프로젝트**
 - 행사 관련 DB 테이블 설계 (9 테이블)
 - Java 기반 서비스 로직 작성
-- DevExpress 출력물 개발 및 C# 화면 디자인 구현 
+- DevExpress 출력물 개발 및 C# 화면 디자인 구현
 - 모든 담당 업무 기한 내 100% 완료
 
 ---
 
 ## 수상
+
 🏆 프로젝트 우수상 · 🏅 특모범상 (출석률 100%) – 한국 ICT 인재개발원
 
 ---
 
 ## 교육
+
 - 클라우드 기반 AI 풀스택 개발 과정 – 한국 ICT 인재개발원 (2025.03 – 2025.09)
 - IBM AI Engineering Professional – Coursera (2025.12 – 현재)
 
 ---
 
 ## 개발 방향
+
 요청 처리 흐름과 파이프라인 설계를 중심으로 외부 서비스 및 AI 기능을 백엔드에 안정적으로 통합하는 개발을 지향합니다.  
 잘 설계된 구조가 팀의 생산성과 서비스 안정성을 동시에 높인다고 믿습니다.
