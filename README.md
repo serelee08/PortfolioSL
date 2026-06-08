@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="README.md">🇰🇷 한국어</a> &nbsp;|&nbsp; <a href="README.en.md">🇺🇸 English</a>
+  <a href="README.md">🇰🇷 한국어</a> &nbsp;|&nbsp; <a href="README_en.md">🇺🇸 English</a>
 </div>
 
 # 이지애 | 백엔드 엔지니어
