@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jiae Lee | Software Engineer</title>
+  <title>Serena Jiae Lee | Software Engineer</title>
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,38 +13,39 @@
 </head>
 <body>
 
+<!-- ================= TOP BAR ================= -->
 <div class="topbar">
   <div class="brand">
     <div class="robot-logo">
-      <i data-lucide="bot"></i>
-    </div>
-    <span>It's JIAE LEE</span>
-  </div>
-
-<div class="nav-wrapper" style="display: flex; align-items: center; gap: 15px;">
-    <div class="lang-buttons" style="display: flex; gap: 12px; align-items: center; background: rgba(0,0,0,0.06); padding: 5px 12px; border-radius: 20px; font-family: 'Pretendard', sans-serif; font-size: 12px; font-weight: bold;">
-      <span style="color: #333; display: flex; align-items: center; gap: 3px; cursor: default;">
-        🇰🇷 KOR
-      </span>
-      <span style="color: #ccc; font-weight: normal;">|</span>
-      <a href="index_en.html" style="text-decoration: none; color: #999; display: flex; align-items: center; gap: 3px; transition: 0.2s;" onmouseover="this.style.color='#333'" onmouseout="this.style.color='#999'" title="Switch to English">
-        🇺🇸 ENG
-      </a>
+    <i data-lucide="bot"></i>
     </div>
 
-    <div class="burger" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-      <a href="#landing">Profile</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Projects</a>
-      <a href="#awards">Awards</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <span>It's Serena Jiae Lee</span>
   </div>
+
+ <div class="nav-wrapper" style="display: flex; align-items: center; gap: 15px;">
+<div class="lang-buttons" style="display: flex; gap: 12px; align-items: center; background: rgba(0,0,0,0.06); padding: 5px 12px; border-radius: 20px; font-family: 'Pretendard', sans-serif; font-size: 12px; font-weight: bold;">
+<a href="./index.html" style="text-decoration: none; color: #999; display: flex; align-items: center; gap: 3px; transition: 0.2s;" onmouseover="this.style.color='#333'" onmouseout="this.style.color='#999'" title="Switch to Korean">
+🇰🇷 KOR
+</a>
+<span style="color: #ccc; font-weight: normal;">|</span>
+<span style="color: #333; display: flex; align-items: center; gap: 3px; cursor: default;">
+🇺🇸 ENG
+</span>
 </div>
-
+<div class="burger" onclick="toggleMenu()">☰</div>
+<div class="menu" id="menu">
+<a href="#landing">Profile</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Projects</a>
+<a href="#awards">Awards</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</div>
+<!-- ================= LANDING ================= -->
 <section class="landing" id="landing">
   <div class="card">
 
@@ -52,39 +53,58 @@
       <img src="images/profile01.png" alt="profile">
     </div>
 
-    <h1>Jiae Lee</h1>
+    <h1>Serena Jiae Lee</h1>
     <h2>Backend Engineer</h2>
 
     <p class="tagline">
-      A backend engineer dedicated to <b>creating sustainable business value</b> through well-designed data pipelines.
+      A backend engineer who creates <b>sustainable business value</b> through well-designed pipelines
     </p>
 
     <div class="contact-icons">
       <button onclick="toggleInfo('emailBox')" title="Email">📧</button>
       <button onclick="toggleInfo('phoneBox')" title="Phone">📱</button>
       <button onclick="window.open('https://github.com/serelee08', '_blank')" title="GitHub">💻</button>
+
     </div>
 
     <div class="contact-info" id="emailBox">serelee08@gmail.com</div>
-    <div class="contact-info" id="phoneBox">+82-10-7713-9527</div>
+    <div class="contact-info" id="phoneBox">010-7713-9527</div>
     <div class="contact-info" id="gitBox">github.com/serelee08</div>
 
   </div>
 </section>
 
+<!-- ================= ABOUT ================= -->
 <section id="about">
-  <h2>About Me</h2>
+  <h2>About</h2>
   <div class="about">
     <p>
-      "I am a software engineer focused on Java/Spring-based backend development, with experience implementing data and AI functionalities using Python in AWS environments."<br><br>
-      I have managed full-cycle development from system design to implementation and deployment. The most critical insight I gained throughout these projects is that even the most brilliant architecture cannot be successfully accomplished alone. Realizing that team members held distinct perspectives on data structures, I understood that **deeply comprehending the technical workflows and functionalities of my peers is just as vital as the quality of my own deliverables** to operate as a unified service.<br><br>
-      Driven by this philosophy, I led **proactive team communications by standardizing API documentation and actively sharing database schema designs**, which significantly aligned our implementation progress. Moving beyond simple data sharing, I consistently engaged in deep alignment regarding our technical contexts. As a result, system integration errors decreased significantly, and as our mutual understanding grew, I witnessed a **collective upgrade in the team's engineering capacity**. By fostering close technical collaboration, we elevated the overall system completeness to a standard that could never have been achieved in isolation.
+"A software engineer focused on Java/Spring-based backend development, who has implemented
+data and AI features using Python in AWS environments."<br>
+
+I carried out projects end to end — from design and implementation to deployment.
+The biggest lesson I learned through these projects was that no matter how excellent a design is,
+it can never be completed alone. While working on projects, each member had a different perspective
+on the data structure, and I realized that to make everything work as a single service,
+<b>deeply understanding the features my teammates built and how they flow together was just as
+important as the completeness of my own part</b>. Based on this, I <b>managed our work through close
+communication and API documentation</b>, and I shared schema designs, which helped everyone better
+understand each other's progress. Beyond simply exchanging information, we continuously discussed our
+ideas to understand each other's technical context. Through this process, errors noticeably decreased,
+our understanding of each other's technologies grew, and I witnessed the <b>capability of the entire
+team rise together</b>. <b>Through technical collaboration with my teammates</b>, I was able to raise
+the quality of the service to a level I could never have reached alone.
+
+
     </p>
   </div>
 </section>
 
+
+
+
 <section id="skills">
-  <h2>Technical Skills</h2>
+  <h2>Skills</h2>
 
   <h3>◦ Backend</h3>
   <div class="skill-table-wrap">
@@ -92,79 +112,79 @@
       <tr>
         <td class="skill-name">Java / Spring Boot</td>
         <td class="skill-desc">
-          RESTful API design and implementation; built backend systems for events, announcements, and FAQs.
+          Designed and implemented REST APIs; built the backend for events, notices, and FAQ
         </td>
       </tr>
       <tr>
         <td class="skill-name">OAuth2 · Spring Security</td>
         <td class="skill-desc">
-          Architected OAuth2 authentication flows (Kakao, Naver, Google) and configured robust access control structures.
+          Designed Kakao/Naver/Google OAuth2 authentication flows and configured access control
         </td>
       </tr>
       <tr>
         <td class="skill-name">MyBatis</td>
         <td class="skill-desc">
-          Data mapping using Mapper XML configuration and implementation of core API business logic.
+          Implemented data mapping and API logic based on Mapper XML
         </td>
       </tr>
       <tr>
         <td class="skill-name">REST API · Postman</td>
         <td class="skill-desc">
-          Designed RESTful APIs, executed automated integration testing with Postman, and managed comprehensive API documentation.
+          Designed REST APIs, tested with Postman, and documented API specifications
         </td>
       </tr>
     </table>
   </div>
 
-  <h3>◦ AI / Data Engineering</h3>
+  <h3>◦ AI / Data</h3>
   <div class="skill-table-wrap">
     <table class="skill-table">
       <tr>
         <td class="skill-name">Python / Django</td>
         <td class="skill-desc">
-          Implemented interactive, generative AI conversational services integrated with the Google Gemini API.
+          Built an AI conversational service integrated with the Gemini API
         </td>
       </tr>
       <tr>
         <td class="skill-name">NLP (RNN · LSTM)</td>
         <td class="skill-desc">
-          Trained NLP sentiment analysis models on user review data and established automated classification pipelines.
+          Trained a sentiment analysis model on user review data and built a classification system
         </td>
       </tr>
     </table>
   </div>
 
-  <h3>◦ Frontend</h3>
+<h3>◦ Frontend</h3>
   <div class="skill-table-wrap">
     <table class="skill-table">
       <tr>
         <td class="skill-name">C#</td>
         <td class="skill-desc">
-          Developed front-facing screens for the WYD Vatican International Event System and designed reporting deliverables using DevExpress controls.
+          Developed system screens for the WYD Vatican international event and implemented DevExpress report outputs
         </td>
       </tr>
       <tr>
         <td class="skill-name">React</td>
         <td class="skill-desc">
-          Built reusable common layouts, engineered UI component hierarchies, and integrated interactive screens with RESTful APIs.
+          Built common layouts and page structures; implemented screens integrated with REST APIs
         </td>
       </tr>
     </table>
   </div>
 
-  <h3>◦ Server / Infrastructure</h3>
+  <h3>◦ Server / Environment</h3>
   <div class="skill-table-wrap">
     <table class="skill-table">
       <tr>
         <td class="skill-name">MySQL · MariaDB</td>
         <td class="skill-desc">
-          Database schema modeling and normalization; executed comprehensive SQL query profiling and application integration.
+          Table design and normalization, SQL query testing, and service integration
         </td>
       </tr>
       <tr>
         <td class="skill-name">AWS EC2</td>
         <td class="skill-desc">
-          Provisioned and operated cloud-based deployment environments for both frontend and backend applications.
+          Configured and operated frontend/backend deployment environments
         </td>
       </tr>
     </table>
@@ -176,33 +196,40 @@
       <tr>
         <td class="skill-name">Git · GitHub</td>
         <td class="skill-desc">
-          Source code version control, branch management, and collaborative code reviews.
+          Version control and code sharing for collaboration
         </td>
       </tr>
       <tr>
         <td class="skill-name">Slack · Microsoft Teams</td>
         <td class="skill-desc">
-          Utilized for professional workplace communication, Agile sprint coordination, and team-wide alignment.
+          Team communication and collaboration
         </td>
       </tr>
     </table>
   </div>
 
   <div class="portfolio-link">
-    <a
+    
       href="https://drive.google.com/file/d/1BgnGuDL1T2Gh_8WSUZQJILOteWh4fjEC/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
     >
-      View Detailed Resume (Google Drive)
+      View Career Description (Google Drive)
     </a>
   </div>
 </section>
 
+
+
+
+
+
+<!-- ================= CORE TECH ================= -->
 <section id="core-tech">
   <h3 class="core-title">Core Tech</h3>
 
   <div class="core-tech-wrap">
+
     <div class="core-group">
       <span class="core-label">Backend</span>
       <div class="core-icons">
@@ -234,238 +261,343 @@
         <img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/docker/docker-original.svg" alt="Docker">
       </div>
     </div>
+
   </div>
 </section>
 
+
+
+
+
+
+
+
+
+
+<!-- ================= EXPERIENCE ================= -->
 <section id="experience">
-  <h2>Featured Projects</h2>
+  <h2>Projects</h2>
 
-  <div class="project-box">
-    <div class="project-row">
-      <div class="project-left-text">
-        <h3>EVLink – AI-Powered EV Charging Station Sharing Platform</h3>
-        <span class="project-period">Duration: Aug 2025 – Sep 2025</span>
+<div class="project-box">
 
-        <span class="project-goal">
-          <b>Project Objective:</b><br>
-          Built a peer-to-peer and public EV charging sharing platform allowing hosts to list private chargers and users to make real-time reservations. Designed to elevate user convenience and operational efficiency while creating monetization structures for hosts.
-        </span>
+  <div class="project-row">
 
-        <span class="project-role">
-          <b>Key Contributions & Role:</b>
-        </span>
+    <!-- LEFT : TEXT -->
+    <div class="project-left-text">
+      <h3>EVLink – AI-Based EV Charger Sharing Platform Project</h3>
 
-        <ul class="project-desc">
-          <li>Developed an AI-driven conversational chatbot leveraging Google Gemini API integrated with Django backend.</li>
-          <li>Engineered and trained an LSTM-based deep learning pipeline for user review sentiment analysis.</li>
-          <li>Designed and implemented secure, modular RESTful APIs utilizing React and Spring Boot.</li>
-          <li>Architected centralized user access control and security layers with OAuth2 and JWT.</li>
-          <li>Modeled and built production-ready relational database environments across MySQL, MariaDB, and Oracle.</li>
-          <li>Drafted the comprehensive system architecture, technical visualization diagrams, and presentation materials.</li>
-        </ul>
-      </div>
+<span class="project-period">Period: 2025.08.25 ~ 2025.09.25</span>
 
-      <div class="project-right overlap-frame">
-        <img src="images/Architecture.jpg" alt="EVLink Architecture" onclick="openModal(this.src)">
-        <img src="images/chatbot.jpg" alt="EVLink AI Feature" onclick="openModal(this.src)">
-      </div>
+<span class="project-goal">
+<b>Project Goal:</b><br>Building a host/user-based EV charger sharing platform that enables reservation of
+private and public chargers, provides real-time usage status, and generates revenue for hosts —
+improving user convenience and operational efficiency
+</span>
+
+<span class="project-role">
+  <b>Role &amp; Responsibilities:</b>
+</span>
+
+<ul class="project-desc">
+  <li>Developed an AI conversational chatbot service based on Google Gemini + Django</li>
+  <li>Designed and implemented an LSTM-based sentiment analysis model</li>
+  <li>Designed and developed REST APIs using React &amp; Spring Boot</li>
+  <li>Designed OAuth2-based login authentication / security architecture</li>
+  <li>Database design and construction (MySQL, MariaDB, Oracle)</li>
+  <li>Designed the overall system architecture and produced diagrams / presentation materials</li>
+</ul>
+
+
     </div>
 
-    <div class="portfolio-link">
-      <a
-        href="https://drive.google.com/file/d/1WHECWwoLdS4O4JYRylPk6vEio3aPRkjs/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View Project Details (Google Drive)
-      </a>
+    <!-- RIGHT : IMAGES -->
+    <div class="project-right overlap-frame">
+      <img src="images/Architecture.jpg"
+           alt="EVLink Architecture"
+           onclick="openModal(this.src)">
+      <img src="images/chatbot.jpg"
+           alt="EVLink AI Feature"
+           onclick="openModal(this.src)">
     </div>
 
-    <div class="achievement-box">
-      <div class="achievement-icon">💡 <strong>Key Deliverables & Metrics:</strong></div>
-      <div class="achievement-content">
-        <p>
-          Automated customer inquiry handling and review sorting by integrating the Gemini AI chatbot and LSTM model. Maximized overall operational speed, accelerated support resolution times, and established an ongoing feedback loop through automated sentiment classification by successfully connecting data streams across REST APIs and RDBMS layers.
-        </p>
-      </div>
+  </div> <!-- project-row end -->
+
+
+  <div class="portfolio-link">
+    
+      href="https://drive.google.com/file/d/1WHECWwoLdS4O4JYRylPk6vEio3aPRkjs/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View Portfolio (Google Drive)
+    </a>
+  </div>
+
+  <div class="achievement-box">
+    <div class="achievement-icon">💡<strong>Outcome (one line):</strong></div>
+    <div class="achievement-content">
+      <p>
+Used an AI chatbot and an LSTM sentiment analysis model to automatically process and classify
+user inquiries and reviews; integrated REST APIs and the database to handle data and operate the
+system, improving efficiency and inquiry processing speed, and enhancing user convenience through
+positive/negative review feedback
+      </p>
     </div>
   </div>
 
-  <div class="project-box">
-    <div class="project-row">
-      <div class="project-left-text">
-        <h3>Walley – Analytics-Driven Personal Asset Management Platform</h3>
-        <span class="project-period">Duration: May 2025 – Jul 2025</span>
+</div>
 
-        <span class="project-goal">
-          <b>Project Objective:</b><br>
-          Developed a data-driven personal financial platform that tracks incomes/expenses and visualizes consumption patterns, enabling users to isolate inefficient spending behaviors and optimize long-term asset management.
-        </span>
 
-        <span class="project-role">
-          <b>Key Contributions & Role:</b>
-        </span>
 
-        <ul class="project-desc">
-          <li>Architected a robust RESTful backend infrastructure and core transaction ledger components with Spring Boot.</li>
-          <li>Engineered transactional data access layers and data mapping components using MyBatis 3 with Oracle DB.</li>
-          <li>Implemented an automated receipt image upload, storage management, and relational database linkage pipeline.</li>
-          <li>Designed and developed frontend view layers and modular transaction management layouts using React and TypeScript.</li>
-          <li>Led the initial Oracle Database relational modeling and relational schema integrity mapping.</li>
-        </ul>
-      </div>
+<!-- ================= PROJECT 02 ================= -->
+<div class="project-box">
 
-      <div class="project-right overlap-frame">
-        <img src="images/erd.jpg" alt="Walley ERD" onclick="openModal(this.src)">
-        <img src="images/check.jpg" alt="Walley Feature" onclick="openModal(this.src)">
-      </div>
+  <div class="project-row">
+
+    <!-- LEFT : TEXT -->
+    <div class="project-left-text">
+      <h3>Walley – Statistics-Based Asset Management Project</h3>
+     
+<span class="project-period">Period: 2025.05.30 ~ 2025.07.15</span>
+
+
+<span class="project-goal">
+<b>Project Goal:</b><br>Identifying unnecessary spending by recording personal income and expenses and
+analyzing and visualizing consumption patterns, and optimizing asset management to improve
+financial efficiency
+</span>
+
+<span class="project-role">
+  <b>Role &amp; Responsibilities:</b>
+</span>
+
+<ul class="project-desc">
+  <li>Designed RESTful APIs based on Spring Boot and built income/expense logic</li>
+  <li>Integrated Oracle DB using MyBatis 3 and implemented data modeling</li>
+  <li>Built receipt image upload and management features for expense records and handled DB integration</li>
+  <li>Built UI/UX for income/expense pages using React + TypeScript</li>
+  <li>Oracle Database schema design and data modeling</li>
+</ul>
+
+
+
     </div>
 
-    <div class="portfolio-link">
-      <a
-        href="https://drive.google.com/file/d/1fT-lxRMfCJoxEY7uPvOlImAcjheWFDTV/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
+    <!-- RIGHT : OVERLAP IMAGES -->
+    <div class="project-right overlap-frame">
+      <img
+        src="images/erd.jpg"
+        alt="Walley ERD"
+        onclick="openModal(this.src)"
       >
-        View Project Details (Google Drive)
-      </a>
+      <img
+        src="images/check.jpg"
+        alt="Walley Feature"
+        onclick="openModal(this.src)"
+      >
     </div>
 
-    <div class="achievement-box">
-      <div class="achievement-icon">💡 <strong>Key Deliverables & Metrics:</strong></div>
-      <div class="achievement-content">
-        <p>
-          Optimized financial auditing efficiency by establishing a synchronized data flow connecting Spring Boot, MyBatis, and Oracle DB to systematically process receipts, category indexing, and historical entries. Facilitated dynamic timeline queries based on date, time, and custom category distributions through a responsive React/TypeScript interface, maximizing user financial control.
-        </p>
-      </div>
+  </div> <!-- project-row end -->
+
+  <div class="portfolio-link">
+    
+      href="https://drive.google.com/file/d/1fT-lxRMfCJoxEY7uPvOlImAcjheWFDTV/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View Portfolio (Google Drive)
+    </a>
+  </div>
+
+  <!-- Outcome -->
+  <div class="achievement-box">
+    <div class="achievement-icon">💡<strong>Outcome (one line):</strong></div>
+    <div class="achievement-content">
+    
+      <p>
+Integrated Spring Boot REST APIs with MyBatis and Oracle DB to upload income, expenses, and receipt
+images, classify them by category, and store them in the database; through a React/TypeScript UI,
+enabled lookups by date, time, and category, and analyzed and visualized consumption patterns to
+maximize financial management efficiency
+      </p>
     </div>
   </div>
-</section>
+
+</div>
+
+
+<!-- github-activity -->
+
+<!-- <section id="github-activity">
+  <h3>GitHub Activity</h3>
+  <a href="https://github.com/serelee08" target="_blank" rel="noopener">
+    <img
+      src="https://ghchart.rshah.org/serelee08"
+      alt="GitHub Contributions"
+      loading="lazy"
+    />
+  </a>
+</section> -->
+
+
+<!-- ================= AWARDS ======================== -->
 
 <section id="awards">
   <h2>Awards</h2>
 
   <div class="award-row">
-    <div class="award-item">
-      <div class="award-title">Excellence Project Award</div>
-      <div class="award-org">Korea ICT Human Resources Development Institute</div>
 
-      <img src="images/award1.png" alt="Excellence Project Award Certificate">
+    <!-- Project Excellence Award -->
+    <div class="award-item">
+      <div class="award-title">Project Excellence Award</div>
+      <div class="award-org">Korea ICT Talent Development Institute</div>
+
+      <img src="images/award1.png" alt="Project Excellence Award certificate">
 
       <div class="award-desc">
-        <strong>📊 Engineering Contributions</strong>
+        <strong>📊 Contribution</strong>
         <ul class="award-list">
-          <li>Led the core Spring Boot backend architectural engineering and built the main business logic REST APIs. Designed and integrated secure decentralized token validation using OAuth2 and JWT.</li>
-          <li>Spearheaded systematic data modeling and application integration utilizing MyBatis mapping configurations.</li>
-          <li>Developed interactive generative conversational AI layers via server-to-server Django communication with the Gemini API.</li>
-          <li>Recognized for outstanding technical contribution by successfully productionizing Python NLP (RNN/LSTM) sentiment data streams directly into core microservices.</li>
+    <li>Led the design of the Spring Boot-based backend architecture and the implementation of core REST API logic, and designed and applied the OAuth2 + JWT authentication / authorization structure</li>
+    <li>Implemented data modeling and MyBatis-based SQL backend integration</li>
+    <li>Developed AI chatbot features based on the Gemini API integrated with Django</li>
+    <li>Recognized for the key contribution of integrating a Python NLP (RNN/LSTM) sentiment analysis pipeline into the service</li>
         </ul>
       </div>
     </div>
 
+    <!-- Special Merit Award -->
     <div class="award-item">
-      <div class="award-title">Special Model Attendance Award</div>
-      <div class="award-org">Korea ICT Human Resources Development Institute</div>
+      <div class="award-title">Special Merit Award (100% Attendance)</div>
+      <div class="award-org">Korea ICT Talent Development Institute</div>
 
-      <img src="images/award2.png" alt="Special Model Award Certificate">
+      <img src="images/award2.png" alt="Special Merit Award certificate">
 
       <div class="award-desc">
-        <strong>📊 Engineering Contributions</strong>
+        <strong>📊 Contribution</strong>
         <ul class="award-list">
-          <li>Maintained a flawless 100% attendance rate throughout a demanding 7-month full-time technical development track.</li>
-          <li>Demonstrated exceptional diligence, reliable engineering ethics, and leadership across all technical labs, real-world development instances, and collaborative sprint operations.</li>
-        </ul>
+           <li>Maintained 100% attendance throughout the entire 7-month full-time training program</li>
+           <li>Recognized for diligent participation in all practice sessions, projects, and team activities, and for an exemplary learning attitude throughout the program</li>
+         </ul>
       </div>
     </div>
+
   </div>
 </section>
 
-<section id="education">
-  <h2>Education & Certifications</h2>
 
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+  <h2>Education &amp; Certificate</h2>
+
+  <!-- 1 -->
   <div class="box">
-    <h3>Cloud-Based AI Full-Stack Development Track</h3>
+    <h3>Cloud-Based AI Full-Stack Development Program</h3>
     <p class="edu-meta">
-      Korea ICT Human Resources Development Institute | Mar 2025 – Sep 2025
+      Korea ICT Talent Development Institute | 2025.03.20 – 2025.09.25
     </p>
     <ul class="edu-list">
       <li>
-        Completed a rigorous, 7-month full-time offline engineering program focused on full-stack web engineering, enterprise RESTful API modeling, relational database integration, and deploying conversational AI features into live pipelines.
+        Completed a full-time 7-month on-site program focused on practical training in full-stack
+        web development, REST API design, database integration, and AI conversational service implementation
       </li>
       <li>
-        Acquired production-level cloud system engineering competencies through hands-on full-stack development using Spring Boot (Backend), React / TypeScript (Frontend), and cross-framework AI service integration.
+        Built service development skills for cloud environments through hands-on backend (Spring Boot),
+        frontend (React / TypeScript), and AI integration projects
       </li>
     </ul>
   </div>
 
+  <!-- 2 -->
   <div class="box">
     <h3>IBM AI Engineering Professional Certificate</h3>
     <p class="edu-meta">
-      Coursera | May 2026 – Present (Expected Completion: Sep 2026)
+      Coursera | 2026.05 – Present (Expected completion: 2026.09)
     </p>
     <ul class="edu-list">
       <li>
-        AI & LLM Specialization: Building robust Retrieval-Augmented Generation (RAG) pipelines leveraging LangChain frameworks; deep architectural exploration of Transformer models and fine-tuning configurations.
+        AI &amp; LLM: Built RAG systems based on LangChain, gained an understanding of the
+        Transformer architecture, and implemented model fine-tuning
       </li>
       <li>
-        AI Pipeline & Frameworks: Designing deep learning model execution plans and executing large-scale data modeling operations using PyTorch and TensorFlow.
+        AI Pipeline &amp; Frameworks: Designed deep learning models using PyTorch and TensorFlow
+        and practiced large-scale data processing
       </li>
     </ul>
   </div>
 
+  <!-- 3 -->
   <div class="box">
-    <h3>University Pathway Academic English Program</h3>
+    <h3>University Pathway English Program (Canada)</h3>
     <p class="edu-meta">
-      ILAC International Language School, Toronto | May 2017 – May 2018
+      ILAC International Language School, Toronto | 2017.05 – 2018.05
     </p>
     <ul class="edu-list">
       <li>
-        Completed intensive academic English tracks covering advanced Writing, Listening, Speaking, and Reading modules optimized for specialized higher-education disciplines.
+        Completed academic English training focused on Writing, Listening, Speaking, and
+        Reading to prepare for advanced university studies
       </li>
       <li>
-        Collaborated extensively within multi-cultural agile academic groups, delivering deep-dive presentations and coordinating cross-border team research operations.
+        Collaborated on academic projects and delivered presentations with
+        teammates of diverse nationalities
       </li>
     </ul>
   </div>
 </section>
+
+
+
+<!-- ================= vision ================= -->
+
 
 <section id="vision">
   <h2>Vision</h2>
   <div class="vision-final">
     <p>
-      I am Jiae Lee—an engineer who consistently validates the practical power of technology through relentless, continuous learning.
+
+I am Serena Jiae Lee, an engineer who proves the value of technology through relentless learning.
+
+
     </p>
   </div>
 </section>
 
+
+
+<!-- ================= CONTACT ICONS ================= -->
 <section id="contact">
   <div class="contact-icons-final">
-    <div class="contact-icon-box">
-      <i data-lucide="phone"></i>
-      <a href="sms:010-7713-9527" class="contact-link">
-        <span>+82 10-7713-9527</span>
-      </a>
-    </div>
 
-    <div class="contact-icon-box">
-      <i data-lucide="mail"></i>
-      <a href="mailto:serelee08@gmail.com" class="contact-link">
-        <span>serelee08@gmail.com</span>
-      </a>
-    </div>
+<div class="contact-icon-box">
+  <i data-lucide="phone"></i>
+  <a href="sms:010-7713-9527" class="contact-link">
+    <span>010-7713-9527</span>
+  </a>
+</div>
 
-    <div class="contact-icon-box">
-      <i data-lucide="link"></i>
-      <a href="https://github.com/serelee08" target="_blank" rel="noopener noreferrer" class="contact-link">
-        <span>github.com/serelee08</span>
-      </a>
-    </div>
+<div class="contact-icon-box">
+  <i data-lucide="mail"></i>
+  <a href="mailto:serelee08@gmail.com" class="contact-link">
+    <span>serelee08@gmail.com</span>
+  </a>
+</div>
+
+<div class="contact-icon-box">
+  <i data-lucide="link"></i>
+  <a href="https://github.com/serelee08" target="_blank" rel="noopener noreferrer" class="contact-link">
+    <span>github.com/serelee08</span>
+  </a>
+</div>
+
   </div>
 </section>
 
+
 <footer>
-© 2026 JIAE LEE · Backend Developer
+© 2026 Jiae Lee · Backend Developer
 </footer>
+
+
 
 <script>
 function toggleMenu() {
@@ -481,16 +613,20 @@ function toggleInfo(id) {
       : 'none';
   });
 }
+
+
 </script>
 <script>
   lucide.createIcons();
 </script>
 
 <div id="img-modal" class="img-modal" onclick="closeModal()">
+  
  <button
     class="modal-close"
     onclick="event.stopPropagation(); closeModal();"
   >×</button>
+
   <img
     id="img-modal-img"
     onclick="event.stopPropagation()"
@@ -510,6 +646,7 @@ function closeModal() {
   document.getElementById('img-modal').classList.remove('active');
 }
 </script>
+
 
 </body>
 </html>
