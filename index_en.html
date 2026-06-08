@@ -10,6 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Awards overflow fix for English text -->
+  <style>
+    .award-item    { overflow: hidden; box-sizing: border-box; }
+    .award-list li { word-break: break-word; line-height: 1.6; }
+    .award-desc    { width: 100%; box-sizing: border-box; }
+  </style>
 </head>
 <body>
 
@@ -222,8 +229,6 @@ the quality of the service to a level I could never have reached alone.
 
 
 
-
-
 <!-- ================= CORE TECH ================= -->
 <section id="core-tech">
   <h3 class="core-title">Core Tech</h3>
@@ -264,12 +269,6 @@ the quality of the service to a level I could never have reached alone.
 
   </div>
 </section>
-
-
-
-
-
-
 
 
 
@@ -457,10 +456,15 @@ maximize financial management efficiency
       <div class="award-desc">
         <strong>📊 Contribution</strong>
         <ul class="award-list">
-    <li>Led the design of the Spring Boot-based backend architecture and the implementation of core REST API logic, and designed and applied the OAuth2 + JWT authentication / authorization structure</li>
-    <li>Implemented data modeling and MyBatis-based SQL backend integration</li>
-    <li>Developed AI chatbot features based on the Gemini API integrated with Django</li>
-    <li>Recognized for the key contribution of integrating a Python NLP (RNN/LSTM) sentiment analysis pipeline into the service</li>
+          <!-- ✅ 첫 bullet 분리 → overflow 해결 -->
+          <li>Led the design of the Spring Boot-based backend architecture
+              and implemented core REST API logic</li>
+          <li>Designed and applied the OAuth2 + JWT authentication
+              / authorization structure</li>
+          <li>Implemented data modeling and MyBatis-based SQL backend integration</li>
+          <li>Developed AI chatbot features based on the Gemini API integrated with Django</li>
+          <li>Recognized for integrating a Python NLP (RNN/LSTM)
+              sentiment analysis pipeline into the service</li>
         </ul>
       </div>
     </div>
