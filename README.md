@@ -2,9 +2,9 @@
   <a href="README.md">🇰🇷 한국어</a> &nbsp;|&nbsp; <a href="README_en.md">🇺🇸 English</a>
 </div>
 
-# 이지애 | 백엔드 엔지니어
+# 이지애 | 소프트웨어 엔지니어
 
-> 명확한 API 설계와 AI 기능 통합으로 안정적인 백엔드 시스템을 구축합니다.
+> 명확한 API 설계와 AI 기능 통합으로 안정적인 시스템을 구축합니다.
 
 🌐 [포트폴리오 사이트](https://serelee08.github.io/PortfolioSL) · 📧 serelee08@gmail.com · 💻 [github.com/serelee08](https://github.com/serelee08)
 
